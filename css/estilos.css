@@ -1,0 +1,351 @@
+*{
+    margin:0; /*Quitamos los margenes por defecto de html*/
+    padding:0; /*Quitamos los padding por defecto de html*/
+    box-sizing: border-box; /*Establecemos que los tamaños de las cajas sean fijos y no se alteren por agregar padding al contenido*/
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap'); /*Importamos fuentes desde Google Fonts*/
+
+/*
+    El orden de los estilados es el siguiente:
+    ESTILADO DE LA CABECERA
+    ESTILADO DEL PIE DE PAGINA
+    ESTILADO DEL MAIN DEL INDEX
+    ESTILADO DEL MAIN DE NOSOTROS
+    ESTILADO DEL MAIN DE RECITALES
+    ESTILADO DEL MAIN DE DISCOGRAFIA
+    ESTILADO DEL MAIN DE SUSCRIBETE
+*/
+
+/*Propiedades de la cabecera*/
+
+.cabecera{
+    background-color: rgb(0, 0, 0); /*Color de fondo de la cabecera*/
+    /*position: sticky; /*Posicion de la cabecera: pegajosa*/
+    top: 0%; /*Distancia de la cabecera al tope de la pantalla: pegado al tope*/
+    border-bottom: solid; /*Borde inferior de la cabecera: solido*/
+    border-color: rgb(0, 0, 200); /*Color del borde*/
+    border-width: 2px; /*Ancho del borde*/
+    font-family: 'Roboto', sans-serif; /*Estilo de fuente para la cabecera*/
+    z-index: 9;
+}
+
+.logo{ /*Tamaño del logo*/
+    width: 12vh; 
+}
+
+.navbar .navbar-toggler-icon { /*El boton del menu hamburguesa de la navegacion no se veia asi que tome el codigo del boton de la navegacion oscura de bootstrap para que si se vea*/
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
+.contenedornavegacion{ /*Acomodamos la navegacion al lado izquiero de la pantalla*/
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.contenedornavegacion .anclas{ /*Estilamos las anclas de navegacion del header*/
+    color: white;
+    font-family: "roboto", sans-serif;
+    font-size: 1.3em;
+}
+
+.anclas:hover{ /*Le damos un subrayado y cambiamos el color a las anclas cuando el usuario pone el puntero encima de ellas*/
+    text-decoration: underline;
+    color: gold;
+}
+
+
+/*Propiedades del pie de página*/
+
+.piedepagina{
+    background-color: rgb(0, 0, 0); /*Color de fondo del pie de página*/
+    border-top: solid; /*Borde superior del pie: solido*/
+    border-color: rgb(0, 0, 200); /*Color del borde*/
+    border-width: 2px; /*Ancho del borde*/
+    margin-top: -1.3vh; /*Margen negativo para remover un espaciado entre los contenedores del main y el footer hechos con bootstrap*/
+    font-family: 'Roboto', sans-serif; /*Defino la fuente*/
+}
+
+.piedepagina .redessociales{
+    width: 50%;
+    text-align: center;
+}
+
+.piedepagina .escuchanos{
+    width: 50%;
+    text-align: center;
+    padding-right: 5vw;
+}
+
+.piedepagina .lista{
+    list-style: none; /*Quitamos los puntos de los items de las listas de navegacion*/
+}
+
+.piedepagina .titulonavegacion{
+    color:lightskyblue; /*Establecemos el color de los titulos de navegacion*/
+    font-size: 1.6em; /*Tamaño de letra*/
+}
+
+.piedepagina .anclas{
+    text-decoration: none; /*Quitamos las decoraciones de las anclas*/
+    color: white; /*Establecemos el color de las anclas*/
+    font-size: 1.2em; /*Tamaño de letra*/
+}
+
+.piedepagina .listaitem{ /*Mostramos los iconos en linea y le agregamos un padding simetrico para separarlas pero que se mantengan centradas*/
+    display: inline-block;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+}
+
+.piedepagina .textoancla{ /*Quitamos los estilados de las anclas*/
+    display: none;
+}
+
+.paddingancla{ /*Agregamos un padding a ciertas anclas para separarlas de su icono en vista desktop*/
+    padding-left: 10px;
+}
+
+/*Propiedades del main del index*/
+
+.mainindex{
+    background-color: rgb(0, 0, 0);
+    padding: 2vh 0;
+    /*display: flex; /*Display flex para acomodar su contenido con flexbox*/
+    /*flex-flow: column nowrap; /*Elementos ordenados en una sola columna*/
+    /*align-items: center; /*Elementos centrados horizontalmente*/
+    /*justify-content: space-around; /*Espaciado entre elementos*/
+    /*height: 220vh;*/
+}
+
+.mainindex .tituloindex{ 
+    width: 90%;
+    background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0.5));
+    border: 2px double rgb(0, 0, 0);
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.mainindex .tituloindex .tituloprincipal{ /*Propiedades del titulo principal*/
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding:2px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.mainindex .tituloindex .introduccion{ /*Propiedades del parrafo introductorio*/
+    font-family: 'Roboto';
+    color: white;
+    padding:1px;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+/*Estilados de la card del ultimo disco*/
+
+.mainindex .carddiscos{ /*Propiedades de la card del ultimo disco*/
+    margin: 2vh auto;
+    background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0.5));
+    border: 2px double rgb(0, 0, 0); 
+    /*display: flex;
+    flex-direction: column-reverse;
+    padding: 5px 0 0 0;*/
+}
+
+.mainindex .carddiscos .portada{ /*Ordenamos el div que contiene al video luego del div que contiene al texto en vista mobile*/
+    order: 1;
+}
+
+.mainindex .carddiscos .portada .video{
+    width: 100%;
+    aspect-ratio: 2;
+}
+
+.mainindex .carddiscos .lista{ /*Ubicamos el contenedor del texto en la card*/
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mainindex .titulolista{ /*Estilamos el titulo de la card*/
+    list-style: none; /*Esto es para quitar los puntos por cada item de la lista*/
+    text-align: center;
+}
+
+.titulolista .titulocard{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.8em;
+    text-decoration: none;
+    text-decoration: underline;
+    /*padding-right: 3vw;*/
+}
+
+.mainindex .subtitulolista{ /*Estilamos el subtitulo de la card*/
+    list-style: none;
+}
+
+.subtitulolista .subtitulocard{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.6em;
+}
+
+.mainindex .anclaslista{ /*Estilamos las anclas de la card (UL)*/
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-align: center;
+}
+
+.mainindex .anclaslista .navegacion{ /*Convertimos la lista con las anclas de una lista vertical a una horizontal (LI)*/
+    display: inline-block;
+    padding-left: 4.5vw;
+    padding-right: 4.5vw;
+}
+
+.mainindex .anclaslista .anclas{  /*(A)*/
+    text-decoration: none; 
+    color: white; 
+    font-size: 2.1em; 
+}
+
+.carddiscos .textoancla{
+    display: none;
+}
+
+/*Propiedades de la seccion proximos recitales*/
+
+.mainindex .cardrecitales{ /*Propiedades de la card del ultimo disco*/
+    background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0.5));
+    border: 2px double rgb(0, 0, 0); 
+}
+
+.mainindex .cardrecitales .lista{ /*Ubicamos el contenedor del texto en la card*/
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: left;
+}
+
+.mainindex .fechas{ /*Propiedades del texto de la card*/
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.2em;
+    list-style: none;
+}
+
+.mainindex .fechas .listaitem{ /*Espaciamos los elementos de la lista de los proximos recitales*/
+    margin-top: 0.6em;
+}
+
+.mainindex .cardrecitales .portada .mapa{ /*Determinamos el tamaño del mapa*/
+    width: 100%;
+    aspect-ratio: 2;
+}
+
+.cardrecitales .texto{ /*Propiedades del texto de la card*/
+    font-size: 0.8em;
+}
+
+/*Vista tablet y desktop*/
+
+@media only screen and (min-width: 576px){
+    .piedepagina .redessociales{
+        text-align: left;
+    }
+    
+    .piedepagina .escuchanos{
+        display: flex;
+        justify-content: flex-end;
+        text-align: left;
+    }
+
+    .piedepagina .listaitem{
+        display: block;
+        padding-left: 0vw;
+    }
+
+    .piedepagina .textoancla{
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .mainindex{
+        background-color: black; /*Color de fondo*/
+        background-image: url(../Assets/Img/Fondo.jpg); /*Imagen de fondo del contenido principal*/
+        background-attachment: fixed; /*Imagen de fondo fija*/
+        background-position: center; /*Imagen de fondo centrada*/
+        background-repeat: no-repeat; /*No se repite la imagen de fondo al hacer scroll, acompaña al movimiento*/
+        background-size: 100%;
+    }
+
+    .mainindex .tituloindex .tituloprincipal{ /*Propiedades del titulo principal*/
+        padding:2px;
+        font-size: 2.2em;
+    }
+    
+    .mainindex .tituloindex .introduccion{ /*Propiedades del parrafo introductorio*/
+        padding:5px;
+        font-size: 1.3em;
+    }
+
+    .mainindex .carddiscos{ /*Propiedades de la card del ultimo disco*/
+        flex-direction: row;
+        padding: 0 5px 0 0;
+    }
+    
+    .mainindex .carddiscos .portada{ /*Determinamos el tañamo del contenedor del video en la card y lo ubicamos primero (a la izquierda) en la card*/
+        width: 50%;
+        order: -1;
+    }
+    
+    .mainindex .carddiscos .lista{ /*Ubicamos el contenedor del texto en la card*/
+        width: 50%;
+    }
+
+    .mainindex .anclaslista .navegacion{ /*Convertimos la lista con las anclas de una lista vertical a una horizontal*/
+        display: inline-block;
+        margin-left: 10px;
+    }
+    
+    .mainindex .anclaslista .anclas{ 
+        text-decoration: none; 
+        color: white; 
+        font-size: 1.1em; 
+    }
+
+    .mainindex .anclaslista .navegacion{ /*Convertimos la lista con las anclas de una lista vertical a una horizontal (LI)*/
+        display: inline-block;
+        padding-left: 1.2vw;
+        padding-right: 1.2vw;
+    }
+
+    .carddiscos .textoancla{
+        display: inline-block;
+        padding-left: 0.5vw;
+    }
+
+    .mainindex .cardrecitales{
+        flex-direction: row;
+        padding: 0 5px 0 0;
+    }
+
+    .mainindex .cardrecitales .portada{
+        width: 50%;
+    }
+
+    .mainindex .cardrecitales .lista{
+        width: 50%;
+    }
+
+    .cardrecitales .texto{
+        font-size: 1em;
+    }
+}
+

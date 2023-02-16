@@ -1,0 +1,255 @@
+*{
+    margin:0; /*Quitamos los margenes por defecto de html*/
+    padding:0; /*Quitamos los padding por defecto de html*/
+    box-sizing: border-box; /*Establecemos que los tamaños de las cajas sean fijos y no se alteren por agregar padding al contenido*/
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap'); /*Importamos fuentes desde Google Fonts*/
+
+/*
+    El orden de los estilados es el siguiente:
+    ESTILADO DE LA CABECERA
+    ESTILADO DEL PIE DE PAGINA
+    ESTILADO DEL MAIN DEL INDEX
+    ESTILADO DEL MAIN DE NOSOTROS
+    ESTILADO DEL MAIN DE RECITALES
+    ESTILADO DEL MAIN DE DISCOGRAFIA
+    ESTILADO DEL MAIN DE SUSCRIBETE
+*/
+
+
+
+/*Estilado de la cabecera*/
+
+.cabecera{ 
+    background-color: rgba(0, 0, 0); /*Color de fondo de la cabecera*/
+    position: sticky; /*Posicion de la cabecera: pegajosa*/
+    top: 0%; /*Distancia de la cabecera al tope de la pantalla: pegado al tope*/
+    border-bottom: solid; /*Borde inferior de la cabecera: solido*/
+    border-color: rgb(0, 0, 200); /*Color del borde*/
+    border-width: 2px; /*Ancho del borde*/
+    font-family: 'Roboto', sans-serif; /*Defino la fuente*/
+    z-index: 10;
+}
+
+.logo{
+    position:relative; /*Definimos la posicion del logo. Usamos relative para que el header tenga su altura definida por el tamaño del logo*/
+    top: 50%;
+    left: 4%;
+    height: 6rem; /*Definimos la altura del logo*/
+}
+
+.cabecera .listanavegacion{
+    position:absolute; /*Definimos la posicion de la navegacion. Usamos absolute para que no influya en el alto de la cabecera*/
+    top: 50%;
+    right: 2%;
+}
+
+.cabecera .navegacion{
+    display: inline; /*Mostramos cada elemento de la navegacion como un elemento en linea para que aparezcan uno al lado del otro*/
+    margin-left: 2px; /*Agregamos 2px de distancia horizontal entre cada elemento de la navegacion*/
+}
+
+.cabecera .anclas{
+    text-decoration: none; /*Quitamos las decoraciones de las anclas*/
+    color: white; /*Establecemos el color de las anclas*/
+}
+
+/*Estilado del footer*/
+
+.piedepagina{
+    background-color: rgba(0, 0, 0); /*Color de fondo del pie de página*/
+    border-top: solid; /*Borde superior del pie: solido*/
+    border-color: rgb(0, 0, 200); /*Color del borde*/
+    border-width: 2px; /*Ancho del borde*/
+    font-family: 'Roboto', sans-serif; /*Defino la fuente*/
+    position: relative; /*Defino posicion relativa para ubicar los elementos contenidos en el pie*/
+    height:15vh; /*altura del pie de página*/
+}
+
+.redessociales{
+    position: absolute; /*Definimos la posicion de la navegacion "Redes Sociales"*/
+    top:5%;
+    left:4%;
+}
+
+.escuchanos{
+    position:absolute; /*Definimos la posicion de la navegacion "Escuchanos"*/
+    top: 5%;
+    right: 4%;
+}
+
+
+.piedepagina .titulonavegacion{
+    color:lightskyblue; /*Establecemos el color de los titulos de navegacion*/
+    font-size: 1.6em; /*Tamaño de letra*/
+}
+
+.piedepagina .anclas{
+    text-decoration: none; /*Quitamos las decoraciones de las anclas*/
+    color: white; /*Establecemos el color de las anclas*/
+    font-size: 1.2em; /*Tamaño de letra*/
+}
+
+/*Estilado del main del index*/
+
+.contenidoindex{
+    background-color: black; /*Color de fondo*/
+    background-image: url(../Assets/Img/Fondo.jpg); /*Imagen de fondo del contenido principal*/
+    background-attachment: fixed; /*Imagen de fondo fija*/
+    background-position: center; /*Imagen de fondo centrada*/
+    background-repeat: no-repeat; /*No se repite la imagen de fondo al hacer scroll, acompaña al movimiento*/
+    padding-bottom: 3vh; /*Padding inferior para dejar espacio entre la ultima tarjeta y el pie de página*/
+}
+
+.contenidoindex .tituloindex{ 
+    display: inline-block;
+    width: 80%;
+    margin: 3vh 10% 2vh 10%;
+    background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0.5));
+    border: 2px double rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+.contenidoindex .tituloindex .tituloprincipal{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding:2px;
+    text-align: center;
+    font-size: 2.2em;
+}
+
+.contenidoindex .tituloindex .introduccion{
+    font-family: 'Roboto';
+    color: white;
+    padding:5px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.contenidoindex .carrusel{ /*propiedades del contenedor del carrusel*/
+    background-color: black;
+    border-width: 3px 0; /*Bordes superior e inferior*/
+    border-style: double;
+    border-color: whitesmoke;
+}
+
+.contenidoindex .carrusel .imagencarrusel{ /*determinamos el tamaño de las imagenes del carrusel y las centramos*/
+    width:70%;
+    position: relative;
+    left: 15%;
+}
+
+.contenidoindex .carddiscos{ /*Propiedades de la card del ultimo disco*/
+    width: 70%;
+    margin: 3vh 15% 3vh 15%;
+    background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0.5));
+    border: 2px double rgb(0, 0, 0); 
+    position: relative;
+}
+
+.contenidoindex .carddiscos .portada{ /*Determinamos el tañamo del contenedor del video en la card*/
+    width: 50%
+}
+
+.contenidoindex .carddiscos .lista{ /*Ubicamos el contenedor del texto en la card*/
+    width: 50%;
+    position:absolute;
+    top:0%;
+    right:0%;
+
+}
+
+.contenidoindex .titulolista{ /*Ubicamos y estilamos el titulo de la card*/
+    position: relative;
+    top: 1.5em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.4em;
+    text-decoration: none;
+    text-decoration: underline;
+    list-style: none; /*Esto es para quitar los puntos por cada item de la lista*/
+}
+
+.contenidoindex .subtitulolista{ /*Ubicamos y estilamos el subtitulo de la card*/
+    position: relative;
+    top: 2.5em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    list-style: none;
+}
+.contenidoindex .anclaslista{ /*Ubicamos y estilamos las anclas de la card*/
+    position: relative;
+    top: 4.5em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.contenidoindex .anclaslista .navegacion{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.contenidoindex .anclaslista .anclas{
+    text-decoration: none; 
+    color: white; 
+    font-size: 1.1em; 
+}
+
+.contenidoindex .cardrecitales{ /*Propiedades de la card de los proximos recitales*/
+    width: 70%;
+    height: 45vh;
+    margin: 3vh 15% 0vh 15%;
+    background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0.5));
+    border: 2px double rgb(0, 0, 0); 
+    position: relative;
+}
+
+.contenidoindex .cardrecitales .lista{
+    width: 40%;
+    height: 20vh;
+    position:absolute;
+    top:0%;
+    left:10%;
+}
+
+.contenidoindex .cardrecitales .titulolista{
+    text-align: left;
+}
+
+.contenidoindex .fechas{
+    position: relative;
+    top: 4.5em;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.2em;
+    list-style: none;
+}
+
+.contenidoindex .fechas .listaitem{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.contenidoindex .cardrecitales .portada{
+    width: 40%;
+    position:absolute;
+    top:10%;
+    right: 10%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.2em;
+}
+
+.contenidoindex .mapa{
+    width: 25vw;
+    height: 30vh;
+}

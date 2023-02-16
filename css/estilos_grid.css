@@ -1,0 +1,409 @@
+*{
+    margin:0; /*Quitamos los margenes por defecto de html*/
+    padding:0; /*Quitamos los padding por defecto de html*/
+    box-sizing: border-box; /*Establecemos que los tamaños de las cajas sean fijos y no se alteren por agregar padding al contenido*/
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap'); /*Importamos fuentes desde Google Fonts*/
+
+/*
+    El orden de los estilados es el siguiente:
+    ESTILADO DE LA CABECERA
+    ESTILADO DEL PIE DE PAGINA
+    ESTILADO DEL MAIN DEL INDEX
+    ESTILADO DEL MAIN DE NOSOTROS
+    ESTILADO DEL MAIN DE RECITALES
+    ESTILADO DEL MAIN DE DISCOGRAFIA
+    ESTILADO DEL MAIN DE SUSCRIBETE
+*/
+
+/*Propiedades de la cabecera*/
+
+.cabecera{ /*Propiedades del contenedor de la cabecera*/
+    grid-area: header; /*Establecemos que parte del grid ocupa*/
+    display: flex; /*Usamos flex para luego acomodar el contenido en su interior*/
+    justify-content: space-between; /*Con esto el contenedor del logo y el contenedor de la navegacion quedan en extremos opuestos*/
+    align-items: center; /*Alineamos los items al centro para que la navegacion quede centrada verticalmente*/
+    background-color: rgba(0, 0, 0); /*Color de fondo de la cabecera*/
+    position: sticky; /*Posicion de la cabecera: pegajosa*/
+    top: 0%; /*Distancia de la cabecera al tope de la pantalla: pegado al tope*/
+    border-bottom: solid; /*Borde inferior de la cabecera: solido*/
+    border-color: rgb(0, 0, 200); /*Color del borde*/
+    border-width: 2px; /*Ancho del borde*/
+    font-family: 'Roboto', sans-serif; /*Estilo de fuente para la cabecera*/
+}
+
+.contenedorlogo{ /*Propiedades del contenedor del logo*/
+    padding-left: 3%; /*Distancia al margen izquierdo de la pantalla*/
+}
+
+.contenedorlogo .logo{
+    height: 14vh; /*Tamaño del logo*/
+}
+
+.contenedornavegacion{ /*Propiedades del contenedor de la navegacion*/
+    padding-right: 3%; /*Distancia al margen derecho de la pantalla*/
+}
+
+.contenedornavegacion .navegacion{
+    display: inline; /*Mostramos cada elemento de la navegacion como un elemento en linea para que aparezcan uno al lado del otro*/
+    margin-left: 2px; /*Agregamos 2px de distancia horizontal entre cada elemento de la navegacion*/
+}
+
+.contenedornavegacion .anclas{
+    text-decoration: none; /*Quitamos las decoraciones de las anclas*/
+    color: white; /*Establecemos el color de las anclas*/
+    font-size: 1.2em;
+}
+
+/*Propiedades del pie de página*/
+
+.piedepagina{
+    grid-area: footer; /*Definimos su area en el grid*/
+    background-color: rgba(0, 0, 0); /*Color de fondo del pie de página*/
+    border-top: solid; /*Borde superior del pie: solido*/
+    border-color: rgb(0, 0, 200); /*Color del borde*/
+    border-width: 2px; /*Ancho del borde*/
+    display: flex; /*Display flex para acomodar su contenido con flexbox*/
+    justify-content: space-between; 
+    padding: 1% 3%;
+    font-family: 'Roboto', sans-serif; /*Defino la fuente*/
+}   
+
+.piedepagina .lista{
+    list-style: none; /*Quitamos los puntos de los items de las listas de navegacion*/
+}
+
+.piedepagina .titulonavegacion{
+    color:lightskyblue; /*Establecemos el color de los titulos de navegacion*/
+    font-size: 1.6em; /*Tamaño de letra*/
+}
+
+.piedepagina .anclas{
+    text-decoration: none; /*Quitamos las decoraciones de las anclas*/
+    color: white; /*Establecemos el color de las anclas*/
+    font-size: 1.2em; /*Tamaño de letra*/
+}
+
+
+/*Propiedades del main del index*/
+
+/*Establecemos el grid*/
+
+.contenedorindex{ /*Propiedades del grid*/
+    display: grid;
+    grid-template-columns: auto; /*Una sola columna de ancho automatico*/
+    grid-template-rows: auto 16fr 1.2fr; /*Tres filas de distintas proporciones*/
+    grid-template-areas: "header" "main" "footer"; /*Establecemos los nombres de las areas para hacer referencia luego*/
+}
+
+.contenidoindex{
+    grid-area: main; /*Definimos su area en el grid*/ 
+    background-color: black; /*Color de fondo*/
+    background-image: url(../Assets/Img/Fondo.jpg); /*Imagen de fondo del contenido principal*/
+    background-attachment: fixed; /*Imagen de fondo fija*/
+    background-position: center; /*Imagen de fondo centrada*/
+    background-repeat: no-repeat; /*No se repite la imagen de fondo al hacer scroll, acompaña al movimiento*/
+    display: flex; /*Display flex para acomodar su contenido con flexbox*/
+    flex-flow: column nowrap; /*Elementos ordenados en una sola columna*/
+    align-items: center; /*Elementos centrados horizontalmente*/
+    justify-content: space-around; /*Espaciado entre elementos*/
+    height: 220vh;
+}
+
+/*Propiedades de la seccion introductoria*/
+
+.contenidoindex .tituloindex{ 
+    width: 80%;
+    background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0.5));
+    border: 2px double rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+.contenidoindex .tituloindex .tituloprincipal{ /*Propiedades del titulo principal*/
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding:2px;
+    text-align: center;
+    font-size: 2.2em;
+}
+
+.contenidoindex .tituloindex .introduccion{ /*Propiedades del parrafo introductorio*/
+    font-family: 'Roboto';
+    color: white;
+    padding:5px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/*Propiedades de la seccion del carrusel*/
+
+.contenidoindex .carrusel{ /*propiedades del contenedor del carrusel*/
+    background-color: black;
+    width: 100%; /*Ancho del 100%*/
+    border-width: 3px 0; /*Bordes superior e inferior*/
+    border-style: double; /*Estilo de borde*/
+    border-color: whitesmoke; /*Color de borde*/
+    display: flex; /*Display flex para centrar las imagenes del carrusel*/
+    justify-content: center;
+
+}
+
+.contenidoindex .carrusel .imagencarrusel{ /*Determinamos el tamaño de las imagenes del carrusel*/
+    width:80%;
+}
+
+/*Propiedades de la seccion ultimo disco*/
+
+.contenidoindex .carddiscos{ /*Propiedades de la card del ultimo disco*/
+    width: 80%;
+    background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0.5));
+    border: 2px double rgb(0, 0, 0); 
+    display: flex;
+}
+
+.contenidoindex .carddiscos .portada{ /*Determinamos el tañamo del contenedor del video en la card*/
+    width: 50%
+}
+
+.contenidoindex .carddiscos .portada .video{
+    width: 100%;
+    height: 40vh;
+}
+
+.contenidoindex .carddiscos .lista{ /*Ubicamos el contenedor del texto en la card*/
+    width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contenidoindex .titulolista{ /*Estilamos el titulo de la card*/
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.4em;
+    text-decoration: none;
+    text-decoration: underline;
+    list-style: none; /*Esto es para quitar los puntos por cada item de la lista*/
+}
+
+.contenidoindex .subtitulolista{ /*Estilamos el subtitulo de la card*/
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.2em;
+    list-style: none;
+}
+.contenidoindex .anclaslista{ /*Estilamos las anclas de la card*/
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+
+.contenidoindex .anclaslista .navegacion{ /*Convertimos la lista con las anclas de una lista vertical a una horizontal*/
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.contenidoindex .anclaslista .anclas{ 
+    text-decoration: none; 
+    color: white; 
+    font-size: 1.1em; 
+}
+
+/*Propiedades de la seccion proximos recitales*/
+
+.contenidoindex .cardrecitales{ /*Propiedades de la card del ultimo disco*/
+    width: 80%;
+    background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0.5));
+    border: 2px double rgb(0, 0, 0); 
+    display: flex;
+}
+
+.contenidoindex .cardrecitales .lista{ /*Ubicamos el contenedor del texto en la card*/
+    width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contenidoindex .fechas{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.2em;
+    list-style: none;
+}
+
+.contenidoindex .fechas .listaitem{ /*Espaciamos los elementos de la lista de los proximos recitales*/
+    margin-top: 0.6em;
+}
+
+
+.contenidoindex .cardrecitales .portada{ /*Determinamos el tañamo del contenedor del mapa en la card*/
+    width: 50%
+}
+
+.contenidoindex .cardrecitales .portada .mapa{
+    width: 100%;
+    height: 37vh;
+}
+
+.contenidoindex .cardrecitales .portada .texto{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1em;
+}
+
+/*Propiedades del main de "Nosotros"*/
+
+/*Establecemos el grid*/
+
+.contenedornosotros{ /*Propiedades del grid*/
+    display: grid;
+    grid-template-columns: auto; /*Una sola columna de ancho automatico*/
+    grid-template-rows: auto 16fr 1.2fr; /*Tres filas de distintas proporciones*/
+    grid-template-areas: "header" "main" "footer"; /*Establecemos los nombres de las areas para hacer referencia luego*/
+}
+
+.contenidonosotros{
+    grid-area: main; /*Definimos su area en el grid*/ 
+    /*background-color: black; /*Color de fondo*/
+    background-image: url(../Assets/Img/Fondo.jpg); /*Imagen de fondo del contenido principal*/
+    background-attachment: fixed; /*Imagen de fondo fija*/
+    background-position: center; /*Imagen de fondo centrada*/
+    background-repeat: no-repeat; /*No se repite la imagen de fondo al hacer scroll, acompaña al movimiento*/
+    background-size: 100%; /*Imagen de fondo ocupado todo el tamaño del main*/
+}
+
+.textonosotros{
+    width: 80%;
+    margin: 3vh auto;
+    text-align: center;
+    border: 2px solid whitesmoke;
+    border-radius: 2vw;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    
+}
+
+.textonosotros .titulonosotros{
+    font-size: 3em;
+}
+
+.textonosotros .texto{
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
+
+.fotosnosotros{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cardfoto{
+    width: 19%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid blue;
+}
+
+.cardfoto .foto{
+    width:100%;
+}
+
+.cardfoto .textofoto{
+    color: white;
+    font-size: 2em;
+    font-family: 'Roboto';
+}
+
+/*Propiedades del main de recitales*/
+
+.contenedorrecitales{ /*Propiedades del grid*/
+    display: grid;
+    grid-template-columns: auto; /*Una sola columna de ancho automatico*/
+    grid-template-rows: auto auto 1.2fr; /*Tres filas de distintas proporciones*/
+    grid-template-areas: "header" "main" "footer"; /*Establecemos los nombres de las areas para hacer referencia luego*/
+}
+
+.contenidorecitales{
+    grid-area: main; /*Definimos su area en el grid*/ 
+    background-color: black; /*Color de fondo*/
+    background-image: url(../Assets/Img/Fondo.jpg); /*Imagen de fondo del contenido principal*/
+    background-attachment: fixed; /*Imagen de fondo fija*/
+    background-position: center; /*Imagen de fondo centrada*/
+    background-repeat: no-repeat; /*No se repite la imagen de fondo al hacer scroll, acompaña al movimiento*/
+    background-size: 100%; /*Imagen de fondo ocupado todo el tamaño del main*/
+    display: flex; /*Display flex para acomodar su contenido con flexbox*/
+    flex-flow: column nowrap; /*Elementos ordenados en una sola columna*/
+    align-items: center; /*Elementos centrados horizontalmente*/
+    justify-content: space-around; /*Espaciado entre elementos*/
+    height: 160vh;
+}
+
+.titulorecitales{
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0.5));
+    border: 2px double rgb(0, 0, 0); 
+}
+
+.titulorecitales .tituloprincipal{
+    font-family: 'Roboto';
+    color: white;
+    font-size: 3em;
+    text-align: center;
+}
+
+.contenidorecitales .cardrecitales{ /*Propiedades de la card del ultimo disco*/
+    width: 90%;
+    background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0.5));
+    border: 2px double rgb(0, 0, 0); 
+    display: flex;
+}
+
+.contenidorecitales .cardrecitales .lista{ /*Ubicamos el contenedor del texto en la card*/
+    width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contenidorecitales .cardrecitales .lista .titulolista{ /*Estilamos el titulo de la card*/
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.6em;
+    text-decoration: none;
+    text-decoration: underline;
+    list-style: none; /*Esto es para quitar los puntos por cada item de la lista*/
+}
+
+.contenidorecitales .cardrecitales .lista .fechas{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.3em;
+    list-style: none;
+}
+
+.contenidorecitales .fechas .listaitem{ /*Espaciamos los elementos de la lista de los proximos recitales*/
+    margin-top: 0.6em;
+}
+
+
+.contenidorecitales .cardrecitales .portada{ /*Determinamos el tañamo del contenedor del mapa en la card*/
+    width: 50%
+}
+
+.contenidorecitales .cardrecitales .portada .mapa{
+    width: 100%;
+    height: 37vh;
+}
+
+.contenidorecitales .cardrecitales .portada .texto{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1em;
+}
