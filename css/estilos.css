@@ -21,11 +21,6 @@
 
 .cabecera{
     background-color: rgb(0, 0, 0); /*Color de fondo de la cabecera*/
-    /*position: sticky; /*Posicion de la cabecera: pegajosa*/
-    top: 0%; /*Distancia de la cabecera al tope de la pantalla: pegado al tope*/
-    border-bottom: solid; /*Borde inferior de la cabecera: solido*/
-    border-color: rgb(0, 0, 200); /*Color del borde*/
-    border-width: 2px; /*Ancho del borde*/
     font-family: 'Roboto', sans-serif; /*Estilo de fuente para la cabecera*/
     z-index: 9;
 }
@@ -59,10 +54,7 @@
 
 .piedepagina{
     background-color: rgb(0, 0, 0); /*Color de fondo del pie de página*/
-    border-top: solid; /*Borde superior del pie: solido*/
-    border-color: rgb(0, 0, 200); /*Color del borde*/
-    border-width: 2px; /*Ancho del borde*/
-    margin-top: -1.3vh; /*Margen negativo para remover un espaciado entre los contenedores del main y el footer hechos con bootstrap*/
+    padding-top: 1vh;
     font-family: 'Roboto', sans-serif; /*Defino la fuente*/
 }
 
@@ -84,6 +76,7 @@
 .piedepagina .titulonavegacion{
     color:lightskyblue; /*Establecemos el color de los titulos de navegacion*/
     font-size: 1.6em; /*Tamaño de letra*/
+    display: none;
 }
 
 .piedepagina .anclas{
@@ -111,15 +104,11 @@
 .mainindex{
     background-color: rgb(0, 0, 0);
     padding: 2vh 0;
-    /*display: flex; /*Display flex para acomodar su contenido con flexbox*/
-    /*flex-flow: column nowrap; /*Elementos ordenados en una sola columna*/
-    /*align-items: center; /*Elementos centrados horizontalmente*/
-    /*justify-content: space-around; /*Espaciado entre elementos*/
-    /*height: 220vh;*/
+    border-top: 2px solid blue;
+    border-bottom: 2px solid blue;
 }
 
 .mainindex .tituloindex{ 
-    width: 90%;
     background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0.5));
     border: 2px double rgb(0, 0, 0);
     border-radius: 15px;
@@ -143,27 +132,39 @@
     font-size: 0.8em;
 }
 
-/*Estilados de la card del ultimo disco*/
+.anclacarrusel{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: white;
+}
 
-.mainindex .carddiscos{ /*Propiedades de la card del ultimo disco*/
+.titulocarrusel{
+    font-size: 1.2em;
+}
+
+.textocarrusel{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 0.8em;
+}
+
+.carddiscos{ /*Propiedades de la card del ultimo disco*/
     margin: 2vh auto;
     background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0.5));
     border: 2px double rgb(0, 0, 0); 
-    /*display: flex;
-    flex-direction: column-reverse;
-    padding: 5px 0 0 0;*/
 }
 
-.mainindex .carddiscos .portada{ /*Ordenamos el div que contiene al video luego del div que contiene al texto en vista mobile*/
+.carddiscos .portada{ /*Ordenamos el div que contiene al video luego del div que contiene al texto en vista mobile*/
     order: 1;
 }
 
-.mainindex .carddiscos .portada .video{
+.carddiscos .portada .video{
     width: 100%;
     aspect-ratio: 2;
 }
 
-.mainindex .carddiscos .lista{ /*Ubicamos el contenedor del texto en la card*/
+.carddiscos .lista{ /*Ubicamos el contenedor del texto en la card*/
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
@@ -182,7 +183,6 @@
     font-size: 1.8em;
     text-decoration: none;
     text-decoration: underline;
-    /*padding-right: 3vw;*/
 }
 
 .mainindex .subtitulolista{ /*Estilamos el subtitulo de la card*/
@@ -195,19 +195,19 @@
     font-size: 1.6em;
 }
 
-.mainindex .anclaslista{ /*Estilamos las anclas de la card (UL)*/
+.anclaslista{ /*Estilamos las anclas de la card (UL)*/
     font-family: 'Roboto', sans-serif;
     list-style: none;
     text-align: center;
 }
 
-.mainindex .anclaslista .navegacion{ /*Convertimos la lista con las anclas de una lista vertical a una horizontal (LI)*/
+.anclaslista .navegacion{ /*Convertimos la lista con las anclas de una lista vertical a una horizontal (LI)*/
     display: inline-block;
     padding-left: 4.5vw;
     padding-right: 4.5vw;
 }
 
-.mainindex .anclaslista .anclas{  /*(A)*/
+.anclaslista .anclas{  /*(A)*/
     text-decoration: none; 
     color: white; 
     font-size: 2.1em; 
@@ -217,9 +217,7 @@
     display: none;
 }
 
-/*Propiedades de la seccion proximos recitales*/
-
-.mainindex .cardrecitales{ /*Propiedades de la card del ultimo disco*/
+.mainindex .cardrecitales{ /*Propiedades de la card de los proximos recitales*/
     background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0.5));
     border: 2px double rgb(0, 0, 0); 
 }
@@ -252,9 +250,195 @@
     font-size: 0.8em;
 }
 
+/*Estilado de la pagina nosotros*/
+
+.mainnosotros{
+    background-color: rgb(0, 0, 0);
+    padding: 2vh 0;
+    border-top: 2px solid silver;
+    border-bottom: 2px solid silver;
+}
+
+.mainnosotros .textonosotros{
+    background-color: white;
+    border: 2px solid black;
+    margin-bottom: 2vh;
+}
+
+.mainnosotros .textonosotros .titulonosotros{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    text-align: center;
+}
+
+.mainnosotros .fotosnosotros{
+    background-color: white;
+    border: 2px solid black;
+    text-align: center;
+    padding: 0;
+}
+
+.mainnosotros .fotosnosotros .cardfoto{
+    border: 2px solid black;
+    text-align: center;
+    padding: 0;
+    height: 75vh;
+}
+
+.mainnosotros .fotosnosotros .cardfoto .foto{
+    width: 100%;
+    height: 90%;
+}
+
+.mainnosotros .fotosnosotros .cardfoto .subtitulofoto{
+    display: inline-block;
+    padding-top: 1%;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*Estilado de la pagina discografía*/
+
+.maindiscografia{
+    background-color: black;
+    padding: 2vh 0;
+    border-top: 2px solid silver;
+    border-bottom: 2px solid silver;
+}
+
+.titulodiscografia{
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid white;
+    text-align: center;
+}
+
+.titulodiscografia .tituloprincipal{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-decoration: underline solid white 3px;
+    text-align: center;
+    font-size: 3.2em;
+}
+
+.titulodiscografia .anclas{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none; 
+    color: white; 
+    font-size: 1.2em; 
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.titulodiscografia .anclas:hover{
+    color: black;
+}
+
+
+.maindiscografia .carddiscos{
+    margin: 0 auto;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
+    border: 1px solid white;
+}
+
+.maindiscografia .carddiscos .portada{
+    display: flex;
+    justify-content: center;
+}
+
+.maindiscografia .carddiscos .tapadisco{
+    width: 50%;
+}
+
+
+.maindiscografia .carddiscos .tapadisco:active{
+    width: 100%;
+}
+
+.maindiscografia .carddiscos .lista .titulocard{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-decoration: underline solid white 3px;
+    text-align: center;
+    font-size: 2.2em;
+}
+
+.maindiscografia .carddiscos .lista .subtitulocard{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-decoration: underline solid white 2px;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+
+.maindiscografia .carddiscos .lista .canciones{
+    display: flex;
+    flex-direction: column;
+}
+
+.maindiscografia .carddiscos .lista .canciones .cancionesdisco{
+    text-align: center;
+}
+
+.maindiscografia .carddiscos .lista .canciones .cancionesdisco .listacanciones{
+    display: inline-block;
+    padding-right: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1em;
+}
+
+/*Estilos de la pagina suscribete*/
+
+.mainsuscribete{
+    padding: 4vh 0 15vh 0;
+    background-color: black;
+    border-top: 2px solid silver;
+    border-bottom: 2px solid silver;
+}
+
+.mainsuscribete .titulosuscribete{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    margin-bottom: 2vh; 
+    padding: 2vh 3%;
+}
+
+.mainsuscribete .titulosuscribete .titulocard{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+}
+
+.mainsuscribete .titulosuscribete .textocard{
+    font-family: 'Roboto', sans-serif;
+}
+
+.mainsuscribete .contenedorformulario{
+    height: auto;
+    padding: 1% 0;
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+}   
+
+.mainsuscribete .contenedorformulario .columna1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 70%;
+}
+
+.mainsuscribete .contenedorformulario .columna1 .espacioformulario{
+    margin-top: 1vh;
+}
+
 /*Vista tablet y desktop*/
 
-@media only screen and (min-width: 576px){
+@media only screen and (min-width: 576px){ /*Acomodamos el footer para que fuera de vista mobile se vean los textos de las anclas y aparezcan en lista*/
+    .piedepagina .titulonavegacion{
+        display: inline-block;
+    }
+
     .piedepagina .redessociales{
         text-align: left;
     }
@@ -295,32 +479,39 @@
         font-size: 1.3em;
     }
 
-    .mainindex .carddiscos{ /*Propiedades de la card del ultimo disco*/
+    .titulocarrusel{
+        font-size: 2em;
+    }
+    
+    .textocarrusel{
+        font-size: 1em;
+    }
+    .carddiscos{ /*Propiedades de la card del ultimo disco*/
         flex-direction: row;
         padding: 0 5px 0 0;
     }
     
-    .mainindex .carddiscos .portada{ /*Determinamos el tañamo del contenedor del video en la card y lo ubicamos primero (a la izquierda) en la card*/
+    .carddiscos .portada{ /*Determinamos el tañamo del contenedor del video en la card y lo ubicamos primero (a la izquierda) en la card*/
         width: 50%;
         order: -1;
     }
     
-    .mainindex .carddiscos .lista{ /*Ubicamos el contenedor del texto en la card*/
+    .carddiscos .lista{ /*Ubicamos el contenedor del texto en la card*/
         width: 50%;
     }
 
-    .mainindex .anclaslista .navegacion{ /*Convertimos la lista con las anclas de una lista vertical a una horizontal*/
+    .anclaslista .navegacion{ /*Convertimos la lista con las anclas de una lista vertical a una horizontal*/
         display: inline-block;
         margin-left: 10px;
     }
     
-    .mainindex .anclaslista .anclas{ 
+    .anclaslista .anclas{ 
         text-decoration: none; 
         color: white; 
-        font-size: 1.1em; 
+        font-size: 1.5em; 
     }
 
-    .mainindex .anclaslista .navegacion{ /*Convertimos la lista con las anclas de una lista vertical a una horizontal (LI)*/
+    .anclaslista .navegacion{ /*Convertimos la lista con las anclas de una lista vertical a una horizontal (LI)*/
         display: inline-block;
         padding-left: 1.2vw;
         padding-right: 1.2vw;
@@ -346,6 +537,52 @@
 
     .cardrecitales .texto{
         font-size: 1em;
+    }
+    .mainnosotros .fotosnosotros .cardfoto .subtitulofoto{
+        padding-top: 4%;
+        font-size: 1.5em;
+    }
+
+    .mainnosotros .fotosnosotros .cardfoto .textofoto{
+        padding-top: 3%;
+    }
+
+    .maindiscografia .carddiscos{
+        background: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
+    }
+
+    .maindiscografia .carddiscos .tapadisco{
+        width: 100%;
+    }
+
+    .maindiscografia .carddiscos .portada{
+        width: 40%;
+    }
+    .maindiscografia .carddiscos .lista{
+        width: 60%;
+    }
+
+    .maindiscografia .carddiscos .lista .canciones .cancionesdisco{
+        text-align: left;
+    }
+
+    .maindiscografia .carddiscos .lista .canciones .cancionesdisco .listacanciones{
+        display: block;
+    }
+
+    .mainsuscribete{
+        background:linear-gradient(to top,rgb(0, 0, 0, 0.4),rgb(0, 0, 0,0.2)), url("../Assets/Img/fondosuscribete.jpeg");
+        background-position: center; /*Imagen de fondo centrada*/
+        background-repeat: no-repeat; /*No se repite la imagen de fondo al hacer scroll, acompaña al movimiento*/
+        background-size: cover; /*La imagen cubre el 100% del alto del main*/
+    }
+
+    .mainsuscribete .contenedorformulario{
+        height: 50vh;
+    }   
+
+    .mainsuscribete .contenedorformulario .columna1 .espacioformulario{
+        margin-top: 0vh;
     }
 }
 

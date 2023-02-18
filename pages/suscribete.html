@@ -4,131 +4,144 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/all.min.css">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href=".././css/all.min.css">
+    <link rel="stylesheet" href=".././css/bootstrap.min.css">
+    <link rel="stylesheet" href=".././css/estilos.css">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
     <title>Suscribete</title>
 </head>
 <body>
-    <header class="cabecera"> <!--Cabecera de la página-->
-        <div>
-            <a href="../index.html"> <img class="logo" src=".././Assets/Img/Logo.jpg" alt="Logo"></a> <!--Logo de la cabecera con enlace al index-->
-        </div>
-        <i class="fa-brands fa-instagram"></i>
-       <div>
-            <nav>
-                <ul class="listanavegacion"> <!--Lista desordenada para la navegacíon-->
-                    <li class="navegacion"> <!--Item de la lista. Cada uno contiene una de las cinco anclas de navegación-->
-                        <a class="anclas" href="../index.html">Inicio</a> <!--Ancla a la página de inicio.-->
+    <header class="container-fluid cabecera"> <!--Cabecera de la página-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary"> <!--Navegacion de bootstrap-->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="logo" src=".././Assets/Img/Logo.jpg" alt="Logo"></a>
+                <button class="navbar-toggler boton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 contenedornavegacion">
+                    <li class="nav-item">
+                        <a class="nav-link anclas" href="nosotros.html">Nosotros</a>
                     </li>
-                    <li class="navegacion">
-                        <a class="anclas" href="nosotros.html">Nosotros</a> <!--Ancla a la página "Nosotros"-->
+                    <li class="nav-item">
+                        <a class="nav-link anclas" href="recitales.html">Recitales</a>
                     </li>
-                    <li class="navegacion">
-                        <a class="anclas" href="recitales.html">Recitales</a> <!--Ancla a la página "Recitales"-->
+                    <li class="nav-item">
+                        <a class="nav-link anclas" href="discografía.html">Discografia</a>
                     </li>
-                    <li class="navegacion">
-                        <a class="anclas" href="discografía.html">Discografia</a> <!--Ancla a la página "Discografía"-->
+                    <li class="nav-item">
+                        <a class="nav-link anclas" href="#">Suscribete</a>
                     </li>
-                    <li class="navegacion">
-                        <a class="anclas" href="#">Suscribete</a> <!--Ancla a la página "Suscribete"-->
-                    </li>  
                 </ul>
-            </nav>
-        </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <main class="suscribete">
+    <main class="mainsuscribete"> <!--Contenido principal-->
         <section>
-            <h1>Suscribete</h1>
+            <div class="container-sm titulosuscribete">
+                <h1 class="text-black titulocard text-center">Suscribete</h1>
             
-            <p>¡Dejanos tu nombre y tu mail y unete a nuestra comunidad! Recibiras noticias sobre nuevos lanzamientos, entrevistas y recitales cerca de tu domicilio.</p>
-            <div>
+                <p class="text-black textocard text-center">¡Dejanos tu nombre y tu mail y unete a nuestra comunidad! Recibiras noticias sobre nuevos lanzamientos, entrevistas y recitales cerca de tu domicilio.</p>
                 <!--El formulario va a tener cuatro entradas: Nombre Completo, Mail, Provincia (todas obligatorias) y una cuarta entrada opcional para dejar un comentario-->
-                <form >
-                    <div>
-                        <label for="nombre">Nombre</label>
-                        <input id="nombre" type="text" placeholder="Nombre completo" required minlength="3" maxlength="50">
+                <form>
+                    <div class="row align-items-center contenedorformulario">
+                        <div class="col-sm-12 col-lg-6 columna1">
+                            <div class="container-sm espacioformulario"> <!--Imput nombre-->
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="floatingInputValue" placeholder="tunombre" value="Nombre y apellido/s" required minlength="3" maxlength="50" required>
+                                    <label for="floatingInputValue">Ingrese su nombre</label>
+                                </div>
+                            </div>
+                            <div class="container-sm espacioformulario"> <!--Imput mail-->
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="prueba@ejemplo.com" required>
+                                    <label for="floatingInputValue">Ingrese su mail</label>
+                                </div>
+                            </div> 
+                            <div class="container-sm espacioformulario"> <!--Imput provincia-->
+                                <select class="form-select container-sm" aria-label="Default select example" required>
+                                    <option selected>Seleccione su provincia</option>
+                                    <option value="Caba">Capital Federal</option>
+                                    <option value="BuenosAires">Bs. As.</option>
+                                    <option value="Catamarca">Catamarca</option>
+                                    <option value="Chaco">Chaco</option>
+                                    <option value="Chubut">Chubut</option>
+                                    <option value="Cordoba">Cordoba</option>
+                                    <option value="Corrientes">Corrientes</option>
+                                    <option value="Entre Rios">Entre Rios</option>
+                                    <option value="Formosa">Formosa</option>
+                                    <option value="Jujuy">Jujuy</option>
+                                    <option value="La Pampa">La Pampa</option>
+                                    <option value="La Rioja">La Rioja</option>
+                                    <option value="Mendoza">Mendoza</option>
+                                    <option value="Misiones">Misiones</option>
+                                    <option value="Neuquen">Neuquen</option>
+                                    <option value="Rio Negro">Rio Negro</option>
+                                    <option value="Salta">Salta</option>
+                                    <option value="San Juan">San Juan</option>
+                                    <option value="San Luis">San Luis</option>
+                                    <option value="Santa Cruz">Santa Cruz</option>
+                                    <option value="Santa Fe">Santa Fe</option>
+                                    <option value="Sgo. del Estero">Sgo. del Estero</option>
+                                    <option value="Tierra del Fuego">Tierra del Fuego</option>
+                                    <option value="Tucuman">Tucuman</option>
+                                </select>
+                            </div>
+                        </div> 
+                        <div class="col-sm-12 col-lg-6 columna1">
+                            <div class="container-sm mb-3 ">
+                                <label for="exampleFormControlTextarea1" class="form-label text-black">Dejanos tu comentario</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-6 ">
+                            <div class="container-sm d-flex justify-content-start">
+                                <button type="submit" placeholder="Suscribirme" class="btn btn-dark">Suscribirme</button>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <label for="mail">E-mail</label>
-                        <input id="mail" type="email" placeholder="ejemplo@gmail.com" required>
-                    </div>
-                    <div>
-                        <label for="prov">Indique Provincia</label>
-                        <select name="provincia" id="prov">
-                            <option value="Caba">Capital Federal</option>
-                            <option value="Buenos Aires" selected>Bs. As.</option>
-                            <option value="Catamarca">Catamarca</option>
-                            <option value="Chaco">Chaco</option>
-                            <option value="Chubut">Chubut</option>
-                            <option value="Cordoba">Cordoba</option>
-                            <option value="Corrientes">Corrientes</option>
-                            <option value="Entre Rios">Entre Rios</option>
-                            <option value="Formosa">Formosa</option>
-                            <option value="Jujuy">Jujuy</option>
-                            <option value="La Pampa">La Pampa</option>
-                            <option value="La Rioja">La Rioja</option>
-                            <option value="Mendoza">Mendoza</option>
-                            <option value="Misiones">Misiones</option>
-                            <option value="Neuquen">Neuquen</option>
-                            <option value="Rio Negro">Rio Negro</option>
-                            <option value="Salta">Salta</option>
-                            <option value="San Juan">San Juan</option>
-                            <option value="San Luis">San Luis</option>
-                            <option value="Santa Cruz">Santa Cruz</option>
-                            <option value="Santa Fe">Santa Fe</option>
-                            <option value="Sgo. del Estero">Sgo. del Estero</option>
-                            <option value="Tierra del Fuego">Tierra del Fuego</option>
-                            <option value="Tucuman">Tucuman</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="comentario">Dejanos tu comentario</label>
-                        <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese un Comentario"></textarea>
-                    </div>
-                    <div>
-                        <input type="submit" placeholder="Suscribirme">
-                    </div>
-                    
                 </form>
             </div>
         </section>
     </main>
 
-    <footer class="piedepagina"> <!--Pie de la página-->
-        <section> <!--Definimos una sección para la navegación de redes sociales-->
-            <div class="redessociales">
-                <ul class="lista"> <!--Lista desordenada de la navegación-->
-                    <h2 class="titulonavegacion">Redes sociales</h2>
-                    <li>
-                        <a class="anclas" href="https://www.instagram.com/cielorazzooficial/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram"></i>   Instagram</a>
-                    </li>
-                    <li>
-                        <a class="anclas" href="https://es-la.facebook.com/cielorazzooficial/" target="_blank"><i class="fa-brands fa-facebook"></i>    Facebook</a>
-                    </li>
-                    <li>
-                        <a class="anclas" href="https://twitter.com/Cielo_Razzo" target="_blank"><i class="fa-brands fa-twitter"></i>   Twitter</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="escuchanos"> <!--Definimos una sección para la navegación de plataformas para escuchar las canciones-->
-            <div class=>
-                <ul class="lista">
-                    <h2 class="titulonavegacion">Escuchanos</h2>
-                    <li>
-                        <a class="anclas" href="https://www.youtube.com/channel/UC586oHsi11RtuPZXEPjsPeQ" target="_blank"><i class="fa-brands fa-youtube"></i>  Youtube</a>
-                    </li>
-                    <li>
-                        <a class="anclas" href="https://open.spotify.com/artist/7EgR8MOSpxSytMngVCVGEu" target="_blank"><i class="fa-brands fa-spotify"></i>    Spotify</a>
-                    </li>
-                    <li>
-                        <a class="anclas" href="https://music.apple.com/ar/artist/cielo-razzo/503594354" target="_blank"><i class="fa-brands fa-apple"></i>  Apple Music</a>
-                    </li>
-                </ul>   
-            </div>
-        </section>
+    <footer class="container-fluid"> <!--Pie de la página-->
+        <div class="row piedepagina" >
+            <!--Definimos una sección para la navegación de redes sociales-->
+                <div class="col-sm-6 col-lg-6 redessociales">
+                    <ul class="lista"> <!--Lista desordenada de la navegación-->
+                        <h2 class="titulonavegacion">Redes sociales</h2>
+                        <li class="listaitem">
+                            <a class="anclas" href="https://www.instagram.com/cielorazzooficial/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram"></i><p class="textoancla paddingancla">Instagram</p></a>
+                        </li>
+                        <li class="listaitem">
+                            <a class="anclas" href="https://es-la.facebook.com/cielorazzooficial/" target="_blank"><i class="fa-brands fa-facebook"></i><p class="textoancla paddingancla">Facebook</p></a>
+                        </li>
+                        <li class="listaitem">
+                            <a class="anclas" href="https://twitter.com/Cielo_Razzo" target="_blank"><i class="fa-brands fa-twitter"></i><p class="textoancla paddingancla">Twitter</p></a>
+                        </li>
+                    </ul>
+                </div>
+            <!--Definimos una sección para la navegación de plataformas para escuchar las canciones-->
+                <div class="col-sm-6 col-lg-6 escuchanos">
+                    <ul class="lista">
+                        <h2 class="titulonavegacion">Escuchanos</h2>
+                        <li class="listaitem">
+                            <a class="anclas" href="https://www.youtube.com/channel/UC586oHsi11RtuPZXEPjsPeQ" target="_blank"><i class="fa-brands fa-youtube"></i> <p class="textoancla">Youtube</p></a>
+                        </li>
+                        <li class="listaitem">
+                            <a class="anclas" href="https://open.spotify.com/artist/7EgR8MOSpxSytMngVCVGEu" target="_blank"><i class="fa-brands fa-spotify"></i><p class="textoancla paddingancla">Spotify</p></a>
+                        </li>
+                        <li class="listaitem">
+                            <a class="anclas" href="https://music.apple.com/ar/artist/cielo-razzo/503594354" target="_blank"><i class="fa-brands fa-apple"></i><p class="textoancla paddingancla">Apple Music</p></a>
+                        </li>
+                    </ul>   
+                </div>
+        </div>
+
     </footer>
+    <script src=".././js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

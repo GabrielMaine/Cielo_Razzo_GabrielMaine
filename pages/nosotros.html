@@ -4,116 +4,124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/all.min.css">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href=".././css/all.min.css">
+    <link rel="stylesheet" href=".././css/bootstrap.min.css">
+    <link rel="stylesheet" href=".././css/estilos.css">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
     <title>Nosotros</title>
 </head>
 <body>
-    <div class="contenedornosotros">
-        <header class="cabecera"> <!--Cabecera de la página-->
-            <div class="contenedorlogo">
-                <a href="../index.html"> <img class="logo" src=".././Assets/Img/Logo.jpg" alt="Logo"></a> <!--Logo de la cabecera con enlace al index-->
+    <header class="container-fluid cabecera"> <!--Cabecera de la página-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary"> <!--Navegacion de bootstrap-->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="logo" src=".././Assets/Img/Logo.jpg" alt="Logo"></a>
+                <button class="navbar-toggler boton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 contenedornavegacion">
+                    <li class="nav-item">
+                        <a class="nav-link anclas" href="#">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link anclas" href="recitales.html">Recitales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link anclas" href="discografía.html">Discografia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link anclas" href="suscribete.html">Suscribete</a>
+                    </li>
+                </ul>
+                </div>
             </div>
-           <div class="contenedornavegacion">
-                <nav>
-                    <ul class="listanavegacion"> <!--Lista desordenada para la navegacíon-->
-                        <li class="navegacion"> <!--Item de la lista. Cada uno contiene una de las cinco anclas de navegación-->
-                            <a class="anclas" href="../index.html">Inicio</a> <!--Ancla a la página de inicio.-->
-                        </li>
-                        <li class="navegacion">
-                            <a class="anclas" href="#">Nosotros</a> <!--Ancla a la página "Nosotros"-->
-                        </li>
-                        <li class="navegacion">
-                            <a class="anclas" href="recitales.html">Recitales</a> <!--Ancla a la página "Recitales"-->
-                        </li>
-                        <li class="navegacion">
-                            <a class="anclas" href="discografía.html">Discografia</a> <!--Ancla a la página "Discografía"-->
-                        </li>
-                        <li class="navegacion">
-                            <a class="anclas" href="suscribete.html">Suscribete</a> <!--Ancla a la página "Suscribete"-->
-                        </li>  
-                    </ul>
-                </nav>
-            </div>
-        </header>
-    
-        <main class="contenidonosotros">
+        </nav>
+    </header>
+
+    <main class="mainnosotros container-fluid">
         <!--Seccion de bibliografia-->
-                <div class="textonosotros">
-                    <!--Futura biografía de la banda-->
-                    <h1 class="titulonosotros">Nosotros</h1>
-                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ipsam est consequuntur, praesentium itaque inventore distinctio mollitia quis animi amet cumque aliquam ipsum quia accusamus voluptatem voluptas fugiat quod! Tempora!
-                    Impedit aliquid laboriosam repudiandae praesentium autem voluptates nihil iure numquam mollitia at ipsam, eaque quos in consequatur sit. Delectus tempore facilis dolorum esse non nisi corrupti. Tempore rem ipsa optio.
-                    Aut facere in praesentium eaque temporibus accusantium illum odit, vitae ducimus quam. Consequuntur doloribus laudantium provident itaque obcaecati nam aperiam voluptatibus? Vitae nesciunt eum ullam provident, magni officia? Rerum, sint.
-                    Ab dignissimos adipisci perferendis nesciunt fugiat commodi doloribus alias aperiam distinctio placeat reiciendis aliquam consectetur voluptate recusandae nam sequi sint, libero accusamus. Rerum ex dignissimos voluptatem facilis magni aliquam modi.
-                    Necessitatibus excepturi quas qui doloremque expedita sint inventore, dolore debitis suscipit eaque saepe ex quidem a deserunt aperiam? Porro ducimus omnis voluptatibus delectus rerum soluta et nemo velit vel magnam.
-                    Sit sapiente voluptates eveniet dolor, accusamus vero ratione, perspiciatis unde numquam adipisci autem illo optio id veniam maiores sequi beatae et! Architecto minima cupiditate suscipit officia dolore natus, provident reprehenderit!
-                    Voluptates, quam nam commodi nostrum, id corrupti fuga magnam beatae assumenda ratione sapiente earum quae voluptas tenetur ut perspiciatis. Ipsa molestias maiores ipsam corporis modi? Aliquid praesentium illum deleniti voluptatum.
-                    Id cumque amet, tempore porro sunt quis optio eaque, magnam impedit explicabo iusto? Quia ipsum voluptates ex porro dolore odio modi aut totam necessitatibus! Magnam dignissimos ducimus iste itaque tempore!
-                    Praesentium quod, maxime sint iste asperiores, tempore necessitatibus voluptates aspernatur sapiente iure delectus beatae at perferendis eveniet voluptatem incidunt similique corrupti possimus labore pariatur quisquam rerum eligendi. Nobis, ipsum minus!
-                    Non eos eveniet doloribus neque molestias, quo perspiciatis molestiae nisi aliquam dolor possimus totam repudiandae debitis illo reprehenderit eius perferendis corporis assumenda veritatis? Quaerat, quae earum? Ab sunt dolores vel?</p>
+            <div class="textonosotros container-lg">
+                <h1 class="titulonosotros">Nosotros</h1>
+                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ipsam est consequuntur, praesentium itaque inventore distinctio mollitia quis animi amet cumque aliquam ipsum quia accusamus voluptatem voluptas fugiat quod! Tempora!
+                Impedit aliquid laboriosam repudiandae praesentium autem voluptates nihil iure numquam mollitia at ipsam, eaque quos in consequatur sit. Delectus tempore facilis dolorum esse non nisi corrupti. Tempore rem ipsa optio.
+                Aut facere in praesentium eaque temporibus accusantium illum odit, vitae ducimus quam. Consequuntur doloribus laudantium provident itaque obcaecati nam aperiam voluptatibus? Vitae nesciunt eum ullam provident, magni officia? Rerum, sint.
+                Ab dignissimos adipisci perferendis nesciunt fugiat commodi doloribus alias aperiam distinctio placeat reiciendis aliquam consectetur voluptate recusandae nam sequi sint, libero accusamus. Rerum ex dignissimos voluptatem facilis magni aliquam modi.
+                Necessitatibus excepturi quas qui doloremque expedita sint inventore, dolore debitis suscipit eaque saepe ex quidem a deserunt aperiam? Porro ducimus omnis voluptatibus delectus rerum soluta et nemo velit vel magnam.
+                Sit sapiente voluptates eveniet dolor, accusamus vero ratione, perspiciatis unde numquam adipisci autem illo optio id veniam maiores sequi beatae et! Architecto minima cupiditate suscipit officia dolore natus, provident reprehenderit!
+                Voluptates, quam nam commodi nostrum, id corrupti fuga magnam beatae assumenda ratione sapiente earum quae voluptas tenetur ut perspiciatis. Ipsa molestias maiores ipsam corporis modi? Aliquid praesentium illum deleniti voluptatum.
+                Id cumque amet, tempore porro sunt quis optio eaque, magnam impedit explicabo iusto? Quia ipsum voluptates ex porro dolore odio modi aut totam necessitatibus! Magnam dignissimos ducimus iste itaque tempore!
+                Praesentium quod, maxime sint iste asperiores, tempore necessitatibus voluptates aspernatur sapiente iure delectus beatae at perferendis eveniet voluptatem incidunt similique corrupti possimus labore pariatur quisquam rerum eligendi. Nobis, ipsum minus!
+                Non eos eveniet doloribus neque molestias, quo perspiciatis molestiae nisi aliquam dolor possimus totam repudiandae debitis illo reprehenderit eius perferendis corporis assumenda veritatis? Quaerat, quae earum? Ab sunt dolores vel?</p>
+            </div>
+        <!--Seccion de fotos-->
+            <div class="fotosnosotros container-lg">
+                <div>
+                    <h2 class="titulofotos">Galeria</h2>
                 </div>
-            <!--Seccion de fotos-->
-                <div class="fotosnosotros">
-                    <!--Futura galeria con fotos de los cinco miembros permanentes-->
-                    <div class="cardfoto">
-                        <img class="foto" src=".././Assets/Img/Codigo de Barras.png" alt="Pablo Pino" height="" width="17%">
-                        <h2 class="textofoto">Pablo Pino</h2>
+                <div class="row">
+                    <div class="cardfoto col-lg-4 col-sm-6">
+                        <img class="foto" src=".././Assets/Img/pablopino.jpg" alt="Pablo Pino" height="" width="17%">
+                        <h2 class="subtitulofoto">Pablo Pino - Voz</h2>
                     </div>
-                    <div class="cardfoto">
-                        <img class="foto" src=".././Assets/Img/Codigo de Barras.png" alt="Diego Almiron" width="17%">
-                        <h2 class="textofoto">Diego Almiron</h2>
+                    <div class="cardfoto col-lg-4 col-sm-6">
+                        <img class="foto" src=".././Assets/Img/diegoalmiron.jpg" alt="Diego Almiron" width="17%">
+                        <h2 class="subtitulofoto">Diego Almiron - Guitarra, coros</h2>
                     </div>
-                    <div class="cardfoto">
-                        <img class="foto" src=".././Assets/Img/Codigo de Barras.png" alt="Fernando Aime" width="17%">
-                        <h2 class="textofoto">Fernando Aime</h2>
+                    <div class="cardfoto col-lg-4 col-sm-6">
+                        <img class="foto" src=".././Assets/Img/fernandoaime.jpg" alt="Fernando Aime" width="17%">
+                        <h2 class="subtitulofoto">Fernando Aime - Guitarra, coros</h2>
                     </div>
-                    <div class="cardfoto">
-                        <img class="foto" src=".././Assets/Img/Codigo de Barras.png" alt="Cristian Narváez" width="17%">
-                        <h2 class="textofoto">Cristian Narváez</h2>
+                    <div class="cardfoto col-lg-4 col-sm-6">
+                        <img class="foto" src=".././Assets/Img/cristiannarvaez.jpg" alt="Cristian Narváez" width="17%">
+                        <h2 class="subtitulofoto">Cristian Narváez - Bajo</h2>
                     </div>
-                    <div class="cardfoto">
-                        <img class="foto" src=".././Assets/Img/Codigo de Barras.png" alt="Javier Robledo" width="17%">
-                        <h2 class="textofoto">Javier Robledo</h2>
+                    <div class="cardfoto col-lg-4 col-sm-6">
+                        <img class="foto" src=".././Assets/Img/javierrobledo.jpg" alt="Javier Robledo" width="17%">
+                        <h2 class="subtitulofoto">Javier Robledo - Bateria</h2>
+                    </div>
+                    <div class="cardfoto col-lg-4 col-sm-6">
+                        <img class="foto" src=".././Assets/Img/marcelovizarri.jpg" alt="Marcelo Vizarri" width="17%">
+                        <h2 class="subtitulofoto">Marcelo Vizarri - Teclado</h2>
                     </div>
                 </div>
-        </main>
-    
-        <footer class="piedepagina"> <!--Pie de la página-->
-            <section> <!--Definimos una sección para la navegación de redes sociales-->
-                <div class="redessociales">
+            </div>
+    </main>
+
+    <footer class="container-fluid"> <!--Pie de la página-->
+        <div class="row piedepagina" >
+            <!--Definimos una sección para la navegación de redes sociales-->
+                <div class="col-sm-6 col-lg-6 redessociales">
                     <ul class="lista"> <!--Lista desordenada de la navegación-->
                         <h2 class="titulonavegacion">Redes sociales</h2>
-                        <li>
-                            <a class="anclas" href="https://www.instagram.com/cielorazzooficial/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram"></i>   Instagram</a>
+                        <li class="listaitem">
+                            <a class="anclas" href="https://www.instagram.com/cielorazzooficial/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram"></i><p class="textoancla paddingancla">Instagram</p></a>
                         </li>
-                        <li>
-                            <a class="anclas" href="https://es-la.facebook.com/cielorazzooficial/" target="_blank"><i class="fa-brands fa-facebook"></i>    Facebook</a>
+                        <li class="listaitem">
+                            <a class="anclas" href="https://es-la.facebook.com/cielorazzooficial/" target="_blank"><i class="fa-brands fa-facebook"></i><p class="textoancla paddingancla">Facebook</p></a>
                         </li>
-                        <li>
-                            <a class="anclas" href="https://twitter.com/Cielo_Razzo" target="_blank"><i class="fa-brands fa-twitter"></i>   Twitter</a>
+                        <li class="listaitem">
+                            <a class="anclas" href="https://twitter.com/Cielo_Razzo" target="_blank"><i class="fa-brands fa-twitter"></i><p class="textoancla paddingancla">Twitter</p></a>
                         </li>
                     </ul>
                 </div>
-            </section>
-            <section class="escuchanos"> <!--Definimos una sección para la navegación de plataformas para escuchar las canciones-->
-                <div class=>
+            <!--Definimos una sección para la navegación de plataformas para escuchar las canciones-->
+                <div class="col-sm-6 col-lg-6 escuchanos">
                     <ul class="lista">
                         <h2 class="titulonavegacion">Escuchanos</h2>
-                        <li>
-                            <a class="anclas" href="https://www.youtube.com/channel/UC586oHsi11RtuPZXEPjsPeQ" target="_blank"><i class="fa-brands fa-youtube"></i>  Youtube</a>
+                        <li class="listaitem">
+                            <a class="anclas" href="https://www.youtube.com/channel/UC586oHsi11RtuPZXEPjsPeQ" target="_blank"><i class="fa-brands fa-youtube"></i> <p class="textoancla">Youtube</p></a>
                         </li>
-                        <li>
-                            <a class="anclas" href="https://open.spotify.com/artist/7EgR8MOSpxSytMngVCVGEu" target="_blank"><i class="fa-brands fa-spotify"></i>    Spotify</a>
+                        <li class="listaitem">
+                            <a class="anclas" href="https://open.spotify.com/artist/7EgR8MOSpxSytMngVCVGEu" target="_blank"><i class="fa-brands fa-spotify"></i><p class="textoancla paddingancla">Spotify</p></a>
                         </li>
-                        <li>
-                            <a class="anclas" href="https://music.apple.com/ar/artist/cielo-razzo/503594354" target="_blank"><i class="fa-brands fa-apple"></i>  Apple Music</a>
+                        <li class="listaitem">
+                            <a class="anclas" href="https://music.apple.com/ar/artist/cielo-razzo/503594354" target="_blank"><i class="fa-brands fa-apple"></i><p class="textoancla paddingancla">Apple Music</p></a>
                         </li>
                     </ul>   
                 </div>
-            </section>
-        </footer>
-    </div>
+        </div>
+
+    </footer>
+    <script src=".././js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
