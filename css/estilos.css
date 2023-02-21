@@ -269,6 +269,13 @@
     font-family: 'Roboto', sans-serif;
     font-size: 3em;
     text-align: center;
+    text-decoration:underline;
+}
+
+.mainnosotros .textonosotros .texto{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    text-align: justify;
 }
 
 .mainnosotros .fotosnosotros{
@@ -280,6 +287,7 @@
 
 .mainnosotros .fotosnosotros .cardfoto{
     border: 2px solid black;
+    background-color: white;
     text-align: center;
     padding: 0;
     height: 75vh;
@@ -295,6 +303,108 @@
     padding-top: 1%;
     font-family: 'Roboto', sans-serif;
 }
+
+/*Estilado de la pagina recitales*/
+
+.mainrecitales{
+    background-color: rgb(0, 0, 0);
+    padding: 2vh 0;
+    border-top: 2px solid silver;
+    border-bottom: 2px solid silver;
+}
+
+.mainrecitales .titulorecitales{
+    margin-top: 2vh;
+    border-top: 2px solid silver;
+    border-bottom: 2px solid silver;
+    background-color: white;
+    padding: 1vh 0;
+}
+
+.mainrecitales .titulorecitales .tituloprincipal{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: underline;
+    font-size: 2em;
+}
+
+.mainrecitales .titulorecitales .portada{
+    height: 30vh;
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    background-color: white;
+}
+
+.mainrecitales .titulorecitales .portada .mapa{
+    height: 96%;
+    padding-top: 2%;
+}
+
+.mainrecitales .titulorecitales .fechas{
+    height: 25vh;
+    border-top: 2px solid rgba(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    background-color: white;
+    padding-top: 1vh;
+}
+
+.mainrecitales .titulorecitales .fechas .subtitulocard{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+}
+
+.mainrecitales .titulorecitales .fechas .lista{
+    padding-top: 2vh;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+}
+
+.mainrecitales .futurasfechas{
+    margin-top: 2vh;
+    border-top: 2px solid silver;
+    border-bottom: 2px solid silver;
+    background-color: white;
+    padding: 1vh 0;
+}
+
+.mainrecitales .futurasfechas .tituloprincipal{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: underline;
+    font-size: 2em;
+}
+
+.mainrecitales .futurasfechas .portada{
+    height: 25vh;
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    background-color: white;
+}
+
+.mainrecitales .futurasfechas .portada .mapa{
+    height: 96%;
+    padding-top: 2%;
+}
+
+.mainrecitales .futurasfechas .fechas{
+    height: 25vh;
+    border-top: 2px solid rgba(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    background-color: white;
+    padding-top: 1vh;
+}
+
+.mainrecitales .futurasfechas .fechas .subtitulocard{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+}
+
+.mainrecitales .futurasfechas .fechas .lista{
+    padding-top: 2vh;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+}
+
 
 
 /*Estilado de la pagina discografía*/
@@ -538,6 +648,15 @@
     .cardrecitales .texto{
         font-size: 1em;
     }
+    
+    .mainnosotros{
+        background:linear-gradient(to top,rgb(0, 0, 0, 0.6),rgb(0, 0, 0,0.4)), url("../Assets/Img/fondonosotros.jpg");
+        background-attachment: fixed; /*Imagen de fondo fija*/
+        background-position: center; /*Imagen de fondo centrada*/
+        background-repeat: no-repeat; /*No se repite la imagen de fondo al hacer scroll, acompaña al movimiento*/
+        background-size: cover; /*La imagen cubre el 100% del alto del main*/
+    }
+
     .mainnosotros .fotosnosotros .cardfoto .subtitulofoto{
         padding-top: 4%;
         font-size: 1.5em;
@@ -545,6 +664,52 @@
 
     .mainnosotros .fotosnosotros .cardfoto .textofoto{
         padding-top: 3%;
+    }
+
+    .mainrecitales{
+        background:linear-gradient(to top,rgb(0, 0, 0, 0.8),rgb(0, 0, 0,0.6)), url("../Assets/Img/fondorecitales.jpg");
+        background-attachment: fixed; /*Imagen de fondo fija*/
+        background-position: center; /*Imagen de fondo centrada*/
+        background-repeat: no-repeat; /*No se repite la imagen de fondo al hacer scroll, acompaña al movimiento*/
+        background-size: cover; /*La imagen cubre el 100% del alto del main*/
+    }
+    .mainrecitales .titulorecitales .tituloprincipal{
+        font-size: 3em;
+    }
+
+
+
+    .mainrecitales .titulorecitales .portada{
+        height: 40vh;
+        border-top: 2px solid rgb(0, 0, 0);
+        background-color: white;
+    }
+    
+    .mainrecitales .titulorecitales .portada .mapa{
+        height: 96%;
+        padding-top: 2%;
+    }
+    
+    .mainrecitales .titulorecitales .fechas{
+        height: 40vh;
+        border-top: 2px solid rgba(0, 0, 0, 0.5);
+        background-color: white;
+    }
+    .mainrecitales .titulorecitales .fechas .subtitulocard{
+        font-size: 2.2em;
+    }
+
+    .mainrecitales .titulorecitales .fechas .lista{
+        padding-top: 5vh;
+        font-size: 1.6em;
+    }
+
+    .maindiscografia{
+        background:linear-gradient(to top,rgb(0, 0, 0, 0.8),rgb(0, 0, 0,0.6)), url("../Assets/Img/fondodiscografia.jpg");
+        background-attachment: fixed; /*Imagen de fondo fija*/
+        background-position: center; /*Imagen de fondo centrada*/
+        background-repeat: no-repeat; /*No se repite la imagen de fondo al hacer scroll, acompaña al movimiento*/
+        background-size: cover; /*La imagen cubre el 100% del alto del main*/
     }
 
     .maindiscografia .carddiscos{
