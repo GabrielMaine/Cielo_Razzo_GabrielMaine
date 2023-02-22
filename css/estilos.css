@@ -340,7 +340,7 @@
 }
 
 .mainrecitales .titulorecitales .fechas{
-    height: 25vh;
+    height: 40vh;
     border-top: 2px solid rgba(0, 0, 0);
     border-bottom: 2px solid rgb(0, 0, 0);
     background-color: white;
@@ -458,11 +458,13 @@
 
 .maindiscografia .carddiscos .tapadisco{
     width: 50%;
+    height: 50%;
 }
 
 
 .maindiscografia .carddiscos .tapadisco:active{
     width: 100%;
+    height: 100%;
 }
 
 .maindiscografia .carddiscos .lista .titulocard{
@@ -718,6 +720,7 @@
 
     .maindiscografia .carddiscos .tapadisco{
         width: 100%;
+        height: 100%;
     }
 
     .maindiscografia .carddiscos .portada{
