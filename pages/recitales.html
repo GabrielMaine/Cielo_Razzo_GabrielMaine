@@ -14,23 +14,23 @@
     <header class="container-fluid cabecera"> <!--Cabecera de la página-->
         <nav class="navbar navbar-expand-lg bg-body-tertiary"> <!--Navegacion de bootstrap-->
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img class="logo" src=".././Assets/Img/Logo.jpg" alt="Logo"></a>
+                <a class="navbar-brand" href="../index.html"><img class="cabecera__logo" src=".././Assets/Img/Logo.jpg" alt="Logo"></a>
                 <button class="navbar-toggler boton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon cabecera__hamburguesa"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 contenedornavegacion">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 cabecera__contenedornavegacion">
                     <li class="nav-item">
-                        <a class="nav-link anclas" href="nosotros.html">Nosotros</a>
+                        <a class="nav-link cabecera__anclas" href="nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link anclas" href="#">Recitales</a>
+                        <a class="nav-link cabecera__anclas" href="#">Recitales</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link anclas" href="discografía.html">Discografia</a>
+                        <a class="nav-link cabecera__anclas" href="discografía.html">Discografia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link anclas" href="suscribete.html">Suscribete</a>
+                        <a class="nav-link cabecera__anclas" href="suscribete.html">Suscribete</a>
                     </li>
                 </ul>
                 </div>
@@ -39,104 +39,103 @@
     </header>
 
     <main class="mainrecitales">
-        <div class="titulorecitales container-lg text-center">
+        <div class="mainrecitales__titulo container-md text-center">
             <div>
-                <h1 class="tituloprincipal">Proximo recital</h1>
+                <h1 class="mainrecitales__titulo__principal">Proximo recital</h1>
             </div>
             <div class="container-lg">
                 <div class="row">
-                    <div class="col-lg-6 col-sm-12 fechas">
-                        <h2 class="subtitulocard text-center">Localidad - Establecimiento</h2>
+                    <div class="col-lg-6 col-sm-12 mainrecitales__titulo__fechas">
+                        <h2 class="mainrecitales__titulo__fechas__subtitulo text-center">Localidad - Establecimiento</h2>
                         <div>
-                            <ul class="lista text-start">
-                                <li class="listaitem">
-                                    <p class="texto">Fecha y hora</p>
+                            <ul class="mainrecitales__titulo__fechas__lista text-start">
+                                <li>
+                                    <p>Fecha y hora</p>
                                 </li>
-                                <li class="listaitem">
-                                    <p class="texto">Entradas disponibles / Agotado</p>
+                                <li>
+                                    <p>Entradas disponibles / Agotado</p>
                                 </li>    
-                                <li class="listaitem">
-                                    <p class="texto">Valor de la entrada</p>
+                                <li>
+                                    <p>Valor de la entrada</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-sm-12 portada">
-                        <iframe class="mapa w-75" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.89083113135084!2d-60.669358092114585!3d-32.933513503154934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab547a2b5cf1%3A0x5a0abfc740606ea4!2sTeatro%20Vorterix%20Rosario!5e0!3m2!1ses!2sar!4v1674765533431!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!--iframe que contiene el mapa-->
+                    <div class="col-lg-6 col-sm-12 mainrecitales__titulo__portada">
+                        <iframe class="mainrecitales__titulo__portada__mapa w-75" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.89083113135084!2d-60.669358092114585!3d-32.933513503154934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab547a2b5cf1%3A0x5a0abfc740606ea4!2sTeatro%20Vorterix%20Rosario!5e0!3m2!1ses!2sar!4v1674765533431!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!--iframe que contiene el mapa-->
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="futurasfechas container-lg text-center">
+        <div class="mainrecitales__futurasfechas container-md text-center">
             <div>
-                <h2 class="tituloprincipal">Futuras fechas</h2>
+                <h2 class="mainrecitales__futurasfechas__titulo">Futuras fechas</h2>
             </div>
             <div class="container-lg">
                 <div class="row">
-                    <div class="col-lg-6 col-sm-12 fechas">
-                        <h2 class="subtitulocard text-center">Localidad - Establecimiento</h2>
+                    <div class="col-lg-6 col-sm-12 mainrecitales__futurasfechas__fechas">
+                        <h2 class="mainrecitales__futurasfechas__fechas__subtitulo text-center">Localidad - Establecimiento</h2>
                         <div>
-                            <ul class="lista text-start">
-                                <li class="listaitem">
-                                    <p class="texto">Fecha y hora</p>
+                            <ul class="mainrecitales__futurasfechas__fechas__lista text-start">
+                                <li>
+                                    <p>Fecha y hora</p>
                                 </li>
-                                <li class="listaitem">
-                                    <p class="texto">Entradas disponibles / Agotado</p>
+                                <li>
+                                    <p>Entradas disponibles / Agotado</p>
                                 </li>    
-                                <li class="listaitem">
-                                    <p class="texto">Valor de la entrada</p>
+                                <li>
+                                    <p>Valor de la entrada</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-sm-12 portada">
-                        <iframe class="mapa w-75" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.89083113135084!2d-60.669358092114585!3d-32.933513503154934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab547a2b5cf1%3A0x5a0abfc740606ea4!2sTeatro%20Vorterix%20Rosario!5e0!3m2!1ses!2sar!4v1674765533431!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!--iframe que contiene el mapa-->
+                    <div class="col-lg-6 col-sm-12 mainrecitales__futurasfechas__portada">
+                        <iframe class="mainrecitales__futurasfechas__portada__mapa w-75" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.89083113135084!2d-60.669358092114585!3d-32.933513503154934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab547a2b5cf1%3A0x5a0abfc740606ea4!2sTeatro%20Vorterix%20Rosario!5e0!3m2!1ses!2sar!4v1674765533431!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!--iframe que contiene el mapa-->
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6 col-sm-12 fechas">
-                        <h2 class="subtitulocard text-center">Localidad - Establecimiento</h2>
+                    <div class="col-lg-6 col-sm-12 mainrecitales__futurasfechas__fechas">
+                        <h2 class="mainrecitales__futurasfechas__fechas__subtitulo text-center">Localidad - Establecimiento</h2>
                         <div>
-                            <ul class="lista text-start">
-                                <li class="listaitem">
-                                    <p class="texto">Fecha y hora</p>
+                            <ul class="mainrecitales__futurasfechas__fechas__lista text-start">
+                                <li>
+                                    <p>Fecha y hora</p>
                                 </li>
-                                <li class="listaitem">
-                                    <p class="texto">Entradas disponibles / Agotado</p>
+                                <li>
+                                    <p>Entradas disponibles / Agotado</p>
                                 </li>    
-                                <li class="listaitem">
-                                    <p class="texto">Valor de la entrada</p>
+                                <li>
+                                    <p>Valor de la entrada</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-sm-12 portada">
-                        <iframe class="mapa w-75" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.89083113135084!2d-60.669358092114585!3d-32.933513503154934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab547a2b5cf1%3A0x5a0abfc740606ea4!2sTeatro%20Vorterix%20Rosario!5e0!3m2!1ses!2sar!4v1674765533431!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!--iframe que contiene el mapa-->
+                    <div class="col-lg-6 col-sm-12 mainrecitales__futurasfechas__portada">
+                        <iframe class="mainrecitales__futurasfechas__portada__mapa w-75" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.89083113135084!2d-60.669358092114585!3d-32.933513503154934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab547a2b5cf1%3A0x5a0abfc740606ea4!2sTeatro%20Vorterix%20Rosario!5e0!3m2!1ses!2sar!4v1674765533431!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!--iframe que contiene el mapa-->
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6 col-sm-12 fechas">
-                        <h2 class="subtitulocard text-center">Localidad - Establecimiento</h2>
+                    <div class="col-lg-6 col-sm-12 mainrecitales__futurasfechas__fechas">
+                        <h2 class="mainrecitales__futurasfechas__fechas__subtitulo text-center">Localidad - Establecimiento</h2>
                         <div>
-                            <ul class="lista text-start">
-                                <li class="listaitem">
-                                    <p class="texto">Fecha y hora</p>
+                            <ul class="mainrecitales__futurasfechas__fechas__lista text-start">
+                                <li>
+                                    <p>Fecha y hora</p>
                                 </li>
-                                <li class="listaitem">
-                                    <p class="texto">Entradas disponibles / Agotado</p>
+                                <li>
+                                    <p>Entradas disponibles / Agotado</p>
                                 </li>    
-                                <li class="listaitem">
-                                    <p class="texto">Valor de la entrada</p>
+                                <li>
+                                    <p>Valor de la entrada</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-sm-12 portada">
-                        <iframe class="mapa w-75" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.89083113135084!2d-60.669358092114585!3d-32.933513503154934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab547a2b5cf1%3A0x5a0abfc740606ea4!2sTeatro%20Vorterix%20Rosario!5e0!3m2!1ses!2sar!4v1674765533431!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!--iframe que contiene el mapa-->
+                    <div class="col-lg-6 col-sm-12 mainrecitales__futurasfechas__portada">
+                        <iframe class="mainrecitales__futurasfechas__portada__mapa w-75" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.89083113135084!2d-60.669358092114585!3d-32.933513503154934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab547a2b5cf1%3A0x5a0abfc740606ea4!2sTeatro%20Vorterix%20Rosario!5e0!3m2!1ses!2sar!4v1674765533431!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!--iframe que contiene el mapa-->
                     </div>
                 </div>
-    
             </div>
 
         </div>
@@ -145,32 +144,32 @@
     <footer class="container-fluid"> <!--Pie de la página-->
         <div class="row piedepagina" >
             <!--Definimos una sección para la navegación de redes sociales-->
-                <div class="col-sm-6 col-lg-6 redessociales">
-                    <ul class="lista"> <!--Lista desordenada de la navegación-->
-                        <h2 class="titulonavegacion">Redes sociales</h2>
-                        <li class="listaitem">
-                            <a class="anclas" href="https://www.instagram.com/cielorazzooficial/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram"></i><p class="textoancla paddingancla">Instagram</p></a>
+                <div class="col-sm-6 col-lg-6 piedepagina__redes">
+                    <ul class="piedepagina__lista"> <!--Lista desordenada de la navegación-->
+                        <h2 class="piedepagina__titulonavegacion">Redes sociales</h2>
+                        <li class="piedepagina__listaitem">
+                            <a class="piedepagina__anclas" href="https://www.instagram.com/cielorazzooficial/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram"></i><p class="piedepagina__textoanclas piedepagina__paddinganclas">Instagram</p></a>
                         </li>
-                        <li class="listaitem">
-                            <a class="anclas" href="https://es-la.facebook.com/cielorazzooficial/" target="_blank"><i class="fa-brands fa-facebook"></i><p class="textoancla paddingancla">Facebook</p></a>
+                        <li class="piedepagina__listaitem">
+                            <a class="piedepagina__anclas" href="https://es-la.facebook.com/cielorazzooficial/" target="_blank"><i class="fa-brands fa-facebook"></i><p class="piedepagina__textoanclas piedepagina__paddinganclas">Facebook</p></a>
                         </li>
-                        <li class="listaitem">
-                            <a class="anclas" href="https://twitter.com/Cielo_Razzo" target="_blank"><i class="fa-brands fa-twitter"></i><p class="textoancla paddingancla">Twitter</p></a>
+                        <li class="piedepagina__listaitem">
+                            <a class="piedepagina__anclas" href="https://twitter.com/Cielo_Razzo" target="_blank"><i class="fa-brands fa-twitter"></i><p class="piedepagina__textoanclas piedepagina__paddinganclas">Twitter</p></a>
                         </li>
                     </ul>
                 </div>
             <!--Definimos una sección para la navegación de plataformas para escuchar las canciones-->
-                <div class="col-sm-6 col-lg-6 escuchanos">
-                    <ul class="lista">
-                        <h2 class="titulonavegacion">Escuchanos</h2>
-                        <li class="listaitem">
-                            <a class="anclas" href="https://www.youtube.com/channel/UC586oHsi11RtuPZXEPjsPeQ" target="_blank"><i class="fa-brands fa-youtube"></i> <p class="textoancla">Youtube</p></a>
+                <div class="col-sm-6 col-lg-6 piedepagina__escuchanos">
+                    <ul class="piedepagina__lista">
+                        <h2 class="piedepagina__titulonavegacion">Escuchanos</h2>
+                        <li class="piedepagina__listaitem">
+                            <a class="piedepagina__anclas" href="https://www.youtube.com/channel/UC586oHsi11RtuPZXEPjsPeQ" target="_blank"><i class="fa-brands fa-youtube"></i> <p class="piedepagina__textoanclas">Youtube</p></a>
                         </li>
-                        <li class="listaitem">
-                            <a class="anclas" href="https://open.spotify.com/artist/7EgR8MOSpxSytMngVCVGEu" target="_blank"><i class="fa-brands fa-spotify"></i><p class="textoancla paddingancla">Spotify</p></a>
+                        <li class="piedepagina__listaitem">
+                            <a class="piedepagina__anclas" href="https://open.spotify.com/artist/7EgR8MOSpxSytMngVCVGEu" target="_blank"><i class="fa-brands fa-spotify"></i><p class="piedepagina__textoanclas piedepagina__paddinganclas">Spotify</p></a>
                         </li>
-                        <li class="listaitem">
-                            <a class="anclas" href="https://music.apple.com/ar/artist/cielo-razzo/503594354" target="_blank"><i class="fa-brands fa-apple"></i><p class="textoancla paddingancla">Apple Music</p></a>
+                        <li class="piedepagina__listaitem">
+                            <a class="piedepagina__anclas" href="https://music.apple.com/ar/artist/cielo-razzo/503594354" target="_blank"><i class="fa-brands fa-apple"></i><p class="piedepagina__textoanclas piedepagina__paddinganclas">Apple Music</p></a>
                         </li>
                     </ul>   
                 </div>

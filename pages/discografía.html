@@ -14,23 +14,23 @@
     <header class="container-fluid cabecera"> <!--Cabecera de la página-->
         <nav class="navbar navbar-expand-lg bg-body-tertiary"> <!--Navegacion de bootstrap-->
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img class="logo" src=".././Assets/Img/Logo.jpg" alt="Logo"></a>
+                <a class="navbar-brand" href="../index.html"><img class="cabecera__logo" src=".././Assets/Img/Logo.jpg" alt="Logo"></a>
                 <button class="navbar-toggler boton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon cabecera__hamburguesa"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 contenedornavegacion">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 cabecera__contenedornavegacion">
                     <li class="nav-item">
-                        <a class="nav-link anclas" href="nosotros.html">Nosotros</a>
+                        <a class="nav-link cabecera__anclas" href="nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link anclas" href="recitales.html">Recitales</a>
+                        <a class="nav-link cabecera__anclas" href="recitales.html">Recitales</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link anclas" href="#">Discografia</a>
+                        <a class="nav-link cabecera__anclas" href="#">Discografia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link anclas" href="suscribete.html">Suscribete</a>
+                        <a class="nav-link cabecera__anclas" href="suscribete.html">Suscribete</a>
                     </li>
                 </ul>
                 </div>
@@ -40,441 +40,450 @@
 
     <main class="container-fluid maindiscografia">
         <section>
-            <div class="container-sm titulodiscografia">
-                <h1 class="tituloprincipal">Discografia</h1>    <!--Navegacion dentro de la página-->        
-                <a class="anclas" href="#buenas"><p class="ancladisco">Buenas</p></a>
-                <a class="anclas" href="#codigodebarras"><p class="ancladisco">Codigo de Barras</p></a>
-                <a class="anclas" href="#marea"><p class="ancladisco">Marea</p></a>
-                <a class="anclas" href="#audiografia"><p class="ancladisco">Audiografía</p></a>
-                <a class="anclas" href="#grietas"><p class="ancladisco">Grietas</p></a>
-                <a class="anclas" href="#compost"><p class="ancladisco">Compost</p></a>
-                <a class="anclas" href="#cronica"><p class="ancladisco">Cronica</p></a>
-                <a class="anclas" href="#sideral"><p class="ancladisco">Sideral</p></a>
-                <a class="anclas" href="#tierranueva"><p class="ancladisco">Tierra Nueva</p></a>
-                <a class="anclas" href="#cielovivo"><p class="ancladisco">Cielo Vivo</p></a>
+            <div class="container-sm maindiscografia__titulo">
+                <h1 class="maindiscografia__titulo__principal">Discografia</h1>    <!--Navegacion dentro de la página-->        
+                <a class="maindiscografia__titulo__anclas" href="#buenas"><p>Buenas</p></a>
+                <a class="maindiscografia__titulo__anclas" href="#codigodebarras"><p>Codigo de Barras</p></a>
+                <a class="maindiscografia__titulo__anclas" href="#marea"><p>Marea</p></a>
+                <a class="maindiscografia__titulo__anclas" href="#audiografia"><p>Audiografía</p></a>
+                <a class="maindiscografia__titulo__anclas" href="#grietas"><p>Grietas</p></a>
+                <a class="maindiscografia__titulo__anclas" href="#compost"><p>Compost</p></a>
+                <a class="maindiscografia__titulo__anclas" href="#cronica"><p>Cronica</p></a>
+                <a class="maindiscografia__titulo__anclas" href="#sideral"><p>Sideral</p></a>
+                <a class="maindiscografia__titulo__anclas" href="#tierranueva"><p>Tierra Nueva</p></a>
+                <a class="maindiscografia__titulo__anclas" href="#cielovivo"><p>Cielo Vivo</p></a>
             </div>
-            <!--Las cards con los discos van a tener un formato similar al de la card del index, agregando la lista de canciones con un desplegable en cada disco-->
-            <div class="container-sm carddiscos" id="buenas"> <!--Buenas-->
+            <div class="container-sm maindiscografia__card" id="buenas"> <!--Buenas-->
                 <div class="row">
-                    <div class="col-sm-12 col-lg-3 portada">
-                       <img class="tapadisco" src=".././Assets/Img/Buenas.png" alt="Buenas">
+                    <div class="col-sm-12 col-lg-3 maindiscografia__card__portada">
+                       <img class="maindiscografia__card__portada__tapa" src=".././Assets/Img/Buenas.png" alt="Buenas">
                     </div>
-                    <div class="col-sm-12 col-lg-9 lista">
-                        <div class="titulolista">
-                            <h2 class="titulocard">Buenas (2001)</h2>
+                    <div class="col-sm-12 col-lg-9 maindiscografia__card__lista">
+                        <div>
+                            <h2 class="maindiscografia__card__lista__titulo">Buenas (2001)</h2>
                         </div>
-                        <div class="anclaslista">
-                            <div class="navegacion">
-                                <a class="anclas" href="" target="_blank"><i class="fa-brands fa-youtube"></i> <p class="textoancla">Youtube</p></a>
+                            <div class="maindiscografia__anclaslista">
+                                <div class="maindiscografia__anclaslista__navegacion">
+                                    <a class="maindiscografia__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-youtube"></i> <p class="maindiscografia__anclaslista__textoancla">Youtube</p></a>
+                                </div>
+                                <div class="maindiscografia__anclaslista__navegacion">
+                                    <a class="maindiscografia__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-spotify"></i><p class="maindiscografia__anclaslista__textoancla">Spotify</p></a>
+                                </div>
+                                <div class="maindiscografia__anclaslista__navegacion">
+                                    <a class="maindiscografia__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-apple"></i><p class="maindiscografia__anclaslista__textoancla">Apple Music</p></a>
+                                </div>
                             </div>
-                            <div class="navegacion">
-                                <a class="anclas" href="" target="_blank"><i class="fa-brands fa-spotify"></i><p class="textoancla">Spotify</p></a>
-                            </div>
-                            <div class="navegacion">
-                                <a class="anclas" href="" target="_blank"><i class="fa-brands fa-apple"></i><p class="textoancla">Apple Music</p></a>
-                            </div>
-                            <div class="canciones">
-                                <h3 class="subtitulocard">Lista de canciones:</h3>
-                                <ul class="cancionesdisco">
-                                    <li class="listacanciones">Sin salida</li>
-                                    <li class="listacanciones">¿Quien baja la pala?</li>
-                                    <li class="listacanciones">Carne 2</li>
-                                    <li class="listacanciones">Perros</li>
-                                    <li class="listacanciones">La gran ola</li>
-                                    <li class="listacanciones">Servile</li>
-                                    <li class="listacanciones">Muñequito</li>
-                                    <li class="listacanciones">Perseguido</li>
-                                    <li class="listacanciones">El silencio del ave</li>
-                                    <li class="listacanciones">Tierra y tambores</li>
-                                    <li class="listacanciones">Mama</li>
-                                    <li class="listacanciones">Que se yo</li>
-                                    <li class="listacanciones">Bebelo</li>
-                                    <li class="listacanciones">Quizas si</li>
+                            <div class="maindiscografia__card__lista__canciones">
+                                <h3 class="maindiscografia__card__lista__canciones__subtitulo">Lista de canciones:</h3>
+                                <ul class="maindiscografia__card__lista__canciones__disco">
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Sin salida</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">¿Quien baja la pala?</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Carne 2</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Perros</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">La gran ola</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Servile</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Muñequito</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Perseguido</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">El silencio del ave</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Tierra y tambores</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Mama</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Que se yo</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Bebelo</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Quizas si</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>    
-            <div class="container-sm carddiscos" id="codigodebarras"> <!--Codigo de Barras-->
+            <div class="container-sm maindiscografia__card" id="codigodebarras"> <!--Codigo de Barras-->
                 <div class="row">
-                    <div class="col-sm-12 col-lg-3 portada">
-                       <img class="tapadisco" src=".././Assets/Img/Codigo de Barras.png" alt="Codigo de Barras">
+                    <div class="col-sm-12 col-lg-3 maindiscografia__card__portada">
+                       <img class="maindiscografia__card__portada__tapa" src=".././Assets/Img/Codigo de Barras.png" alt="Codigo de Barras">
                     </div>
-                    <div class="col-sm-12 col-lg-9 lista">
-                        <div class="titulolista">
-                            <h2 class="titulocard">Codigo de barras (2003)</h2>
+                    <div class="col-sm-12 col-lg-9 maindiscografia__card__lista">
+                        <div>
+                            <h2 class="maindiscografia__card__lista__titulo">Codigo de barras (2003)</h2>
                         </div>
-                        <div class="anclaslista">
-                            <div class="navegacion">
-                                <a class="anclas" href="" target="_blank"><i class="fa-brands fa-youtube"></i> <p class="textoancla">Youtube</p></a>
+                            <div class="maindiscografia__anclaslista">
+                                <div class="maindiscografia__anclaslista__navegacion">
+                                    <a class="maindiscografia__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-youtube"></i> <p class="maindiscografia__anclaslista__textoancla">Youtube</p></a>
+                                </div>
+                                <div class="maindiscografia__anclaslista__navegacion">
+                                    <a class="maindiscografia__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-spotify"></i><p class="maindiscografia__anclaslista__textoancla">Spotify</p></a>
+                                </div>
+                                <div class="maindiscografia__anclaslista__navegacion">
+                                    <a class="maindiscografia__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-apple"></i><p class="maindiscografia__anclaslista__textoancla">Apple Music</p></a>
+                                </div>
                             </div>
-                            <div class="navegacion">
-                                <a class="anclas" href="" target="_blank"><i class="fa-brands fa-spotify"></i><p class="textoancla">Spotify</p></a>
-                            </div>
-                            <div class="navegacion">
-                                <a class="anclas" href="" target="_blank"><i class="fa-brands fa-apple"></i><p class="textoancla">Apple Music</p></a>
-                            </div>
-                            <div class="canciones">
-                                <h3 class="subtitulocard">Lista de canciones:</h3>
-                                <ul class="cancionesdisco">
-                                    <li class="listacanciones">Luna</li>
-                                    <li class="listacanciones">Mujer</li>
-                                    <li class="listacanciones">Estrella</li>
-                                    <li class="listacanciones">Frágil</li>
-                                    <li class="listacanciones">Demás</li>
-                                    <li class="listacanciones">Chapa y bandera</li>
-                                    <li class="listacanciones">Por llegar</li>
-                                    <li class="listacanciones">Otoño blanco</li>
-                                    <li class="listacanciones">Madre poder</li>
-                                    <li class="listacanciones">Arde</li>
-                                    <li class="listacanciones">Esquina</li>
-                                    <li class="listacanciones">Puta</li>
-                                    <li class="listacanciones">Cuenta</li>
-                                    <li class="listacanciones">Vueltas</li>
+                            <div class="maindiscografia__card__lista__canciones">
+                                <h3 class="maindiscografia__card__lista__canciones__subtitulo">Lista de canciones:</h3>
+                                <ul class="maindiscografia__card__lista__canciones__disco">
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Luna</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Mujer</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Estrella</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Frágil</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Demás</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Chapa y bandera</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Por llegar</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Otoño blanco</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Madre poder</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Arde</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Esquina</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Puta</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Cuenta</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Vueltas</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>  
-            <div class="container-sm carddiscos" id="marea"> <!--Marea-->
+            <div class="container-sm maindiscografia__card" id="marea"> <!--Marea-->
                 <div class="row">
-                    <div class="col-sm-12 col-lg-3 portada">
-                       <img class="tapadisco" src=".././Assets/Img/Marea.png" alt="Marea">
+                    <div class="col-sm-12 col-lg-3 maindiscografia__card__portada">
+                       <img class="maindiscografia__card__portada__tapa" src=".././Assets/Img/Marea.png" alt="Marea">
                     </div>
-                    <div class="col-sm-12 col-lg-9 lista">
-                        <div class="titulolista">
-                            <h2 class="titulocard">Marea (2005)</h2>
+                    <div class="col-sm-12 col-lg-9 maindiscografia__card__lista">
+                        <div>
+                            <h2 class="maindiscografia__card__lista__titulo">Marea (2005)</h2>
                         </div>
-                        <div class="anclaslista">
-                            <div class="navegacion">
-                                <a class="anclas" href="" target="_blank"><i class="fa-brands fa-youtube"></i> <p class="textoancla">Youtube</p></a>
+                            <div class="maindiscografia__anclaslista">
+                                <div class="maindiscografia__anclaslista__navegacion">
+                                    <a class="maindiscografia__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-youtube"></i> <p class="maindiscografia__anclaslista__textoancla">Youtube</p></a>
+                                </div>
+                                <div class="maindiscografia__anclaslista__navegacion">
+                                    <a class="maindiscografia__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-spotify"></i><p class="maindiscografia__anclaslista__textoancla">Spotify</p></a>
+                                </div>
+                                <div class="maindiscografia__anclaslista__navegacion">
+                                    <a class="maindiscografia__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-apple"></i><p class="maindiscografia__anclaslista__textoancla">Apple Music</p></a>
+                                </div>
                             </div>
-                            <div class="navegacion">
-                                <a class="anclas" href="" target="_blank"><i class="fa-brands fa-spotify"></i><p class="textoancla">Spotify</p></a>
-                            </div>
-                            <div class="navegacion">
-                                <a class="anclas" href="" target="_blank"><i class="fa-brands fa-apple"></i><p class="textoancla">Apple Music</p></a>
-                            </div>
-                            <div class="canciones">
-                                <h3 class="subtitulocard">Lista de canciones:</h3>
-                                <ul class="cancionesdisco">
-                                    <li class="listacanciones">Miradas</li>
-                                    <li class="listacanciones">Luminoso</li>
-                                    <li class="listacanciones">Alma en tregua</li>
-                                    <li class="listacanciones">La cruz</li>
-                                    <li class="listacanciones">La roca</li>
-                                    <li class="listacanciones">Charlone</li>
-                                    <li class="listacanciones">Esa brisa</li>
-                                    <li class="listacanciones">Vieja caña</li>
-                                    <li class="listacanciones">Sola</li>
-                                    <li class="listacanciones">Buscando mas</li>
-                                    <li class="listacanciones">Cableluz</li>
-                                    <li class="listacanciones">Mi refugio</li>
+                            <div class="maindiscografia__card__lista__canciones">
+                                <h3 class="maindiscografia__card__lista__canciones__subtitulo">Lista de canciones:</h3>
+                                <ul class="maindiscografia__card__lista__canciones__disco">
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Miradas</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Luminoso</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Alma en tregua</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">La cruz</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">La roca</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Charlone</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Esa brisa</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Vieja caña</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Sola</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Buscando mas</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Cableluz</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Mi refugio</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>  
-            <div class="container-sm carddiscos" id="audiografia"> <!--Audiografia-->
+            <div class="container-sm maindiscografia__card" id="audiografia"> <!--Audiografia-->
                 <div class="row">
-                    <div class="col-sm-12 col-lg-3 portada">
-                       <img class="tapadisco" src=".././Assets/Img/Audiografia.png" alt="Audiografia">
+                    <div class="col-sm-12 col-lg-3 maindiscografia__card__portada">
+                       <img class="maindiscografia__card__portada__tapa" src=".././Assets/Img/Audiografia.png" alt="Audiografia">
                     </div>
-                    <div class="col-sm-12 col-lg-9 lista">
-                        <div class="titulolista">
-                            <h2 class="titulocard">Audiografia (2006)</h2>
+                    <div class="col-sm-12 col-lg-9 maindiscografia__card__lista">
+                        <div>
+                            <h2 class="maindiscografia__card__lista__titulo">Audiografia (2006)</h2>
                         </div>
-                        <div class="anclaslista">
-                            <div class="navegacion">
-                                <a class="anclas" href="" target="_blank"><i class="fa-brands fa-youtube"></i> <p class="textoancla">Youtube</p></a>
+                            <div class="maindiscografia__anclaslista">
+                                <div class="maindiscografia__anclaslista__navegacion">
+                                    <a class="maindiscografia__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-youtube"></i> <p class="maindiscografia__anclaslista__textoancla">Youtube</p></a>
+                                </div>
+                                <div class="maindiscografia__anclaslista__navegacion">
+                                    <a class="maindiscografia__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-spotify"></i><p class="maindiscografia__anclaslista__textoancla">Spotify</p></a>
+                                </div>
+                                <div class="maindiscografia__anclaslista__navegacion">
+                                    <a class="maindiscografia__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-apple"></i><p class="maindiscografia__anclaslista__textoancla">Apple Music</p></a>
+                                </div>
                             </div>
-                            <div class="navegacion">
-                                <a class="anclas" href="" target="_blank"><i class="fa-brands fa-spotify"></i><p class="textoancla">Spotify</p></a>
-                            </div>
-                            <div class="navegacion">
-                                <a class="anclas" href="" target="_blank"><i class="fa-brands fa-apple"></i><p class="textoancla">Apple Music</p></a>
-                            </div>
-                            <div class="canciones">
-                                <h3 class="subtitulocard">Lista de canciones:</h3>
-                                <ul class="cancionesdisco">
-                                    <li class="listacanciones">Alma en tregua</li>
-                                    <li class="listacanciones">¿Quien baja la pala?</li>
-                                    <li class="listacanciones">Chapa y bandera</li>
-                                    <li class="listacanciones">La cruz</li>
-                                    <li class="listacanciones">Charlone</li>
-                                    <li class="listacanciones">Esa brisa</li>
-                                    <li class="listacanciones">Por llegar</li>
-                                    <li class="listacanciones">Miradas</li>
-                                    <li class="listacanciones">Luminoso</li>
-                                    <li class="listacanciones">La roca</li>
-                                    <li class="listacanciones">Que se yo</li>
-                                    <li class="listacanciones">Vieja caña</li>
-                                    <li class="listacanciones">Luna</li>
-                                    <li class="listacanciones">Carne 2</li>
-                                    <li class="listacanciones">Sin salida</li>
-                                    <li class="listacanciones">Estrella</li>
+                            <div class="maindiscografia__card__lista__canciones">
+                                <h3 class="maindiscografia__card__lista__canciones__subtitulo">Lista de canciones:</h3>
+                                <ul class="maindiscografia__card__lista__canciones__disco">
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Alma en tregua</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">¿Quien baja la pala?</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Chapa y bandera</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">La cruz</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Charlone</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Esa brisa</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Por llegar</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Miradas</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Luminoso</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">La roca</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Que se yo</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Vieja caña</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Luna</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Carne 2</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Sin salida</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Estrella</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div> 
-            <div class="container-sm carddiscos" id="grietas"> <!--Grietas-->
+            <div class="container-sm maindiscografia__card" id="grietas"> <!--Grietas-->
                 <div class="row">
-                    <div class="col-sm-12 col-lg-3 portada">
-                       <img class="tapadisco" src=".././Assets/Img/Grietas.jpg" alt="Grietas">
+                    <div class="col-sm-12 col-lg-3 maindiscografia__card__portada">
+                       <img class="maindiscografia__card__portada__tapa" src=".././Assets/Img/Grietas.jpg" alt="Grietas">
                     </div>
-                    <div class="col-sm-12 col-lg-9 lista">
-                        <div class="titulolista">
-                            <h2 class="titulocard">Grietas (2007)</h2>
+                    <div class="col-sm-12 col-lg-9 maindiscografia__card__lista">
+                        <div>
+                            <h2 class="maindiscografia__card__lista__titulo">Grietas (2007)</h2>
                         </div>
-                        <div class="anclaslista">
-                            <div class="navegacion">
-                                <a class="anclas" href="" target="_blank"><i class="fa-brands fa-youtube"></i> <p class="textoancla">Youtube</p></a>
+                            <div class="maindiscografia__anclaslista">
+                                <div class="maindiscografia__anclaslista__navegacion">
+                                    <a class="maindiscografia__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-youtube"></i> <p class="maindiscografia__anclaslista__textoancla">Youtube</p></a>
+                                </div>
+                                <div class="maindiscografia__anclaslista__navegacion">
+                                    <a class="maindiscografia__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-spotify"></i><p class="maindiscografia__anclaslista__textoancla">Spotify</p></a>
+                                </div>
+                                <div class="maindiscografia__anclaslista__navegacion">
+                                    <a class="maindiscografia__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-apple"></i><p class="maindiscografia__anclaslista__textoancla">Apple Music</p></a>
+                                </div>
                             </div>
-                            <div class="navegacion">
-                                <a class="anclas" href="" target="_blank"><i class="fa-brands fa-spotify"></i><p class="textoancla">Spotify</p></a>
-                            </div>
-                            <div class="navegacion">
-                                <a class="anclas" href="" target="_blank"><i class="fa-brands fa-apple"></i><p class="textoancla">Apple Music</p></a>
-                            </div>
-                            <div class="canciones">
-                                <h3 class="subtitulocard">Lista de canciones:</h3>
-                                <ul class="cancionesdisco">
-                                    <li class="listacanciones">De caer</li>
-                                    <li class="listacanciones">Algen</li>
-                                    <li class="listacanciones">Resto</li>
-                                    <li class="listacanciones">Satiretalised</li>
-                                    <li class="listacanciones">Santos</li>
-                                    <li class="listacanciones">Barek</li>
-                                    <li class="listacanciones">El huracán</li>
-                                    <li class="listacanciones">Belicosis</li>
-                                    <li class="listacanciones">H</li>
-                                    <li class="listacanciones">Televicio</li>
-                                    <li class="listacanciones">Tu fricción</li>
-                                    <li class="listacanciones">Sistema</li>
-                                    <li class="listacanciones">La cuna del sol</li>
+                            <div class="maindiscografia__card__lista__canciones">
+                                <h3 class="maindiscografia__card__lista__canciones__subtitulo">Lista de canciones:</h3>
+                                <ul class="maindiscografia__card__lista__canciones__disco">
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">De caer</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Algen</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Resto</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Satiretalised</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Santos</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Barek</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">El huracán</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Belicosis</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">H</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Televicio</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Tu fricción</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Sistema</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">La cuna del sol</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div> 
-            <div class="container-sm carddiscos" id="compost"> <!--Compost-->
+            <div class="container-sm maindiscografia__card" id="compost"> <!--Compost-->
                 <div class="row">
-                    <div class="col-sm-12 col-lg-3 portada">
-                       <img class="tapadisco" src=".././Assets/Img/Compost.jpg" alt="Compost">
+                    <div class="col-sm-12 col-lg-3 maindiscografia__card__portada">
+                       <img class="maindiscografia__card__portada__tapa" src=".././Assets/Img/Compost.jpg" alt="Compost">
                     </div>
-                    <div class="col-sm-12 col-lg-9 lista">
-                        <div class="titulolista">
-                            <h2 class="titulocard">Compost (2010)</h2>
+                    <div class="col-sm-12 col-lg-9 maindiscografia__card__lista">
+                        <div>
+                            <h2 class="maindiscografia__card__lista__titulo">Compost (2010)</h2>
                         </div>
-                        <div class="anclaslista">
-                            <div class="navegacion">
-                                <a class="anclas" href="" target="_blank"><i class="fa-brands fa-youtube"></i> <p class="textoancla">Youtube</p></a>
+                            <div class="maindiscografia__anclaslista">
+                                <div class="maindiscografia__anclaslista__navegacion">
+                                    <a class="maindiscografia__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-youtube"></i> <p class="maindiscografia__anclaslista__textoancla">Youtube</p></a>
+                                </div>
+                                <div class="maindiscografia__anclaslista__navegacion">
+                                    <a class="maindiscografia__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-spotify"></i><p class="maindiscografia__anclaslista__textoancla">Spotify</p></a>
+                                </div>
+                                <div class="maindiscografia__anclaslista__navegacion">
+                                    <a class="maindiscografia__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-apple"></i><p class="maindiscografia__anclaslista__textoancla">Apple Music</p></a>
+                                </div>
                             </div>
-                            <div class="navegacion">
-                                <a class="anclas" href="" target="_blank"><i class="fa-brands fa-spotify"></i><p class="textoancla">Spotify</p></a>
-                            </div>
-                            <div class="navegacion">
-                                <a class="anclas" href="" target="_blank"><i class="fa-brands fa-apple"></i><p class="textoancla">Apple Music</p></a>
-                            </div>
-                            <div class="canciones">
-                                <h3 class="subtitulocard">Lista de canciones:</h3>
-                                <ul class="cancionesdisco">
-                                    <li class="listacanciones">Conexion</li>
-                                    <li class="listacanciones">Monos</li>
-                                    <li class="listacanciones">Murciélago</li>
-                                    <li class="listacanciones">Pequeña caja</li>
-                                    <li class="listacanciones">Dulce Nana</li>
-                                    <li class="listacanciones">De ogro</li>
-                                    <li class="listacanciones">Desde la puerta</li>
-                                    <li class="listacanciones">Mi Díos</li>
-                                    <li class="listacanciones">Reacción</li>
-                                    <li class="listacanciones">Cascarudo</li>
-                                    <li class="listacanciones">Escorpión</li>
+                            <div class="maindiscografia__card__lista__canciones">
+                                <h3 class="maindiscografia__card__lista__canciones__subtitulo">Lista de canciones:</h3>
+                                <ul class="maindiscografia__card__lista__canciones__disco">
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Conexion</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Monos</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Murciélago</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Pequeña caja</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Dulce Nana</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">De ogro</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Desde la puerta</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Mi Díos</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Reacción</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Cascarudo</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Escorpión</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container-sm carddiscos" id="cronica"> <!--Crónica-->
+            <div class="container-sm maindiscografia__card" id="cronica"> <!--Crónica-->
                 <div class="row">
-                    <div class="col-sm-12 col-lg-3 portada">
-                       <img class="tapadisco" src=".././Assets/Img/Cronica.jpg" alt="Crónica">
+                    <div class="col-sm-12 col-lg-3 maindiscografia__card__portada">
+                       <img class="maindiscografia__card__portada__tapa" src=".././Assets/Img/Cronica.jpg" alt="Crónica">
                     </div>
-                    <div class="col-sm-12 col-lg-9 lista">
-                        <div class="titulolista">
-                            <h2 class="titulocard">Crónica (2012)</h2>
+                    <div class="col-sm-12 col-lg-9 maindiscografia__card__lista">
+                        <div>
+                            <h2 class="maindiscografia__card__lista__titulo">Crónica (2012)</h2>
                         </div>
-                        <div class="anclaslista">
-                            <div class="navegacion">
-                                <a class="anclas" href="" target="_blank"><i class="fa-brands fa-youtube"></i> <p class="textoancla">Youtube</p></a>
+                            <div class="maindiscografia__anclaslista">
+                                <div class="maindiscografia__anclaslista__navegacion">
+                                    <a class="maindiscografia__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-youtube"></i> <p class="maindiscografia__anclaslista__textoancla">Youtube</p></a>
+                                </div>
+                                <div class="maindiscografia__anclaslista__navegacion">
+                                    <a class="maindiscografia__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-spotify"></i><p class="maindiscografia__anclaslista__textoancla">Spotify</p></a>
+                                </div>
+                                <div class="maindiscografia__anclaslista__navegacion">
+                                    <a class="maindiscografia__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-apple"></i><p class="maindiscografia__anclaslista__textoancla">Apple Music</p></a>
+                                </div>
                             </div>
-                            <div class="navegacion">
-                                <a class="anclas" href="" target="_blank"><i class="fa-brands fa-spotify"></i><p class="textoancla">Spotify</p></a>
-                            </div>
-                            <div class="navegacion">
-                                <a class="anclas" href="" target="_blank"><i class="fa-brands fa-apple"></i><p class="textoancla">Apple Music</p></a>
-                            </div>
-                            <div class="canciones">
-                                <h3 class="subtitulocard">Lista de canciones:</h3>
-                                <ul class="cancionesdisco">
-                                    <li class="listacanciones">Miradas</li>
-                                    <li class="listacanciones">Alma en tregua</li>
-                                    <li class="listacanciones">Charlone</li>
-                                    <li class="listacanciones">Luna</li>
-                                    <li class="listacanciones">Estrella</li>
-                                    <li class="listacanciones">Luminoso</li>
-                                    <li class="listacanciones">Sin salida</li>
-                                    <li class="listacanciones">Bebelo</li>
-                                    <li class="listacanciones">Otoño blanco</li>
-                                    <li class="listacanciones">Por llegar</li>
-                                    <li class="listacanciones">Arde</li>
-                                    <li class="listacanciones">Esquina</li>
-                                    <li class="listacanciones">Perseguido</li>
-                                    <li class="listacanciones">Vieja caña</li>
-                                    <li class="listacanciones">Mi refugio</li>
+                            <div class="maindiscografia__card__lista__canciones">
+                                <h3 class="maindiscografia__card__lista__canciones__subtitulo">Lista de canciones:</h3>
+                                <ul class="maindiscografia__card__lista__canciones__disco">
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Miradas</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Alma en tregua</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Charlone</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Luna</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Estrella</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Luminoso</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Sin salida</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Bebelo</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Otoño blanco</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Por llegar</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Arde</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Esquina</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Perseguido</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Vieja caña</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Mi refugio</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container-sm carddiscos" id="sideral"> <!--Sideral-->
+            <div class="container-sm maindiscografia__card" id="sideral"> <!--Sideral-->
                 <div class="row">
-                    <div class="col-sm-12 col-lg-3 portada">
-                       <img class="tapadisco" src=".././Assets/Img/Sideral.jpg" alt="Sideral">
+                    <div class="col-sm-12 col-lg-3 maindiscografia__card__portada">
+                       <img class="maindiscografia__card__portada__tapa" src=".././Assets/Img/Sideral.jpg" alt="Sideral">
                     </div>
-                    <div class="col-sm-12 col-lg-9 lista">
-                        <div class="titulolista">
-                            <h2 class="titulocard">Sideral (2013)</h2>
+                    <div class="col-sm-12 col-lg-9 maindiscografia__card__lista">
+                        <div>
+                            <h2 class="maindiscografia__card__lista__titulo">Sideral (2013)</h2>
                         </div>
-                        <div class="anclaslista">
-                            <div class="navegacion">
-                                <a class="anclas" href="" target="_blank"><i class="fa-brands fa-youtube"></i> <p class="textoancla">Youtube</p></a>
+                            <div class="maindiscografia__anclaslista">
+                                <div class="maindiscografia__anclaslista__navegacion">
+                                    <a class="maindiscografia__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-youtube"></i> <p class="maindiscografia__anclaslista__textoancla">Youtube</p></a>
+                                </div>
+                                <div class="maindiscografia__anclaslista__navegacion">
+                                    <a class="maindiscografia__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-spotify"></i><p class="maindiscografia__anclaslista__textoancla">Spotify</p></a>
+                                </div>
+                                <div class="maindiscografia__anclaslista__navegacion">
+                                    <a class="maindiscografia__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-apple"></i><p class="maindiscografia__anclaslista__textoancla">Apple Music</p></a>
+                                </div>
                             </div>
-                            <div class="navegacion">
-                                <a class="anclas" href="" target="_blank"><i class="fa-brands fa-spotify"></i><p class="textoancla">Spotify</p></a>
-                            </div>
-                            <div class="navegacion">
-                                <a class="anclas" href="" target="_blank"><i class="fa-brands fa-apple"></i><p class="textoancla">Apple Music</p></a>
-                            </div>
-                            <div class="canciones">
-                                <h3 class="subtitulocard">Lista de canciones:</h3>
-                                <ul class="cancionesdisco">
-                                    <li class="listacanciones">Caminando</li>
-                                    <li class="listacanciones">Te vas</li>
-                                    <li class="listacanciones">Piba espada</li>
-                                    <li class="listacanciones">Ojos</li>
-                                    <li class="listacanciones">Posdata</li>
-                                    <li class="listacanciones">Hombre tambor</li>
-                                    <li class="listacanciones">Viaducto</li>
-                                    <li class="listacanciones">Sociedad</li>
-                                    <li class="listacanciones">No shopping</li>
-                                    <li class="listacanciones">Mao</li>
-                                    <li class="listacanciones">Entre las 4 y las 6</li>
-                                    <li class="listacanciones">Galope</li>
-                                    <li class="listacanciones">El alfil</li>
-                                    <li class="listacanciones">Calesita</li>
+                            <div class="maindiscografia__card__lista__canciones">
+                                <h3 class="maindiscografia__card__lista__canciones__subtitulo">Lista de canciones:</h3>
+                                <ul class="maindiscografia__card__lista__canciones__disco">
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Caminando</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Te vas</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Piba espada</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Ojos</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Posdata</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Hombre tambor</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Viaducto</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Sociedad</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">No shopping</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Mao</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Entre las 4 y las 6</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Galope</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">El alfil</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Calesita</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container-sm carddiscos" id="tierranueva"> <!--Tierra Nueva-->
+            <div class="container-sm maindiscografia__card" id="tierranueva"> <!--Tierra Nueva-->
                 <div class="row">
-                    <div class="col-sm-12 col-lg-3 portada">
-                       <img class="tapadisco" src=".././Assets/Img/Tierra Nueva.jpg" alt="Tierra Nueva">
+                    <div class="col-sm-12 col-lg-3 maindiscografia__card__portada">
+                       <img class="maindiscografia__card__portada__tapa" src=".././Assets/Img/Tierra Nueva.jpg" alt="Tierra Nueva">
                     </div>
-                    <div class="col-sm-12 col-lg-9 lista">
-                        <div class="titulolista">
-                            <h2 class="titulocard">Tierra Nueva (2015)</h2>
+                    <div class="col-sm-12 col-lg-9 maindiscografia__card__lista">
+                        <div>
+                            <h2 class="maindiscografia__card__lista__titulo">Tierra Nueva (2015)</h2>
                         </div>
-                        <div class="anclaslista">
-                            <div class="navegacion">
-                                <a class="anclas" href="" target="_blank"><i class="fa-brands fa-youtube"></i> <p class="textoancla">Youtube</p></a>
+                            <div class="maindiscografia__anclaslista">
+                                <div class="maindiscografia__anclaslista__navegacion">
+                                    <a class="maindiscografia__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-youtube"></i> <p class="maindiscografia__anclaslista__textoancla">Youtube</p></a>
+                                </div>
+                                <div class="maindiscografia__anclaslista__navegacion">
+                                    <a class="maindiscografia__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-spotify"></i><p class="maindiscografia__anclaslista__textoancla">Spotify</p></a>
+                                </div>
+                                <div class="maindiscografia__anclaslista__navegacion">
+                                    <a class="maindiscografia__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-apple"></i><p class="maindiscografia__anclaslista__textoancla">Apple Music</p></a>
+                                </div>
                             </div>
-                            <div class="navegacion">
-                                <a class="anclas" href="" target="_blank"><i class="fa-brands fa-spotify"></i><p class="textoancla">Spotify</p></a>
-                            </div>
-                            <div class="navegacion">
-                                <a class="anclas" href="" target="_blank"><i class="fa-brands fa-apple"></i><p class="textoancla">Apple Music</p></a>
-                            </div>
-                            <div class="canciones">
-                                <h3 class="subtitulocard">Lista de canciones:</h3>
-                                <ul class="cancionesdisco">
-                                    <li class="listacanciones">Obtuso</li>
-                                    <li class="listacanciones">Disfraz</li>
-                                    <li class="listacanciones">Ventana</li>
-                                    <li class="listacanciones">Cochico</li>
-                                    <li class="listacanciones">La misma oscuridad</li>
-                                    <li class="listacanciones">Barón</li>
-                                    <li class="listacanciones">Alcalina</li>
-                                    <li class="listacanciones">Alisten</li>
-                                    <li class="listacanciones">La furia</li>
-                                    <li class="listacanciones">El bobo y el payaso</li>
-                                    <li class="listacanciones">Tus pasos</li>
+                            <div class="maindiscografia__card__lista__canciones">
+                                <h3 class="maindiscografia__card__lista__canciones__subtitulo">Lista de canciones:</h3>
+                                <ul class="maindiscografia__card__lista__canciones__disco">
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Obtuso</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Disfraz</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Ventana</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Cochico</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">La misma oscuridad</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Barón</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Alcalina</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Alisten</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">La furia</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">El bobo y el payaso</li>
+                                    <li class="maindiscografia__card__lista__canciones__disco__lista">Tus pasos</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container-sm carddiscos" id="cielovivo"> <!--Cielo Vivo-->
+            <div class="container-sm maindiscografia__card" id="cielovivo"> <!--Cielo Vivo-->
                 <div class="row">
-                    <div class="col-sm-12 col-lg-3 portada">
-                       <img class="tapadisco" src=".././Assets/Img/Cielo Vivo.jpg" alt="Cielo Vivo">
+                    <div class="col-sm-12 col-lg-3 maindiscografia__card__portada">
+                       <img class="maindiscografia__card__portada__tapa" src=".././Assets/Img/Cielo Vivo.jpg" alt="Cielo Vivo">
                     </div>
-                    <div class="col-sm-12 col-lg-9 lista">
-                        <div class="titulolista">
-                            <h2 class="titulocard">Cielo Vivo (2018)</h2>
+                    <div class="col-sm-12 col-lg-9 maindiscografia__card__lista">
+                        <div>
+                            <h2 class="maindiscografia__card__lista__titulo">Cielo Vivo (2018)</h2>
                         </div>
-                        <div class="anclaslista">
-                            <div class="navegacion">
-                                <a class="anclas" href="" target="_blank"><i class="fa-brands fa-youtube"></i> <p class="textoancla">Youtube</p></a>
+                            <div class="maindiscografia__anclaslista">
+                                <div class="maindiscografia__anclaslista__navegacion">
+                                    <a class="maindiscografia__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-youtube"></i> <p class="maindiscografia__anclaslista__textoancla">Youtube</p></a>
+                                </div>
+                                <div class="maindiscografia__anclaslista__navegacion">
+                                    <a class="maindiscografia__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-spotify"></i><p class="maindiscografia__anclaslista__textoancla">Spotify</p></a>
+                                </div>
+                                <div class="maindiscografia__anclaslista__navegacion">
+                                    <a class="maindiscografia__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-apple"></i><p class="maindiscografia__anclaslista__textoancla">Apple Music</p></a>
+                                </div>
                             </div>
-                            <div class="navegacion">
-                                <a class="anclas" href="" target="_blank"><i class="fa-brands fa-spotify"></i><p class="textoancla">Spotify</p></a>
-                            </div>
-                            <div class="navegacion">
-                                <a class="anclas" href="" target="_blank"><i class="fa-brands fa-apple"></i><p class="textoancla">Apple Music</p></a>
-                            </div>
-                            <div class="canciones">
-                                <h3 class="subtitulocard">Lista de canciones:</h3>
+                            <div class="maindiscografia__card__lista__canciones">
+                                <h3 class="maindiscografia__card__lista__canciones__subtitulo">Lista de canciones:</h3>
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <ul class="cancionesdisco">
-                                            <li class="listacanciones">Tus pasos</li>
-                                            <li class="listacanciones">Luminoso</li>
-                                            <li class="listacanciones">Te vas</li>
-                                            <li class="listacanciones">Disfraz</li>
-                                            <li class="listacanciones">Caminando</li>
-                                            <li class="listacanciones">Barek</li>
-                                            <li class="listacanciones">Alma en tregua</li>
-                                            <li class="listacanciones">Alcalina</li>
-                                            <li class="listacanciones">De caer</li>
-                                            <li class="listacanciones">Ojos</li>
-                                            <li class="listacanciones">Estrella</li>
-                                            <li class="listacanciones">Luna</li>
-                                            <li class="listacanciones">Vueltas</li>
-                                            <li class="listacanciones">Entre las 4 y las 6</li>
+                                        <ul class="maindiscografia__card__lista__canciones__disco">
+                                            <li class="maindiscografia__card__lista__canciones__disco__lista">Tus pasos</li>
+                                            <li class="maindiscografia__card__lista__canciones__disco__lista">Luminoso</li>
+                                            <li class="maindiscografia__card__lista__canciones__disco__lista">Te vas</li>
+                                            <li class="maindiscografia__card__lista__canciones__disco__lista">Disfraz</li>
+                                            <li class="maindiscografia__card__lista__canciones__disco__lista">Caminando</li>
+                                            <li class="maindiscografia__card__lista__canciones__disco__lista">Barek</li>
+                                            <li class="maindiscografia__card__lista__canciones__disco__lista">Alma en tregua</li>
+                                            <li class="maindiscografia__card__lista__canciones__disco__lista">Alcalina</li>
+                                            <li class="maindiscografia__card__lista__canciones__disco__lista">De caer</li>
+                                            <li class="maindiscografia__card__lista__canciones__disco__lista">Ojos</li>
+                                            <li class="maindiscografia__card__lista__canciones__disco__lista">Estrella</li>
+                                            <li class="maindiscografia__card__lista__canciones__disco__lista">Luna</li>
+                                            <li class="maindiscografia__card__lista__canciones__disco__lista">Vueltas</li>
+                                            <li class="maindiscografia__card__lista__canciones__disco__lista">Entre las 4 y las 6</li>
                                         </ul>
                                     </div>
                                     <div class="col-lg-6">
-                                        <ul class="cancionesdisco">
-                                            <li class="listacanciones">Desarmar (5 locos)</li>
-                                            <li class="listacanciones">Televicio</li>
-                                            <li class="listacanciones">Galope</li>
-                                            <li class="listacanciones">Madre poder</li>
-                                            <li class="listacanciones">La gran ola</li>
-                                            <li class="listacanciones">Que se yo</li>
-                                            <li class="listacanciones">Charlone</li>
+                                        <ul class="maindiscografia__card__lista__canciones__disco">
+                                            <li class="maindiscografia__card__lista__canciones__disco__lista">Desarmar (5 locos)</li>
+                                            <li class="maindiscografia__card__lista__canciones__disco__lista">Televicio</li>
+                                            <li class="maindiscografia__card__lista__canciones__disco__lista">Galope</li>
+                                            <li class="maindiscografia__card__lista__canciones__disco__lista">Madre poder</li>
+                                            <li class="maindiscografia__card__lista__canciones__disco__lista">La gran ola</li>
+                                            <li class="maindiscografia__card__lista__canciones__disco__lista">Que se yo</li>
+                                            <li class="maindiscografia__card__lista__canciones__disco__lista">Charlone</li>
                                         </ul>                                       
                                     </div>
                                 </div>
@@ -489,32 +498,32 @@
     <footer class="container-fluid"> <!--Pie de la página-->
         <div class="row piedepagina" >
             <!--Definimos una sección para la navegación de redes sociales-->
-                <div class="col-sm-6 col-lg-6 redessociales">
-                    <ul class="lista"> <!--Lista desordenada de la navegación-->
-                        <h2 class="titulonavegacion">Redes sociales</h2>
-                        <li class="listaitem">
-                            <a class="anclas" href="https://www.instagram.com/cielorazzooficial/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram"></i><p class="textoancla paddingancla">Instagram</p></a>
+                <div class="col-sm-6 col-lg-6 piedepagina__redes">
+                    <ul class="piedepagina__lista"> <!--Lista desordenada de la navegación-->
+                        <h2 class="piedepagina__titulonavegacion">Redes sociales</h2>
+                        <li class="piedepagina__listaitem">
+                            <a class="piedepagina__anclas" href="https://www.instagram.com/cielorazzooficial/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram"></i><p class="piedepagina__textoanclas piedepagina__paddinganclas">Instagram</p></a>
                         </li>
-                        <li class="listaitem">
-                            <a class="anclas" href="https://es-la.facebook.com/cielorazzooficial/" target="_blank"><i class="fa-brands fa-facebook"></i><p class="textoancla paddingancla">Facebook</p></a>
+                        <li class="piedepagina__listaitem">
+                            <a class="piedepagina__anclas" href="https://es-la.facebook.com/cielorazzooficial/" target="_blank"><i class="fa-brands fa-facebook"></i><p class="piedepagina__textoanclas piedepagina__paddinganclas">Facebook</p></a>
                         </li>
-                        <li class="listaitem">
-                            <a class="anclas" href="https://twitter.com/Cielo_Razzo" target="_blank"><i class="fa-brands fa-twitter"></i><p class="textoancla paddingancla">Twitter</p></a>
+                        <li class="piedepagina__listaitem">
+                            <a class="piedepagina__anclas" href="https://twitter.com/Cielo_Razzo" target="_blank"><i class="fa-brands fa-twitter"></i><p class="piedepagina__textoanclas piedepagina__paddinganclas">Twitter</p></a>
                         </li>
                     </ul>
                 </div>
             <!--Definimos una sección para la navegación de plataformas para escuchar las canciones-->
-                <div class="col-sm-6 col-lg-6 escuchanos">
-                    <ul class="lista">
-                        <h2 class="titulonavegacion">Escuchanos</h2>
-                        <li class="listaitem">
-                            <a class="anclas" href="https://www.youtube.com/channel/UC586oHsi11RtuPZXEPjsPeQ" target="_blank"><i class="fa-brands fa-youtube"></i> <p class="textoancla">Youtube</p></a>
+                <div class="col-sm-6 col-lg-6 piedepagina__escuchanos">
+                    <ul class="piedepagina__lista">
+                        <h2 class="piedepagina__titulonavegacion">Escuchanos</h2>
+                        <li class="piedepagina__listaitem">
+                            <a class="piedepagina__anclas" href="https://www.youtube.com/channel/UC586oHsi11RtuPZXEPjsPeQ" target="_blank"><i class="fa-brands fa-youtube"></i> <p class="piedepagina__textoanclas">Youtube</p></a>
                         </li>
-                        <li class="listaitem">
-                            <a class="anclas" href="https://open.spotify.com/artist/7EgR8MOSpxSytMngVCVGEu" target="_blank"><i class="fa-brands fa-spotify"></i><p class="textoancla paddingancla">Spotify</p></a>
+                        <li class="piedepagina__listaitem">
+                            <a class="piedepagina__anclas" href="https://open.spotify.com/artist/7EgR8MOSpxSytMngVCVGEu" target="_blank"><i class="fa-brands fa-spotify"></i><p class="piedepagina__textoanclas piedepagina__paddinganclas">Spotify</p></a>
                         </li>
-                        <li class="listaitem">
-                            <a class="anclas" href="https://music.apple.com/ar/artist/cielo-razzo/503594354" target="_blank"><i class="fa-brands fa-apple"></i><p class="textoancla paddingancla">Apple Music</p></a>
+                        <li class="piedepagina__listaitem">
+                            <a class="piedepagina__anclas" href="https://music.apple.com/ar/artist/cielo-razzo/503594354" target="_blank"><i class="fa-brands fa-apple"></i><p class="piedepagina__textoanclas piedepagina__paddinganclas">Apple Music</p></a>
                         </li>
                     </ul>   
                 </div>

@@ -1,0 +1,32 @@
+$tamañofuente:(
+    texto_c: 1em,
+    texto_g: 1.3em,
+    subt_card: 1.6em,
+    tit_card: 1.8em,
+    tit_sec: 2em,
+    tit_princ: 3em
+);
+
+$fuentes:(
+    principal-sans: 'Roboto, sans-serif',
+    principal: 'Roboto'
+);
+
+$rgb:(
+    negro: black,
+    blanco: white,
+    azul: blue,
+    celeste: lightblue,
+    dorado: gold,
+    plateado: silver
+);
+
+$rgba:(
+    negro2: rgba(0, 0, 0,0.2),
+    negro4: rgba(0, 0, 0,0.4),
+    negro5: rgba(0, 0, 0,0.5),
+    negro6: rgba(0, 0, 0,0.6),
+    negro8: rgba(0, 0, 0,0.8),
+    blanco5: rgba(255, 255, 255,0.5),
+    azul5: rgba(0, 0, 255, 0.5)
+)

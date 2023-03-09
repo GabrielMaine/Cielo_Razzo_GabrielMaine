@@ -1,0 +1,42 @@
+@mixin borde-t($ancho, $estilo, $color){
+    border-top: $ancho $estilo $color;
+}
+
+@mixin borde-b($ancho, $estilo, $color){
+    border-bottom: $ancho $estilo $color;
+}
+
+@mixin borde-l($ancho, $estilo, $color){
+    border-left: $ancho $estilo $color;
+}
+
+@mixin borde-r($ancho, $estilo, $color){
+    border-right: $ancho $estilo $color;
+}
+
+@mixin borde($ancho, $estilo, $color){
+    border: $ancho $estilo $color;
+}
+
+@mixin flexbox($direccion, $justify, $wrap:nowrap, $align:center){
+    display: flex;
+    flex-flow: $direccion $wrap;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin fuentes($fuente, $color, $tamaño, $decoracion:none){
+    font-family: $fuente;
+    text-decoration: $decoracion;
+    color: $color;
+    font-size: $tamaño;
+}
+
+@mixin fondopagina($rgba1, $rgba2, $imagen, $attachment:fixed){
+    $url: "../Assets/Img/#{$imagen}.jpg";
+    background: linear-gradient(to top,$rgba1,$rgba2), url($url);
+    background-attachment: $attachment; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}

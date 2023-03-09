@@ -14,23 +14,23 @@
     <header class="container-fluid cabecera"> <!--Cabecera de la página-->
         <nav class="navbar navbar-expand-lg bg-body-tertiary"> <!--Navegacion de bootstrap-->
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img class="logo" src="./Assets/Img/Logo.jpg" alt="Logo"></a>
+                <a class="navbar-brand" href="#"><img class="cabecera__logo" src="./Assets/Img/Logo.jpg" alt="Logo"></a>
                 <button class="navbar-toggler boton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon cabecera__hamburguesa"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 contenedornavegacion">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 cabecera__contenedornavegacion">
                     <li class="nav-item">
-                        <a class="nav-link anclas" href="./pages/nosotros.html">Nosotros</a>
+                        <a class="nav-link cabecera__anclas" href="./pages/nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link anclas" href="./pages/recitales.html">Recitales</a>
+                        <a class="nav-link cabecera__anclas" href="./pages/recitales.html">Recitales</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link anclas" href="./pages/discografía.html">Discografia</a>
+                        <a class="nav-link cabecera__anclas" href="./pages/discografía.html">Discografia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link anclas" href="./pages/suscribete.html">Suscribete</a>
+                        <a class="nav-link cabecera__anclas" href="./pages/suscribete.html">Suscribete</a>
                     </li>
                 </ul>
                 </div>
@@ -40,9 +40,9 @@
 
     <main class="container-fluid mainindex"> <!--Contenido principal de la página-->
         <!--Seccion de introducción-->
-        <div class="container-md tituloindex"> 
-            <h1 class="tituloprincipal">¡Bienvenidos a la página oficial de Cielo Razzo!</h1>
-            <p class="introduccion">Aquí encontraras todas las noticias sobre nuevos recitales, nuevos lanzamientos y más. Tendras tambíen acceso a toda la discografía de la banda en una variedad de plataformas para escucharla cuando quieras.</p>
+        <div class="container-md mainindex__titulo"> 
+            <h1 class="mainindex__titulo__principal">¡Bienvenidos a la página oficial de Cielo Razzo!</h1>
+            <p class="mainindex__titulo__introduccion">Aquí encontraras todas las noticias sobre nuevos recitales, nuevos lanzamientos y más. Tendras tambíen acceso a toda la discografía de la banda en una variedad de plataformas para escucharla cuando quieras.</p>
         </div>
         <!--Seccion del carrusel-->
         <div class="container-md p-0"> <!--Agregamos un contenedor que contenga al carrusel-->
@@ -57,29 +57,29 @@
                 <div class="carousel-item active">
                     <img src="Assets/Img/Carrusel1.jpg" class="d-block w-100 " alt="Carrusel_1">
                     <div class="carousel-caption d-md-block">
-                        <a class="anclacarrusel" href="./pages/nosotros.html"><h5 class="titulocarrusel">¿Quiénes somos?</h5></a>
-                        <p class="textocarrusel">Conoce nuestro origen y nustros mas de 25 años de trayectoria </p>
+                        <a class="mainindex__anclacarrusel" href="./pages/nosotros.html"><h5 class="mainindex__titulocarrusel">¿Quiénes somos?</h5></a>
+                        <p class="mainindex__textocarrusel">Conoce nuestro origen y nuestros mas de 25 años de trayectoria </p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="Assets/Img/carrusel2.jpg" class="d-block w-100 " alt="Carrusel_2">
                     <div class="carousel-caption d-md-block">
-                        <a class="anclacarrusel" href="./pages/recitales.html"><h5 class="titulocarrusel">¡Veni a escucharnos!</h5></a>
-                        <p class="textocarrusel">No te pierdas ninguno de nuestros proximos recitales</p>
+                        <a class="mainindex__anclacarrusel" href="./pages/recitales.html"><h5 class="mainindex__titulocarrusel">¡Veni a escucharnos!</h5></a>
+                        <p class="mainindex__textocarrusel">No te pierdas ninguno de nuestros proximos recitales</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="Assets/Img/carrusel3.jpeg" class="d-block w-100 " alt="Carrusel_3">
                     <div class="carousel-caption d-md-block">
-                        <a class="anclacarrusel" href="./pages/discografía.html"><h5 class="titulocarrusel">¡Escuchanos donde sea!</h5></a>
-                        <p class="textocarrusel">Podras escuchar nuestra discografía entera en la plataforma que elijas</p>
+                        <a class="mainindex__anclacarrusel" href="./pages/discografía.html"><h5 class="mainindex__titulocarrusel">¡Escuchanos donde sea!</h5></a>
+                        <p class="mainindex__textocarrusel">Podras escuchar nuestra discografía entera en la plataforma que elijas</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="Assets/Img/carrusel4.jpg" class="d-block w-100 " alt="Carrusel_4">
                     <div class="carousel-caption d-md-block">
-                        <a class="anclacarrusel" href="./pages/suscribete.html"><h5 class="titulocarrusel">¡Suscribete!</h5></a>
-                        <p class="textocarrusel">Convertite en miembro de nuestra comunidad para estar al tanto de todas las noticias sobre recitales, entrevistas y más</p>
+                        <a class="mainindex__anclacarrusel" href="./pages/suscribete.html"><h5 class="mainindex__titulocarrusel">¡Suscribete!</h5></a>
+                        <p class="mainindex__textocarrusel">Convertite en miembro de nuestra comunidad para estar al tanto de todas las noticias sobre recitales, entrevistas y más</p>
                     </div>
                 </div>
                 </div>
@@ -94,53 +94,53 @@
             </div>
         </div>
         <!--Seccion para mostrar el ultimo disco-->
-        <div class="container-sm carddiscos"> <!--Div para armar la card contenedora-->
+        <div class="container-sm mainindex__carddiscos"> <!--Div para armar la card contenedora-->
             <div class="row">
-                <div class="col-sm-12 col-lg-6 portada">
-                    <iframe class="video" src="https://www.youtube.com/embed/vzlPHXNSnPo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <!--iframe que contiene un video del ultimo disco-->
+                <div class="col-sm-12 col-lg-6 mainindex__carddiscos__portada">
+                    <iframe class="mainindex__carddiscos__portada__video" src="https://www.youtube.com/embed/vzlPHXNSnPo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <!--iframe que contiene un video del ultimo disco-->
                 </div>
-                <div class="col-sm-12 col-lg-6 lista">
-                    <div class="titulolista">
-                        <h2 class="titulocard">Ultimo disco: Cielo Vivo</h2>
+                <div class="col-sm-12 col-lg-6 mainindex__carddiscos__lista">
+                    <div class="mainindex__titulolista">
+                        <h2 class="mainindex__titulolista__titulocard">Ultimo disco: Cielo Vivo</h2>
                     </div>
-                    <div class="subtitulolista">
-                        <h3 class="subtitulocard">Escuchar ahora</h3>
+                    <div class="mainindex__subtitulolista">
+                        <h3 class="mainindex__subtitulolista__subtitulocard">Escuchar ahora</h3>
                     </div>
-                    <div class="anclaslista">
-                        <div class="navegacion">
-                            <a class="anclas" href="" target="_blank"><i class="fa-brands fa-youtube"></i> <p class="textoancla">Youtube</p></a>
+                    <div class="mainindex__anclaslista">
+                        <div class="mainindex__anclaslista__navegacion">
+                            <a class="mainindex__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-youtube"></i> <p class="mainindex__carddiscos__textoancla">Youtube</p></a>
                         </div>
-                        <div class="navegacion">
-                            <a class="anclas" href="" target="_blank"><i class="fa-brands fa-spotify"></i><p class="textoancla">Spotify</p></a>
+                        <div class="mainindex__anclaslista__navegacion">
+                            <a class="mainindex__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-spotify"></i><p class="mainindex__carddiscos__textoancla">Spotify</p></a>
                         </div>
-                        <div class="navegacion">
-                            <a class="anclas" href="" target="_blank"><i class="fa-brands fa-apple"></i><p class="textoancla">Apple Music</p></a>
+                        <div class="mainindex__anclaslista__navegacion">
+                            <a class="mainindex__anclaslista__anclas" href="" target="_blank"><i class="fa-brands fa-apple"></i><p class="mainindex__carddiscos__textoancla">Apple Music</p></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>            
         <!--Seccion para los proximos recitales-->
-        <div class="container-sm cardrecitales"> <!--Div para armar la card contenedora-->
+        <div class="container-sm mainindex__cardrecitales"> <!--Div para armar la card contenedora-->
             <div class="row">
-                <div class="col-sm-12 col-lg-6 lista">
-                    <div class="titulolista">
-                        <h2 class="titulocard">Proximas fechas:</h2>
+                <div class="col-sm-12 col-lg-6 mainindex__cardrecitales__lista">
+                    <div class="mainindex__titulolista">
+                        <h2 class="mainindex__titulolista__titulocard">Proximas fechas:</h2>
                     </div>
-                    <ul class="fechas">
-                        <li class="listaitem"> <!--En un futuro cambiar los <p> por anclas que lleven a secciones de los distintos recis en la pagina Recitales-->
-                            <p class="texto">Fecha xx/xx - Lugar generico 1 - Localidad 1</p>
+                    <ul class="mainindex__fechas">
+                        <li class="mainindex__fechas__listaitem"> <!--En un futuro cambiar los <p> por anclas que lleven a secciones de los distintos recis en la pagina Recitales-->
+                            <p class="mainindex__cardrecitales__texto">Fecha xx/xx - Lugar generico 1 - Localidad 1</p>
                         </li>
-                        <li class="listaitem">
-                            <p class="texto">Fecha yy/yy - Lugar generico 2 - Localidad 2</p>
+                        <li class="mainindex__fechas__listaitem">
+                            <p class="mainindex__cardrecitales__texto">Fecha yy/yy - Lugar generico 2 - Localidad 2</p>
                         </li>    
-                        <li class="listaitem">
-                            <p class="texto">Fecha zz/zz - Lugar generico 3 - Localidad 3</p>
+                        <li class="mainindex__fechas__listaitem">
+                            <p class="mainindex__cardrecitales__texto">Fecha zz/zz - Lugar generico 3 - Localidad 3</p>
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-12 col-lg-6 portada"> <!--Agregamos un mapa del lugar del proximo recital-->
-                    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.89083113135084!2d-60.669358092114585!3d-32.933513503154934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab547a2b5cf1%3A0x5a0abfc740606ea4!2sTeatro%20Vorterix%20Rosario!5e0!3m2!1ses!2sar!4v1674765533431!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!--iframe que contiene el mapa-->
+                <div class="col-sm-12 col-lg-6 mainindex__cardrecitales__portada"> <!--Agregamos un mapa del lugar del proximo recital-->
+                    <iframe class="mainindex__cardrecitales__portada__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.89083113135084!2d-60.669358092114585!3d-32.933513503154934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab547a2b5cf1%3A0x5a0abfc740606ea4!2sTeatro%20Vorterix%20Rosario!5e0!3m2!1ses!2sar!4v1674765533431!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!--iframe que contiene el mapa-->
                 </div>
             </div>
         </div>
@@ -149,32 +149,32 @@
     <footer class="container-fluid"> <!--Pie de la página-->
         <div class="row piedepagina" >
             <!--Definimos una sección para la navegación de redes sociales-->
-                <div class="col-sm-6 col-lg-6 redessociales">
-                    <ul class="lista"> <!--Lista desordenada de la navegación-->
-                        <h2 class="titulonavegacion">Redes sociales</h2>
-                        <li class="listaitem">
-                            <a class="anclas" href="https://www.instagram.com/cielorazzooficial/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram"></i><p class="textoancla paddingancla">Instagram</p></a>
+                <div class="col-sm-6 col-lg-6 piedepagina__redes">
+                    <ul class="piedepagina__lista"> <!--Lista desordenada de la navegación-->
+                        <h2 class="piedepagina__titulonavegacion">Redes sociales</h2>
+                        <li class="piedepagina__listaitem">
+                            <a class="piedepagina__anclas" href="https://www.instagram.com/cielorazzooficial/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram"></i><p class="piedepagina__textoanclas piedepagina__paddinganclas">Instagram</p></a>
                         </li>
-                        <li class="listaitem">
-                            <a class="anclas" href="https://es-la.facebook.com/cielorazzooficial/" target="_blank"><i class="fa-brands fa-facebook"></i><p class="textoancla paddingancla">Facebook</p></a>
+                        <li class="piedepagina__listaitem">
+                            <a class="piedepagina__anclas" href="https://es-la.facebook.com/cielorazzooficial/" target="_blank"><i class="fa-brands fa-facebook"></i><p class="piedepagina__textoanclas piedepagina__paddinganclas">Facebook</p></a>
                         </li>
-                        <li class="listaitem">
-                            <a class="anclas" href="https://twitter.com/Cielo_Razzo" target="_blank"><i class="fa-brands fa-twitter"></i><p class="textoancla paddingancla">Twitter</p></a>
+                        <li class="piedepagina__listaitem">
+                            <a class="piedepagina__anclas" href="https://twitter.com/Cielo_Razzo" target="_blank"><i class="fa-brands fa-twitter"></i><p class="piedepagina__textoanclas piedepagina__paddinganclas">Twitter</p></a>
                         </li>
                     </ul>
                 </div>
             <!--Definimos una sección para la navegación de plataformas para escuchar las canciones-->
-                <div class="col-sm-6 col-lg-6 escuchanos">
-                    <ul class="lista">
-                        <h2 class="titulonavegacion">Escuchanos</h2>
-                        <li class="listaitem">
-                            <a class="anclas" href="https://www.youtube.com/channel/UC586oHsi11RtuPZXEPjsPeQ" target="_blank"><i class="fa-brands fa-youtube"></i> <p class="textoancla">Youtube</p></a>
+                <div class="col-sm-6 col-lg-6 piedepagina__escuchanos">
+                    <ul class="piedepagina__lista">
+                        <h2 class="piedepagina__titulonavegacion">Escuchanos</h2>
+                        <li class="piedepagina__listaitem">
+                            <a class="piedepagina__anclas" href="https://www.youtube.com/channel/UC586oHsi11RtuPZXEPjsPeQ" target="_blank"><i class="fa-brands fa-youtube"></i> <p class="piedepagina__textoanclas">Youtube</p></a>
                         </li>
-                        <li class="listaitem">
-                            <a class="anclas" href="https://open.spotify.com/artist/7EgR8MOSpxSytMngVCVGEu" target="_blank"><i class="fa-brands fa-spotify"></i><p class="textoancla paddingancla">Spotify</p></a>
+                        <li class="piedepagina__listaitem">
+                            <a class="piedepagina__anclas" href="https://open.spotify.com/artist/7EgR8MOSpxSytMngVCVGEu" target="_blank"><i class="fa-brands fa-spotify"></i><p class="piedepagina__textoanclas piedepagina__paddinganclas">Spotify</p></a>
                         </li>
-                        <li class="listaitem">
-                            <a class="anclas" href="https://music.apple.com/ar/artist/cielo-razzo/503594354" target="_blank"><i class="fa-brands fa-apple"></i><p class="textoancla paddingancla">Apple Music</p></a>
+                        <li class="piedepagina__listaitem">
+                            <a class="piedepagina__anclas" href="https://music.apple.com/ar/artist/cielo-razzo/503594354" target="_blank"><i class="fa-brands fa-apple"></i><p class="piedepagina__textoanclas piedepagina__paddinganclas">Apple Music</p></a>
                         </li>
                     </ul>   
                 </div>

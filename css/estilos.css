@@ -1,756 +1,576 @@
-*{
-    margin:0; /*Quitamos los margenes por defecto de html*/
-    padding:0; /*Quitamos los padding por defecto de html*/
-    box-sizing: border-box; /*Establecemos que los tamaños de las cajas sean fijos y no se alteren por agregar padding al contenido*/
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap'); /*Importamos fuentes desde Google Fonts*/
-
-/*
-    El orden de los estilados es el siguiente:
-    ESTILADO DE LA CABECERA
-    ESTILADO DEL PIE DE PAGINA
-    ESTILADO DEL MAIN DEL INDEX
-    ESTILADO DEL MAIN DE NOSOTROS
-    ESTILADO DEL MAIN DE RECITALES
-    ESTILADO DEL MAIN DE DISCOGRAFIA
-    ESTILADO DEL MAIN DE SUSCRIBETE
-*/
+@charset "UTF-8";
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap'); /*Importamos fuentes desde Google Fonts*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 /*Propiedades de la cabecera*/
-
-.cabecera{
-    background-color: rgb(0, 0, 0); /*Color de fondo de la cabecera*/
-    font-family: 'Roboto', sans-serif; /*Estilo de fuente para la cabecera*/
-    z-index: 9;
-}
-
-.logo{ /*Tamaño del logo*/
-    width: 12vh; 
-}
-
-.navbar .navbar-toggler-icon { /*El boton del menu hamburguesa de la navegacion no se veia asi que tome el codigo del boton de la navegacion oscura de bootstrap para que si se vea*/
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  }
-
-.contenedornavegacion{ /*Acomodamos la navegacion al lado izquiero de la pantalla*/
+.cabecera {
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
+  z-index: 9; }
+  .cabecera .cabecera__logo {
+    width: 12vh; }
+  .cabecera .navbar .cabecera__hamburguesa {
+    /*El boton del menu hamburguesa de la navegacion no se veia asi que tome el codigo del boton de la navegacion oscura de bootstrap para que si se vea*/
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+  .cabecera .cabecera__contenedornavegacion {
     width: 100%;
-    justify-content: flex-end;
-}
+    justify-content: flex-end; }
+    .cabecera .cabecera__contenedornavegacion .cabecera__anclas {
+      color: white;
+      font-family: "roboto", sans-serif;
+      font-size: 1.3em; }
+      .cabecera .cabecera__contenedornavegacion .cabecera__anclas:hover {
+        /*Le damos un subrayado y cambiamos el color a las anclas cuando el usuario pone el puntero encima de ellas*/
+        text-decoration: underline;
+        color: gold; }
 
-.contenedornavegacion .anclas{ /*Estilamos las anclas de navegacion del header*/
-    color: white;
-    font-family: "roboto", sans-serif;
-    font-size: 1.3em;
-}
-
-.anclas:hover{ /*Le damos un subrayado y cambiamos el color a las anclas cuando el usuario pone el puntero encima de ellas*/
-    text-decoration: underline;
-    color: gold;
-}
-
-
-/*Propiedades del pie de página*/
-
-.piedepagina{
-    background-color: rgb(0, 0, 0); /*Color de fondo del pie de página*/
-    padding-top: 1vh;
-    font-family: 'Roboto', sans-serif; /*Defino la fuente*/
-}
-
-.piedepagina .redessociales{
+.piedepagina {
+  background-color: black;
+  padding-top: 1vh;
+  font-family: 'Roboto', sans-serif; }
+  .piedepagina .piedepagina__redes {
+    width: 50%;
+    text-align: center; }
+  .piedepagina .piedepagina__escuchanos {
     width: 50%;
     text-align: center;
-}
-
-.piedepagina .escuchanos{
-    width: 50%;
-    text-align: center;
-    padding-right: 5vw;
-}
-
-.piedepagina .lista{
-    list-style: none; /*Quitamos los puntos de los items de las listas de navegacion*/
-}
-
-.piedepagina .titulonavegacion{
-    color:lightskyblue; /*Establecemos el color de los titulos de navegacion*/
-    font-size: 1.6em; /*Tamaño de letra*/
-    display: none;
-}
-
-.piedepagina .anclas{
-    text-decoration: none; /*Quitamos las decoraciones de las anclas*/
-    color: white; /*Establecemos el color de las anclas*/
-    font-size: 1.2em; /*Tamaño de letra*/
-}
-
-.piedepagina .listaitem{ /*Mostramos los iconos en linea y le agregamos un padding simetrico para separarlas pero que se mantengan centradas*/
+    padding-right: 5vw; }
+  .piedepagina .piedepagina__lista {
+    list-style: none; }
+  .piedepagina .piedepagina__titulonavegacion {
+    color: lightskyblue;
+    font-size: 1.6em;
+    display: none; }
+  .piedepagina .piedepagina__listaitem {
     display: inline-block;
     padding-left: 1.5vw;
-    padding-right: 1.5vw;
-}
+    padding-right: 1.5vw; }
+  .piedepagina .piedepagina__anclas {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em; }
+  .piedepagina .piedepagina__textoanclas {
+    display: none; }
+  .piedepagina .piedepagina__paddinganclas {
+    padding-left: 10px; }
 
-.piedepagina .textoancla{ /*Quitamos los estilados de las anclas*/
-    display: none;
-}
-
-.paddingancla{ /*Agregamos un padding a ciertas anclas para separarlas de su icono en vista desktop*/
-    padding-left: 10px;
-}
+@media only screen and (min-width: 576px) {
+  /*Acomodamos el footer para que fuera de vista mobile se vean los textos de las anclas y aparezcan en lista*/
+  .piedepagina .piedepagina__redes {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left; }
+  .piedepagina .piedepagina__escuchanos {
+    display: flex;
+    justify-content: flex-end;
+    text-align: left;
+    padding-right: 2vw; }
+  .piedepagina .piedepagina__titulonavegacion {
+    display: inline-block; }
+  .piedepagina .piedepagina__listaitem {
+    display: block;
+    padding-left: 0vw; }
+  .piedepagina .piedepagina__textoanclas {
+    display: inline-block; } }
 
 /*Propiedades del main del index*/
-
-.mainindex{
-    background-color: rgb(0, 0, 0);
-    padding: 2vh 0;
-    border-top: 2px solid blue;
-    border-bottom: 2px solid blue;
-}
-
-.mainindex .tituloindex{ 
+.mainindex {
+  background-color: black;
+  padding: 2vh 0;
+  border-top: 2px solid blue;
+  border-bottom: 2px solid blue; }
+  .mainindex .mainindex__titulo {
     background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0.5));
-    border: 2px double rgb(0, 0, 0);
+    border: 2px solid black;
     border-radius: 15px;
     text-align: center;
-    margin-bottom: 2vh;
-}
-
-.mainindex .tituloindex .tituloprincipal{ /*Propiedades del titulo principal*/
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    padding:2px;
-    text-align: center;
-    font-size: 1.2em;
-}
-
-.mainindex .tituloindex .introduccion{ /*Propiedades del parrafo introductorio*/
-    font-family: 'Roboto';
-    color: white;
-    padding:1px;
-    text-align: center;
-    font-size: 0.8em;
-}
-
-.anclacarrusel{
-    font-family: 'Roboto', sans-serif;
+    margin-bottom: 2vh; }
+    .mainindex .mainindex__titulo .mainindex__titulo__principal {
+      font-family: "Roboto";
+      text-decoration: underline;
+      color: white;
+      font-size: 2em;
+      font-family: 'Roboto', sans-serif;
+      text-align: center; }
+    .mainindex .mainindex__titulo .mainindex__titulo__introduccion {
+      font-family: "Roboto";
+      text-decoration: none;
+      color: white;
+      font-size: 1em;
+      font-family: 'Roboto';
+      text-align: center; }
+  .mainindex .mainindex__anclacarrusel {
+    font-family: "Roboto";
     text-decoration: none;
     color: white;
-}
-
-.titulocarrusel{
-    font-size: 1.2em;
-}
-
-.textocarrusel{
+    font-size: 1em;
     font-family: 'Roboto', sans-serif;
+    text-decoration: none; }
+  .mainindex .mainindex__titulocarrusel {
+    font-size: 1.3em; }
+  .mainindex .mainindex__textocarrusel {
+    font-family: "Roboto";
     text-decoration: none;
     color: white;
-    font-size: 0.8em;
-}
-
-.carddiscos{ /*Propiedades de la card del ultimo disco*/
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none; }
+  .mainindex .mainindex__carddiscos {
     margin: 2vh auto;
     background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0.5));
-    border: 2px double rgb(0, 0, 0); 
-}
-
-.carddiscos .portada{ /*Ordenamos el div que contiene al video luego del div que contiene al texto en vista mobile*/
-    order: 1;
-}
-
-.carddiscos .portada .video{
-    width: 100%;
-    aspect-ratio: 2;
-}
-
-.carddiscos .lista{ /*Ubicamos el contenedor del texto en la card*/
-    width: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.mainindex .titulolista{ /*Estilamos el titulo de la card*/
-    list-style: none; /*Esto es para quitar los puntos por cada item de la lista*/
-    text-align: center;
-}
-
-.titulolista .titulocard{
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-size: 1.8em;
-    text-decoration: none;
-    text-decoration: underline;
-}
-
-.mainindex .subtitulolista{ /*Estilamos el subtitulo de la card*/
+    border: 2px solid black; }
+    .mainindex .mainindex__carddiscos .mainindex__carddiscos__portada {
+      order: 1; }
+      .mainindex .mainindex__carddiscos .mainindex__carddiscos__portada .mainindex__carddiscos__portada__video {
+        width: 100%;
+        aspect-ratio: 2; }
+    .mainindex .mainindex__carddiscos .mainindex__carddiscos__lista {
+      width: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-evenly;
+      align-items: center; }
+    .mainindex .mainindex__carddiscos .mainindex__carddiscos__textoancla {
+      display: none; }
+  .mainindex .mainindex__titulolista {
     list-style: none;
-}
-
-.subtitulolista .subtitulocard{
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-size: 1.6em;
-}
-
-.anclaslista{ /*Estilamos las anclas de la card (UL)*/
+    text-align: center; }
+    .mainindex .mainindex__titulolista .mainindex__titulolista__titulocard {
+      font-family: "Roboto";
+      text-decoration: underline;
+      color: white;
+      font-size: 1.8em;
+      font-family: 'Roboto', sans-serif; }
+  .mainindex .mainindex__subtitulolista {
+    list-style: none; }
+    .mainindex .mainindex__subtitulolista .mainindex__subtitulolista__subtitulocard {
+      font-family: "Roboto";
+      text-decoration: none;
+      color: white;
+      font-size: 1.6em;
+      font-family: 'Roboto', sans-serif; }
+  .mainindex .mainindex__anclaslista {
     font-family: 'Roboto', sans-serif;
     list-style: none;
-    text-align: center;
-}
-
-.anclaslista .navegacion{ /*Convertimos la lista con las anclas de una lista vertical a una horizontal (LI)*/
-    display: inline-block;
-    padding-left: 4.5vw;
-    padding-right: 4.5vw;
-}
-
-.anclaslista .anclas{  /*(A)*/
-    text-decoration: none; 
-    color: white; 
-    font-size: 2.1em; 
-}
-
-.carddiscos .textoancla{
-    display: none;
-}
-
-.mainindex .cardrecitales{ /*Propiedades de la card de los proximos recitales*/
+    text-align: center; }
+    .mainindex .mainindex__anclaslista .mainindex__anclaslista__navegacion {
+      display: inline-block;
+      padding-left: 4.5vw;
+      padding-right: 4.5vw; }
+    .mainindex .mainindex__anclaslista .mainindex__anclaslista__anclas {
+      text-decoration: none;
+      color: white;
+      font-size: 2em; }
+  .mainindex .mainindex__cardrecitales {
     background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0.5));
-    border: 2px double rgb(0, 0, 0); 
-}
-
-.mainindex .cardrecitales .lista{ /*Ubicamos el contenedor del texto en la card*/
-    width: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
-    align-items: left;
-}
-
-.mainindex .fechas{ /*Propiedades del texto de la card*/
-    font-family: 'Roboto', sans-serif;
+    border: 2px solid black; }
+    .mainindex .mainindex__cardrecitales .mainindex__cardrecitales__lista {
+      width: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-evenly;
+      align-items: left; }
+    .mainindex .mainindex__cardrecitales .mainindex__cardrecitales__portada .mainindex__cardrecitales__portada__mapa {
+      width: 100%;
+      aspect-ratio: 2; }
+    .mainindex .mainindex__cardrecitales .mainindex__cardrecitales__texto {
+      font-size: 1em; }
+  .mainindex .mainindex__fechas {
+    font-family: "Roboto";
+    text-decoration: none;
     color: white;
-    font-size: 1.2em;
-    list-style: none;
-}
+    font-size: 1.3em;
+    font-family: 'Roboto', sans-serif;
+    list-style: none; }
+    .mainindex .mainindex__fechas .mainindex__fechas__listaitem {
+      margin-top: 0.6em; }
 
-.mainindex .fechas .listaitem{ /*Espaciamos los elementos de la lista de los proximos recitales*/
-    margin-top: 0.6em;
-}
+@media only screen and (min-width: 768px) {
+  .mainindex {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../Assets/Img/fondo.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; } }
 
-.mainindex .cardrecitales .portada .mapa{ /*Determinamos el tamaño del mapa*/
-    width: 100%;
-    aspect-ratio: 2;
-}
-
-.cardrecitales .texto{ /*Propiedades del texto de la card*/
-    font-size: 0.8em;
-}
+@media only screen and (min-width: 992px) {
+  .mainindex .mainindex__titulo .mainindex__titulo__principal {
+    padding: 2px;
+    font-size: 3em; }
+  .mainindex .mainindex__titulo .mainindex__titulo__introduccion {
+    padding: 5px;
+    font-size: 1.3em; }
+  .mainindex .mainindex__titulocarrusel {
+    font-size: 2em; }
+  .mainindex .mainindex__textocarrusel {
+    font-size: 1em; }
+  .mainindex .mainindex__carddiscos {
+    flex-direction: row;
+    padding: 0 5px 0 0; }
+    .mainindex .mainindex__carddiscos .mainindex__carddiscos__portada {
+      width: 50%;
+      order: -1; }
+    .mainindex .mainindex__carddiscos .mainindex__carddiscos__lista {
+      width: 50%; }
+    .mainindex .mainindex__carddiscos .mainindex__carddiscos__textoancla {
+      display: inline-block;
+      padding-left: 0.5vw; }
+  .mainindex .mainindex__anclaslista .mainindex__anclaslista__navegacion {
+    display: inline-block;
+    padding-left: 1.2vw;
+    padding-right: 1.2vw; }
+  .mainindex .mainindex__anclaslista .mainindex__anclaslista__anclas {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em; }
+  .mainindex .mainindex__cardrecitales {
+    flex-direction: row;
+    padding: 0 5px 0 0; }
+    .mainindex .mainindex__cardrecitales .mainindex__cardrecitales__lista {
+      width: 50%; }
+    .mainindex .mainindex__cardrecitales .mainindex__cardrecitales__portada {
+      width: 50%; }
+    .mainindex .mainindex__cardrecitales .mainindex__cardrecitales__texto {
+      font-size: 1em; } }
 
 /*Estilado de la pagina nosotros*/
-
-.mainnosotros{
-    background-color: rgb(0, 0, 0);
-    padding: 2vh 0;
-    border-top: 2px solid silver;
-    border-bottom: 2px solid silver;
-}
-
-.mainnosotros .textonosotros{
+.mainnosotros {
+  background-color: black;
+  padding: 2vh 0;
+  border-top: 2px solid silver;
+  border-bottom: 2px solid silver; }
+  .mainnosotros .mainnosotros__biografia {
     background-color: white;
     border: 2px solid black;
-    margin-bottom: 2vh;
-}
-
-.mainnosotros .textonosotros .titulonosotros{
-    font-family: 'Roboto', sans-serif;
-    font-size: 3em;
-    text-align: center;
-    text-decoration:underline;
-}
-
-.mainnosotros .textonosotros .texto{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-    text-align: justify;
-}
-
-.mainnosotros .fotosnosotros{
+    margin-bottom: 2vh; }
+    .mainnosotros .mainnosotros__biografia .mainnosotros__biografia__titulo {
+      font-family: "Roboto";
+      text-decoration: underline;
+      color: black;
+      font-size: 3em;
+      font-family: 'Roboto', sans-serif;
+      text-align: center; }
+    .mainnosotros .mainnosotros__biografia .mainnosotros__biografia__texto {
+      font-family: "Roboto";
+      text-decoration: none;
+      color: black;
+      font-size: 1em;
+      font-family: 'Roboto', sans-serif;
+      text-align: justify; }
+  .mainnosotros .mainnosotros__fotos {
     background-color: white;
     border: 2px solid black;
     text-align: center;
-    padding: 0;
-}
+    padding: 0; }
+    .mainnosotros .mainnosotros__fotos .mainnosotros__fotos__card {
+      border: 2px solid black;
+      text-align: center;
+      padding: 0;
+      height: 75vh; }
+      .mainnosotros .mainnosotros__fotos .mainnosotros__fotos__card .mainnosotros__fotos__card__foto {
+        width: 100%;
+        height: 90%; }
+      .mainnosotros .mainnosotros__fotos .mainnosotros__fotos__card .mainnosotros__fotos__card__subtitulo {
+        display: inline-block;
+        padding-top: 1%;
+        font-family: 'Roboto', sans-serif; }
 
-.mainnosotros .fotosnosotros .cardfoto{
-    border: 2px solid black;
-    background-color: white;
-    text-align: center;
-    padding: 0;
-    height: 75vh;
-}
+@media only screen and (min-width: 768px) {
+  .mainnosotros {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../Assets/Img/fondonosotros.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; } }
 
-.mainnosotros .fotosnosotros .cardfoto .foto{
-    width: 100%;
-    height: 90%;
-}
-
-.mainnosotros .fotosnosotros .cardfoto .subtitulofoto{
-    display: inline-block;
-    padding-top: 1%;
-    font-family: 'Roboto', sans-serif;
-}
+@media only screen and (min-width: 992px) {
+  .mainnosotros .mainnosotros__fotos .mainnosotros__fotos__card .mainnosotros__fotos__card__subtitulo {
+    padding-top: 4%;
+    font-size: 1.6em; } }
 
 /*Estilado de la pagina recitales*/
-
-.mainrecitales{
-    background-color: rgb(0, 0, 0);
-    padding: 2vh 0;
-    border-top: 2px solid silver;
-    border-bottom: 2px solid silver;
-}
-
-.mainrecitales .titulorecitales{
+.mainrecitales {
+  background-color: black;
+  padding: 2vh 0;
+  border-top: 2px solid silver;
+  border-bottom: 2px solid silver; }
+  .mainrecitales .mainrecitales__titulo {
     margin-top: 2vh;
-    border-top: 2px solid silver;
-    border-bottom: 2px solid silver;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
     background-color: white;
-    padding: 1vh 0;
-}
-
-.mainrecitales .titulorecitales .tituloprincipal{
-    font-family: 'Roboto', sans-serif;
-    text-decoration: underline;
-    font-size: 2em;
-}
-
-.mainrecitales .titulorecitales .portada{
-    height: 30vh;
-    border-top: 2px solid rgb(0, 0, 0);
-    border-bottom: 2px solid rgb(0, 0, 0);
-    background-color: white;
-}
-
-.mainrecitales .titulorecitales .portada .mapa{
-    height: 96%;
-    padding-top: 2%;
-}
-
-.mainrecitales .titulorecitales .fechas{
-    height: 40vh;
-    border-top: 2px solid rgba(0, 0, 0);
-    border-bottom: 2px solid rgb(0, 0, 0);
-    background-color: white;
-    padding-top: 1vh;
-}
-
-.mainrecitales .titulorecitales .fechas .subtitulocard{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.8em;
-}
-
-.mainrecitales .titulorecitales .fechas .lista{
-    padding-top: 2vh;
-    list-style: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2em;
-}
-
-.mainrecitales .futurasfechas{
+    padding: 1vh 0; }
+    .mainrecitales .mainrecitales__titulo .mainrecitales__titulo__principal {
+      font-family: "Roboto";
+      text-decoration: underline;
+      color: black;
+      font-size: 3em;
+      font-family: 'Roboto', sans-serif; }
+    .mainrecitales .mainrecitales__titulo .mainrecitales__titulo__portada {
+      height: 30vh;
+      border-top: 2px solid black;
+      border-bottom: 2px solid black; }
+      .mainrecitales .mainrecitales__titulo .mainrecitales__titulo__portada .mainrecitales__titulo__portada__mapa {
+        height: 96%;
+        padding-top: 2%; }
+    .mainrecitales .mainrecitales__titulo .mainrecitales__titulo__fechas {
+      height: 40vh;
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+      padding-top: 1vh; }
+      .mainrecitales .mainrecitales__titulo .mainrecitales__titulo__fechas .mainrecitales__titulo__fechas__subtitulo {
+        font-family: "Roboto";
+        text-decoration: underline;
+        color: black;
+        font-size: 1.8em;
+        font-family: 'Roboto', sans-serif; }
+      .mainrecitales .mainrecitales__titulo .mainrecitales__titulo__fechas .mainrecitales__titulo__fechas__lista {
+        padding-top: 2vh;
+        list-style: none;
+        font-family: "Roboto";
+        text-decoration: none;
+        color: black;
+        font-size: 1.3em;
+        font-family: 'Roboto', sans-serif; }
+  .mainrecitales .mainrecitales__futurasfechas {
     margin-top: 2vh;
-    border-top: 2px solid silver;
-    border-bottom: 2px solid silver;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
     background-color: white;
-    padding: 1vh 0;
-}
+    padding: 1vh 0; }
+    .mainrecitales .mainrecitales__futurasfechas .mainrecitales__futurasfechas__titulo {
+      font-family: "Roboto";
+      text-decoration: underline;
+      color: black;
+      font-size: 2em;
+      font-family: 'Roboto', sans-serif; }
+    .mainrecitales .mainrecitales__futurasfechas .mainrecitales__futurasfechas__portada {
+      height: 25vh;
+      border-top: 2px solid black;
+      border-bottom: 2px solid black; }
+      .mainrecitales .mainrecitales__futurasfechas .mainrecitales__futurasfechas__portada .mainrecitales__futurasfechas__portada__mapa {
+        height: 96%;
+        padding-top: 2%; }
+    .mainrecitales .mainrecitales__futurasfechas .mainrecitales__futurasfechas__fechas {
+      height: 25vh;
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+      padding-top: 1vh; }
+      .mainrecitales .mainrecitales__futurasfechas .mainrecitales__futurasfechas__fechas .mainrecitales__futurasfechas__fechas__subtitulo {
+        font-family: "Roboto";
+        text-decoration: underline;
+        color: black;
+        font-size: 1.8em;
+        font-family: 'Roboto', sans-serif; }
+      .mainrecitales .mainrecitales__futurasfechas .mainrecitales__futurasfechas__fechas .mainrecitales__futurasfechas__fechas__lista {
+        padding-top: 2vh;
+        list-style: none;
+        font-family: "Roboto";
+        text-decoration: none;
+        color: black;
+        font-size: 1.3em;
+        font-family: 'Roboto', sans-serif; }
 
-.mainrecitales .futurasfechas .tituloprincipal{
-    font-family: 'Roboto', sans-serif;
-    text-decoration: underline;
-    font-size: 2em;
-}
+@media only screen and (min-width: 768px) {
+  .mainrecitales {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("../Assets/Img/fondorecitales.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; } }
 
-.mainrecitales .futurasfechas .portada{
-    height: 25vh;
-    border-top: 2px solid rgb(0, 0, 0);
-    border-bottom: 2px solid rgb(0, 0, 0);
-    background-color: white;
-}
-
-.mainrecitales .futurasfechas .portada .mapa{
-    height: 96%;
-    padding-top: 2%;
-}
-
-.mainrecitales .futurasfechas .fechas{
-    height: 25vh;
-    border-top: 2px solid rgba(0, 0, 0);
-    border-bottom: 2px solid rgb(0, 0, 0);
-    background-color: white;
-    padding-top: 1vh;
-}
-
-.mainrecitales .futurasfechas .fechas .subtitulocard{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.8em;
-}
-
-.mainrecitales .futurasfechas .fechas .lista{
-    padding-top: 2vh;
-    list-style: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2em;
-}
-
-
+@media only screen and (min-width: 992px) {
+  .mainrecitales .mainrecitales__titulo .mainrecitales__titulo__portada {
+    height: 40vh; }
+    .mainrecitales .mainrecitales__titulo .mainrecitales__titulo__portada .mainrecitales__titulo__portada__mapa {
+      height: 96%;
+      padding-top: 2%; }
+  .mainrecitales .mainrecitales__titulo .mainrecitales__titulo__fechas {
+    height: 40vh; }
+    .mainrecitales .mainrecitales__titulo .mainrecitales__titulo__fechas .mainrecitales__titulo__fechas__subtitulo {
+      font-size: 2em; }
+    .mainrecitales .mainrecitales__titulo .mainrecitales__titulo__fechas .mainrecitales__titulo__fechas__lista {
+      padding-top: 5vh;
+      font-size: 1.6em; } }
 
 /*Estilado de la pagina discografía*/
-
-.maindiscografia{
-    background-color: black;
-    padding: 2vh 0;
-    border-top: 2px solid silver;
-    border-bottom: 2px solid silver;
-}
-
-.titulodiscografia{
+.maindiscografia {
+  background-color: black;
+  padding: 2vh 0;
+  border-top: 2px solid silver;
+  border-bottom: 2px solid silver; }
+  .maindiscografia .maindiscografia__titulo {
     background-color: rgba(255, 255, 255, 0.5);
     border: 2px solid white;
-    text-align: center;
-}
-
-.titulodiscografia .tituloprincipal{
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    text-decoration: underline solid white 3px;
-    text-align: center;
-    font-size: 3.2em;
-}
-
-.titulodiscografia .anclas{
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none; 
-    color: white; 
-    font-size: 1.2em; 
-    display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.titulodiscografia .anclas:hover{
-    color: black;
-}
-
-
-.maindiscografia .carddiscos{
+    text-align: center; }
+    .maindiscografia .maindiscografia__titulo .maindiscografia__titulo__principal {
+      font-family: "Roboto";
+      text-decoration: underline;
+      color: white;
+      font-size: 3em;
+      font-family: 'Roboto', sans-serif;
+      text-align: center; }
+    .maindiscografia .maindiscografia__titulo .maindiscografia__titulo__anclas {
+      font-family: "Roboto";
+      text-decoration: none;
+      color: white;
+      font-size: 1.3em;
+      font-family: 'Roboto', sans-serif;
+      text-decoration: none;
+      display: inline-block;
+      padding-left: 10px;
+      padding-right: 10px; }
+      .maindiscografia .maindiscografia__titulo .maindiscografia__titulo__anclas:hover {
+        color: black; }
+  .maindiscografia .maindiscografia__card {
     margin: 0 auto;
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
-    border: 1px solid white;
-}
-
-.maindiscografia .carddiscos .portada{
-    display: flex;
-    justify-content: center;
-}
-
-.maindiscografia .carddiscos .tapadisco{
-    width: 50%;
-    height: 50%;
-}
-
-
-.maindiscografia .carddiscos .tapadisco:active{
-    width: 100%;
-    height: 100%;
-}
-
-.maindiscografia .carddiscos .lista .titulocard{
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    text-decoration: underline solid white 3px;
-    text-align: center;
-    font-size: 2.2em;
-}
-
-.maindiscografia .carddiscos .lista .subtitulocard{
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    text-decoration: underline solid white 2px;
-    text-align: center;
-    font-size: 1.8em;
-}
-
-
-.maindiscografia .carddiscos .lista .canciones{
-    display: flex;
-    flex-direction: column;
-}
-
-.maindiscografia .carddiscos .lista .canciones .cancionesdisco{
-    text-align: center;
-}
-
-.maindiscografia .carddiscos .lista .canciones .cancionesdisco .listacanciones{
-    display: inline-block;
-    padding-right: 10px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-size: 1em;
-}
-
-/*Estilos de la pagina suscribete*/
-
-.mainsuscribete{
-    padding: 4vh 0 15vh 0;
-    background-color: black;
-    border-top: 2px solid silver;
-    border-bottom: 2px solid silver;
-}
-
-.mainsuscribete .titulosuscribete{
-    background-color: rgb(255, 255, 255);
-    border-radius: 15px;
-    margin-bottom: 2vh; 
-    padding: 2vh 3%;
-}
-
-.mainsuscribete .titulosuscribete .titulocard{
-    font-family: 'Roboto', sans-serif;
-    font-size: 3em;
-}
-
-.mainsuscribete .titulosuscribete .textocard{
-    font-family: 'Roboto', sans-serif;
-}
-
-.mainsuscribete .contenedorformulario{
-    height: auto;
-    padding: 1% 0;
-    border-top: 2px solid rgb(0, 0, 0);
-    border-bottom: 2px solid rgb(0, 0, 0);
-}   
-
-.mainsuscribete .contenedorformulario .columna1{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 70%;
-}
-
-.mainsuscribete .contenedorformulario .columna1 .espacioformulario{
-    margin-top: 1vh;
-}
-
-/*Vista tablet y desktop*/
-
-@media only screen and (min-width: 576px){ /*Acomodamos el footer para que fuera de vista mobile se vean los textos de las anclas y aparezcan en lista*/
-    .piedepagina .titulonavegacion{
-        display: inline-block;
-    }
-
-    .piedepagina .redessociales{
-        text-align: left;
-    }
-    
-    .piedepagina .escuchanos{
+    border: 2px solid white;
+    border-top: 0px; }
+    .maindiscografia .maindiscografia__card .maindiscografia__card__portada {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center; }
+      .maindiscografia .maindiscografia__card .maindiscografia__card__portada .maindiscografia__card__portada__tapa {
+        width: 60%;
+        aspect-ratio: 1; }
+        .maindiscografia .maindiscografia__card .maindiscografia__card__portada .maindiscografia__card__portada__tapa:active {
+          width: 100%;
+          height: 100%; }
+    .maindiscografia .maindiscografia__card .maindiscografia__card__lista {
+      order: -1; }
+      .maindiscografia .maindiscografia__card .maindiscografia__card__lista .maindiscografia__card__lista__titulo {
+        font-family: "Roboto";
+        text-decoration: underline;
+        color: white;
+        font-size: 1.8em;
+        font-family: 'Roboto', sans-serif;
+        text-align: center; }
+      .maindiscografia .maindiscografia__card .maindiscografia__card__lista .maindiscografia__anclaslista {
+        font-family: 'Roboto', sans-serif;
+        list-style: none;
+        text-align: center; }
+        .maindiscografia .maindiscografia__card .maindiscografia__card__lista .maindiscografia__anclaslista .maindiscografia__anclaslista__navegacion {
+          display: inline-block;
+          padding-left: 4.5vw;
+          padding-right: 4.5vw; }
+        .maindiscografia .maindiscografia__card .maindiscografia__card__lista .maindiscografia__anclaslista .maindiscografia__anclaslista__anclas {
+          text-decoration: none;
+          color: white;
+          font-size: 1.8em; }
+          .maindiscografia .maindiscografia__card .maindiscografia__card__lista .maindiscografia__anclaslista .maindiscografia__anclaslista__anclas:hover {
+            color: black; }
+        .maindiscografia .maindiscografia__card .maindiscografia__card__lista .maindiscografia__anclaslista .maindiscografia__anclaslista__textoancla {
+          display: none; }
+      .maindiscografia .maindiscografia__card .maindiscografia__card__lista .maindiscografia__card__lista__canciones {
         display: flex;
-        justify-content: flex-end;
-        text-align: left;
-    }
+        flex-flow: column nowrap;
+        justify-content: initial;
+        align-items: initial; }
+        .maindiscografia .maindiscografia__card .maindiscografia__card__lista .maindiscografia__card__lista__canciones .maindiscografia__card__lista__canciones__subtitulo {
+          font-family: "Roboto";
+          text-decoration: underline;
+          color: white;
+          font-size: 1.6em;
+          font-family: 'Roboto', sans-serif;
+          text-align: center; }
+        .maindiscografia .maindiscografia__card .maindiscografia__card__lista .maindiscografia__card__lista__canciones .maindiscografia__card__lista__canciones__disco {
+          text-align: center; }
+          .maindiscografia .maindiscografia__card .maindiscografia__card__lista .maindiscografia__card__lista__canciones .maindiscografia__card__lista__canciones__disco .maindiscografia__card__lista__canciones__disco__lista {
+            display: inline-block;
+            padding-right: 10px;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            font-size: 1em; }
 
-    .piedepagina .listaitem{
-        display: block;
-        padding-left: 0vw;
-    }
+@media only screen and (min-width: 768px) {
+  .maindiscografia {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("../Assets/Img/fondodiscografia.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; } }
 
-    .piedepagina .textoancla{
-        display: inline-block;
-    }
-}
-
-@media only screen and (min-width: 992px){
-    .mainindex{
-        background-color: black; /*Color de fondo*/
-        background-image: url(../Assets/Img/Fondo.jpg); /*Imagen de fondo del contenido principal*/
-        background-attachment: fixed; /*Imagen de fondo fija*/
-        background-position: center; /*Imagen de fondo centrada*/
-        background-repeat: no-repeat; /*No se repite la imagen de fondo al hacer scroll, acompaña al movimiento*/
-        background-size: 100%;
-    }
-
-    .mainindex .tituloindex .tituloprincipal{ /*Propiedades del titulo principal*/
-        padding:2px;
-        font-size: 2.2em;
-    }
-    
-    .mainindex .tituloindex .introduccion{ /*Propiedades del parrafo introductorio*/
-        padding:5px;
-        font-size: 1.3em;
-    }
-
-    .titulocarrusel{
-        font-size: 2em;
-    }
-    
-    .textocarrusel{
-        font-size: 1em;
-    }
-    .carddiscos{ /*Propiedades de la card del ultimo disco*/
-        flex-direction: row;
-        padding: 0 5px 0 0;
-    }
-    
-    .carddiscos .portada{ /*Determinamos el tañamo del contenedor del video en la card y lo ubicamos primero (a la izquierda) en la card*/
-        width: 50%;
-        order: -1;
-    }
-    
-    .carddiscos .lista{ /*Ubicamos el contenedor del texto en la card*/
-        width: 50%;
-    }
-
-    .anclaslista .navegacion{ /*Convertimos la lista con las anclas de una lista vertical a una horizontal*/
-        display: inline-block;
-        margin-left: 10px;
-    }
-    
-    .anclaslista .anclas{ 
-        text-decoration: none; 
-        color: white; 
-        font-size: 1.5em; 
-    }
-
-    .anclaslista .navegacion{ /*Convertimos la lista con las anclas de una lista vertical a una horizontal (LI)*/
+@media only screen and (min-width: 992px) {
+  .maindiscografia .maindiscografia__card {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
+    padding: 0; }
+    .maindiscografia .maindiscografia__card .maindiscografia__card__portada {
+      width: 40%; }
+      .maindiscografia .maindiscografia__card .maindiscografia__card__portada .maindiscografia__card__portada__tapa {
+        width: 100%;
+        height: 100%; }
+    .maindiscografia .maindiscografia__card .maindiscografia__card__lista {
+      width: 60%;
+      order: 1; }
+      .maindiscografia .maindiscografia__card .maindiscografia__card__lista .maindiscografia__anclaslista .maindiscografia__anclaslista__navegacion {
         display: inline-block;
         padding-left: 1.2vw;
-        padding-right: 1.2vw;
-    }
-
-    .carddiscos .textoancla{
+        padding-right: 1.2vw; }
+      .maindiscografia .maindiscografia__card .maindiscografia__card__lista .maindiscografia__anclaslista .maindiscografia__anclaslista__anclas {
+        text-decoration: none;
+        color: white;
+        font-size: 1.5em; }
+      .maindiscografia .maindiscografia__card .maindiscografia__card__lista .maindiscografia__anclaslista .maindiscografia__anclaslista__textoancla {
         display: inline-block;
-        padding-left: 0.5vw;
-    }
+        padding-left: 0.5vw; }
+      .maindiscografia .maindiscografia__card .maindiscografia__card__lista .maindiscografia__card__lista__canciones .maindiscografia__card__lista__canciones__disco {
+        text-align: left; }
+        .maindiscografia .maindiscografia__card .maindiscografia__card__lista .maindiscografia__card__lista__canciones .maindiscografia__card__lista__canciones__disco .maindiscografia__card__lista__canciones__disco__lista {
+          display: block;
+          padding-left: 15%; } }
 
-    .mainindex .cardrecitales{
-        flex-direction: row;
-        padding: 0 5px 0 0;
-    }
+/*Estilos de la pagina suscribete*/
+.mainsuscribete {
+  padding: 4vh 0 15vh 0;
+  background-color: black;
+  border-top: 2px solid silver;
+  border-bottom: 2px solid silver; }
+  .mainsuscribete .mainsuscribete__titulo {
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 2vh;
+    padding: 2vh 3%; }
+    .mainsuscribete .mainsuscribete__titulo .mainsuscribete__titulo__principal {
+      font-family: "Roboto";
+      text-decoration: none;
+      color: black;
+      font-size: 3em;
+      font-family: 'Roboto', sans-serif; }
+    .mainsuscribete .mainsuscribete__titulo .mainsuscribete__titulo__texto {
+      font-family: "Roboto";
+      text-decoration: none;
+      color: black;
+      font-size: 1em;
+      font-family: 'Roboto', sans-serif; }
+    .mainsuscribete .mainsuscribete__titulo .mainsuscribete__titulo__contenedor {
+      height: auto;
+      padding: 1% 0;
+      border-top: 2px solid black;
+      border-bottom: 2px solid black; }
+      .mainsuscribete .mainsuscribete__titulo .mainsuscribete__titulo__contenedor .mainsuscribete__titulo__contenedor__columna1 {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 70%; }
+        .mainsuscribete .mainsuscribete__titulo .mainsuscribete__titulo__contenedor .mainsuscribete__titulo__contenedor__columna1 .mainsuscribete__titulo__contenedor__columna1__margenformulario {
+          margin-top: 1vh; }
 
-    .mainindex .cardrecitales .portada{
-        width: 50%;
-    }
+@media only screen and (min-width: 768px) {
+  .mainsuscribete {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("../Assets/Img/fondosuscribete.jpg");
+    background-attachment: initial;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; } }
 
-    .mainindex .cardrecitales .lista{
-        width: 50%;
-    }
-
-    .cardrecitales .texto{
-        font-size: 1em;
-    }
-    
-    .mainnosotros{
-        background:linear-gradient(to top,rgb(0, 0, 0, 0.6),rgb(0, 0, 0,0.4)), url("../Assets/Img/fondonosotros.jpg");
-        background-attachment: fixed; /*Imagen de fondo fija*/
-        background-position: center; /*Imagen de fondo centrada*/
-        background-repeat: no-repeat; /*No se repite la imagen de fondo al hacer scroll, acompaña al movimiento*/
-        background-size: cover; /*La imagen cubre el 100% del alto del main*/
-    }
-
-    .mainnosotros .fotosnosotros .cardfoto .subtitulofoto{
-        padding-top: 4%;
-        font-size: 1.5em;
-    }
-
-    .mainnosotros .fotosnosotros .cardfoto .textofoto{
-        padding-top: 3%;
-    }
-
-    .mainrecitales{
-        background:linear-gradient(to top,rgb(0, 0, 0, 0.8),rgb(0, 0, 0,0.6)), url("../Assets/Img/fondorecitales.jpg");
-        background-attachment: fixed; /*Imagen de fondo fija*/
-        background-position: center; /*Imagen de fondo centrada*/
-        background-repeat: no-repeat; /*No se repite la imagen de fondo al hacer scroll, acompaña al movimiento*/
-        background-size: cover; /*La imagen cubre el 100% del alto del main*/
-    }
-    .mainrecitales .titulorecitales .tituloprincipal{
-        font-size: 3em;
-    }
-
-
-
-    .mainrecitales .titulorecitales .portada{
-        height: 40vh;
-        border-top: 2px solid rgb(0, 0, 0);
-        background-color: white;
-    }
-    
-    .mainrecitales .titulorecitales .portada .mapa{
-        height: 96%;
-        padding-top: 2%;
-    }
-    
-    .mainrecitales .titulorecitales .fechas{
-        height: 40vh;
-        border-top: 2px solid rgba(0, 0, 0, 0.5);
-        background-color: white;
-    }
-    .mainrecitales .titulorecitales .fechas .subtitulocard{
-        font-size: 2.2em;
-    }
-
-    .mainrecitales .titulorecitales .fechas .lista{
-        padding-top: 5vh;
-        font-size: 1.6em;
-    }
-
-    .maindiscografia{
-        background:linear-gradient(to top,rgb(0, 0, 0, 0.8),rgb(0, 0, 0,0.6)), url("../Assets/Img/fondodiscografia.jpg");
-        background-attachment: fixed; /*Imagen de fondo fija*/
-        background-position: center; /*Imagen de fondo centrada*/
-        background-repeat: no-repeat; /*No se repite la imagen de fondo al hacer scroll, acompaña al movimiento*/
-        background-size: cover; /*La imagen cubre el 100% del alto del main*/
-    }
-
-    .maindiscografia .carddiscos{
-        background: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
-    }
-
-    .maindiscografia .carddiscos .tapadisco{
-        width: 100%;
-        height: 100%;
-    }
-
-    .maindiscografia .carddiscos .portada{
-        width: 40%;
-    }
-    .maindiscografia .carddiscos .lista{
-        width: 60%;
-    }
-
-    .maindiscografia .carddiscos .lista .canciones .cancionesdisco{
-        text-align: left;
-    }
-
-    .maindiscografia .carddiscos .lista .canciones .cancionesdisco .listacanciones{
-        display: block;
-    }
-
-    .mainsuscribete{
-        background:linear-gradient(to top,rgb(0, 0, 0, 0.4),rgb(0, 0, 0,0.2)), url("../Assets/Img/fondosuscribete.jpeg");
-        background-position: center; /*Imagen de fondo centrada*/
-        background-repeat: no-repeat; /*No se repite la imagen de fondo al hacer scroll, acompaña al movimiento*/
-        background-size: cover; /*La imagen cubre el 100% del alto del main*/
-    }
-
-    .mainsuscribete .contenedorformulario{
-        height: 50vh;
-    }   
-
-    .mainsuscribete .contenedorformulario .columna1 .espacioformulario{
-        margin-top: 0vh;
-    }
-}
-
+@media only screen and (min-width: 992px) {
+  .mainsuscribete .mainsuscribete__titulo .mainsuscribete__titulo__contenedor {
+    height: 50vh; }
+    .mainsuscribete .mainsuscribete__titulo .mainsuscribete__titulo__contenedor .mainsuscribete__titulo__contenedor__columna1 .mainsuscribete__titulo__contenedor__columna1__margenformulario {
+      margin-top: 0vh; } }

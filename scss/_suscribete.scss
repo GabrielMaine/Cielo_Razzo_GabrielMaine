@@ -1,0 +1,56 @@
+/*Estilos de la pagina suscribete*/
+
+.mainsuscribete{
+    padding: 4vh 0 15vh 0;
+    background-color: map-get($rgb, negro);
+    @include borde-t (2px, solid, map-get($rgb, plateado));
+    @include borde-b (2px, solid, map-get($rgb, plateado));
+    .mainsuscribete__titulo{
+        background-color: map-get($rgb, blanco);
+        border-radius: 15px;
+        margin-bottom: 2vh; 
+        padding: 2vh 3%;
+        .mainsuscribete__titulo__principal{
+            @include fuentes (map-get($fuentes, principal), map-get($rgb, negro), map-get($tamañofuente, tit_princ));
+            font-family: 'Roboto', sans-serif;
+        }
+        .mainsuscribete__titulo__texto{
+            @include fuentes (map-get($fuentes, principal), map-get($rgb, negro), map-get($tamañofuente, texto_c));
+            font-family: 'Roboto', sans-serif;
+        }
+        .mainsuscribete__titulo__contenedor{
+            height: auto;
+            padding: 1% 0;
+            @include borde-t (2px, solid, map-get($rgb, negro));
+            @include borde-b (2px, solid, map-get($rgb, negro));
+            .mainsuscribete__titulo__contenedor__columna1{
+                @include flexbox (column, space-evenly);
+                height: 70%;
+                .mainsuscribete__titulo__contenedor__columna1__margenformulario{
+                    margin-top: 1vh;
+                }
+            }
+        }  
+    }
+}
+
+@media only screen and (min-width: 768px){  
+    .mainsuscribete{
+        @include fondopagina(map-get($rgba, negro4), map-get($rgba, negro2), fondosuscribete, initial);
+    }
+}
+
+@media only screen and (min-width: 992px){  
+    .mainsuscribete{
+        .mainsuscribete__titulo{
+            .mainsuscribete__titulo__contenedor{
+                height: 50vh;
+                .mainsuscribete__titulo__contenedor__columna1{
+                    .mainsuscribete__titulo__contenedor__columna1__margenformulario{
+                        margin-top: 0vh;
+                    }
+                }
+            }  
+        }
+    }
+}
