@@ -113,7 +113,7 @@
 
 @media only screen and (min-width: 768px){
     .mainindex{
-        @include fondopagina(map-get($rgba, negro2), map-get($rgba, negro2), fondo);
+        @include fondopagina(map-get($rgba, negro2), map-get($rgba, negro2), Fondo);
     }
 }
 
