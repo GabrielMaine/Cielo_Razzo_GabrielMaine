@@ -204,7 +204,7 @@
 
 @media only screen and (min-width: 768px) {
   .mainindex {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../Assets/Img/Fondo.jpg");
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../Assets/Img/fondo.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
