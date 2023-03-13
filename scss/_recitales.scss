@@ -16,7 +16,7 @@
             font-family: 'Roboto', sans-serif;
         }
         .mainrecitales__titulo__portada{
-            height: 30vh;
+            height: initial;
             @include borde-t (2px, solid, map-get($rgb, negro));
             @include borde-b (2px, solid, map-get($rgb, negro));
             .mainrecitales__titulo__portada__mapa{
@@ -25,7 +25,7 @@
             }
         }
         .mainrecitales__titulo__fechas{
-            height: 40vh;
+            height: initial;
             @include borde-t (2px, solid, map-get($rgb, negro));
             @include borde-b (2px, solid, map-get($rgb, negro));
             padding-top: 1vh;
@@ -52,7 +52,7 @@
             font-family: 'Roboto', sans-serif;
         }
         .mainrecitales__futurasfechas__portada{
-            height: 25vh;
+            height: initial;
             @include borde-t (2px, solid, map-get($rgb, negro));
             @include borde-b (2px, solid, map-get($rgb, negro));
             .mainrecitales__futurasfechas__portada__mapa{
@@ -61,7 +61,7 @@
             }
         }
         .mainrecitales__futurasfechas__fechas{
-            height: 25vh;
+            height: initial;
             @include borde-t (2px, solid, map-get($rgb, negro));
             @include borde-b (2px, solid, map-get($rgb, negro));
             padding-top: 1vh;
@@ -104,6 +104,14 @@
                     padding-top: 5vh;
                     font-size: map-get($tamañofuente, subt_card);
                 }
+            }
+        }
+        .mainrecitales__futurasfechas{
+            .mainrecitales__futurasfechas__portada{
+                height: 25vh;
+            }
+            .mainrecitales__futurasfechas__fechas{
+                height: 25vh;
             }
         }
     }

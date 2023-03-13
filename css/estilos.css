@@ -275,21 +275,20 @@
       font-family: 'Roboto', sans-serif;
       text-align: justify; }
   .mainnosotros .mainnosotros__fotos {
-    background-color: white;
+    background-color: black;
     border: 2px solid black;
-    text-align: center;
-    padding: 0; }
+    margin: 0 auto; }
     .mainnosotros .mainnosotros__fotos .mainnosotros__fotos__card {
+      background-color: white;
       border: 2px solid black;
       text-align: center;
-      padding: 0;
-      height: 75vh; }
+      padding: 0; }
       .mainnosotros .mainnosotros__fotos .mainnosotros__fotos__card .mainnosotros__fotos__card__foto {
         width: 100%;
-        height: 90%; }
+        height: 60vh; }
       .mainnosotros .mainnosotros__fotos .mainnosotros__fotos__card .mainnosotros__fotos__card__subtitulo {
         display: inline-block;
-        padding-top: 1%;
+        padding-top: 2.5%;
         font-family: 'Roboto', sans-serif; }
 
 @media only screen and (min-width: 768px) {
@@ -302,7 +301,6 @@
 
 @media only screen and (min-width: 992px) {
   .mainnosotros .mainnosotros__fotos .mainnosotros__fotos__card .mainnosotros__fotos__card__subtitulo {
-    padding-top: 4%;
     font-size: 1.6em; } }
 
 /*Estilado de la pagina recitales*/
@@ -324,14 +322,14 @@
       font-size: 3em;
       font-family: 'Roboto', sans-serif; }
     .mainrecitales .mainrecitales__titulo .mainrecitales__titulo__portada {
-      height: 30vh;
+      height: initial;
       border-top: 2px solid black;
       border-bottom: 2px solid black; }
       .mainrecitales .mainrecitales__titulo .mainrecitales__titulo__portada .mainrecitales__titulo__portada__mapa {
         height: 96%;
         padding-top: 2%; }
     .mainrecitales .mainrecitales__titulo .mainrecitales__titulo__fechas {
-      height: 40vh;
+      height: initial;
       border-top: 2px solid black;
       border-bottom: 2px solid black;
       padding-top: 1vh; }
@@ -362,14 +360,14 @@
       font-size: 2em;
       font-family: 'Roboto', sans-serif; }
     .mainrecitales .mainrecitales__futurasfechas .mainrecitales__futurasfechas__portada {
-      height: 25vh;
+      height: initial;
       border-top: 2px solid black;
       border-bottom: 2px solid black; }
       .mainrecitales .mainrecitales__futurasfechas .mainrecitales__futurasfechas__portada .mainrecitales__futurasfechas__portada__mapa {
         height: 96%;
         padding-top: 2%; }
     .mainrecitales .mainrecitales__futurasfechas .mainrecitales__futurasfechas__fechas {
-      height: 25vh;
+      height: initial;
       border-top: 2px solid black;
       border-bottom: 2px solid black;
       padding-top: 1vh; }
@@ -408,7 +406,11 @@
       font-size: 2em; }
     .mainrecitales .mainrecitales__titulo .mainrecitales__titulo__fechas .mainrecitales__titulo__fechas__lista {
       padding-top: 5vh;
-      font-size: 1.6em; } }
+      font-size: 1.6em; }
+  .mainrecitales .mainrecitales__futurasfechas .mainrecitales__futurasfechas__portada {
+    height: 25vh; }
+  .mainrecitales .mainrecitales__futurasfechas .mainrecitales__futurasfechas__fechas {
+    height: 25vh; } }
 
 /*Estilado de la pagina discografía*/
 .maindiscografia {
