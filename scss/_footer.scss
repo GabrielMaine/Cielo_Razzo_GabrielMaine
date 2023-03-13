@@ -1,5 +1,5 @@
 .piedepagina{
-    background-color: rgb(0, 0, 0);
+    background-color: map-get($rgb, negro);
     padding-top: 1vh;
     font-family: 'Roboto', sans-serif;
     .piedepagina__redes{
@@ -15,8 +15,8 @@
         list-style: none; 
     }
     .piedepagina__titulonavegacion{
-        color:lightskyblue; 
-        font-size: 1.6em; 
+        color:map-get($rgb, celeste); 
+        font-size: map-get($tamañofuente, subt_card); 
         display: none;
     }
     .piedepagina__listaitem{ 
@@ -26,14 +26,22 @@
     }
     .piedepagina__anclas{
         text-decoration: none; 
-        color: white; 
-        font-size: 1.2em; 
+        color: map-get($rgb, blanco); 
+        font-size: map-get($tamañofuente, texto_g); 
     }
     .piedepagina__textoanclas{
         display: none;
     }
     .piedepagina__paddinganclas{
         padding-left: 10px;
+    }
+    .piedepagina__animacion{
+        &:hover{ /*Le agregamos una animacion de cambio de color a las anclas cuando el usuario pone el puntero encima de ellas*/
+            animation-name: anclasindex;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-duration: 3s;
+        }
     }
 }
 

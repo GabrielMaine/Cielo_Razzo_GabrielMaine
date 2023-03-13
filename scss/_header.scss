@@ -1,7 +1,7 @@
 /*Propiedades de la cabecera*/
 
 .cabecera{
-    background-color: rgb(0, 0, 0);
+    background-color: map-get($rgb, negro);
     font-family: 'Roboto', sans-serif;
     z-index: 9;
     .cabecera__logo{
@@ -16,12 +16,12 @@
         width: 100%;
         justify-content: flex-end;
         .cabecera__anclas{
-            color: white;
+            color: map-get($rgb, blanco);
             font-family: "roboto", sans-serif;
-            font-size: 1.3em;
+            font-size: map-get($tamañofuente, texto_g);
             &:hover{ /*Le damos un subrayado y cambiamos el color a las anclas cuando el usuario pone el puntero encima de ellas*/
                 text-decoration: underline;
-                color: gold;
+                color: map-get($rgb, dorado);
             }
         }
     }

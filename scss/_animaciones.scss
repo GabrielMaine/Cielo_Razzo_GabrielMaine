@@ -1,0 +1,7 @@
+@keyframes anclasindex{
+    0% {color: map-get($rgb, blanco)}
+    25% {color: map-get($rgb, celeste)}
+    50% {color: map-get($rgb, azul)}
+    75% {color: map-get($rgb, celeste)}
+    100% {color: map-get($rgb, blanco)}
+}

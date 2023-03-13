@@ -17,9 +17,9 @@
             text-align: center;
         }
         .mainindex__titulo__introduccion{
-            @include fuentes (map-get($fuentes, principal), map-get($rgb, blanco), map-get($tamañofuente, texto_c));
-            font-family: 'Roboto';
-            text-align: center;
+            @extend .mainindex__titulo__principal;
+            font-size: map-get($tamañofuente, texto_c);
+            text-decoration: none;
         }
     }
     .mainindex__anclacarrusel{
@@ -137,8 +137,8 @@
         }
         .mainindex__carddiscos{
             flex-direction: row;
-            padding: 0 5px 0 0;
             .mainindex__carddiscos__portada{
+                padding: 0%;
                 width: 50%;
                 order: -1;
             }
