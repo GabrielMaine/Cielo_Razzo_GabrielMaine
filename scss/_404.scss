@@ -1,0 +1,35 @@
+/*Estilos de la pagina 404*/
+.main404{
+    height: 100vh;
+    padding: 15vh 0 15vh 0;
+    background: linear-gradient(map-get($rgba, azul5), map-get($rgba, negro8));
+    .main404__contenedor{
+        text-align: center;
+        .main404__contenedor__principal{
+            @include fuentes (map-get($fuentes, principal), map-get($rgb, negro), map-get($tamañofuente, tit_princ));
+            font-family: 'Roboto', sans-serif;
+        }
+        .main404__contenedor__texto{
+            @include fuentes (map-get($fuentes, principal), map-get($rgb, negro), map-get($tamañofuente, tit_card));
+            font-family: 'Roboto', sans-serif;
+        }
+        .main404__contenedor__ancla{
+            @include fuentes (map-get($fuentes, principal), map-get($rgb, azul), map-get($tamañofuente, subt_card));
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){  
+    .main404{
+        @include fondopagina(map-get($rgba, negro6), map-get($rgba, negro6), fondo404);
+        .main404__contenedor{
+            .main404__contenedor__principal{
+                color: map-get($rgb, blanco);
+            }
+            .main404__contenedor__texto{
+                color: map-get($rgb, blanco);
+            }
+        }
+    }
+}

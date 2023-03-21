@@ -441,6 +441,9 @@
       padding-right: 10px; }
       .maindiscografia .maindiscografia__titulo .maindiscografia__titulo__anclas:hover {
         color: black; }
+      .maindiscografia .maindiscografia__titulo .maindiscografia__titulo__anclas:active {
+        color: gold;
+        font-weight: bold; }
   .maindiscografia .maindiscografia__card {
     margin: 0 auto;
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
@@ -590,3 +593,41 @@
     height: 50vh; }
     .mainsuscribete .mainsuscribete__titulo .mainsuscribete__titulo__contenedor .mainsuscribete__titulo__contenedor__columna1 .mainsuscribete__titulo__contenedor__columna1__margenformulario {
       margin-top: 0vh; } }
+
+/*Estilos de la pagina 404*/
+.main404 {
+  height: 100vh;
+  padding: 15vh 0 15vh 0;
+  background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0.8)); }
+  .main404 .main404__contenedor {
+    text-align: center; }
+    .main404 .main404__contenedor .main404__contenedor__principal {
+      font-family: "Roboto";
+      text-decoration: none;
+      color: black;
+      font-size: 3em;
+      font-family: 'Roboto', sans-serif; }
+    .main404 .main404__contenedor .main404__contenedor__texto {
+      font-family: "Roboto";
+      text-decoration: none;
+      color: black;
+      font-size: 1.8em;
+      font-family: 'Roboto', sans-serif; }
+    .main404 .main404__contenedor .main404__contenedor__ancla {
+      font-family: "Roboto";
+      text-decoration: none;
+      color: blue;
+      font-size: 1.6em;
+      font-family: 'Roboto', sans-serif; }
+
+@media only screen and (min-width: 768px) {
+  .main404 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../Assets/Img/fondo404.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .main404 .main404__contenedor .main404__contenedor__principal {
+      color: white; }
+    .main404 .main404__contenedor .main404__contenedor__texto {
+      color: white; } }

@@ -24,6 +24,10 @@
             &:hover{
                 color: map-get($rgb, negro);
             }
+            &:active{
+                color: map-get($rgb, dorado);
+                font-weight: bold;
+            }
         }
     }
     .maindiscografia__card{
